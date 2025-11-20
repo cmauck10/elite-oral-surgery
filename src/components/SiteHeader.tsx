@@ -128,13 +128,21 @@ export function SiteHeader() {
                 <div onMouseLeave={() => setActiveMenu(null)}>
                   <button
                     type="button"
-                    className={`text-sm font-medium transition ${
+                    className={`flex items-center gap-1 text-sm font-medium transition ${
                       activeMenu === index ? "text-[var(--accent)]" : "text-[var(--foreground)]"
                     }`}
                     onMouseEnter={() => setActiveMenu(index)}
                     onClick={() => setActiveMenu((prev) => (prev === index ? null : index))}
                   >
                     {item.label}
+                    <svg 
+                      className={`h-4 w-4 transition-transform duration-200 ${activeMenu === index ? 'rotate-180' : ''}`}
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
                   </button>
                   {activeMenu === index && (
                     <div className="absolute left-1/2 top-full z-30 -translate-x-1/2 pt-4">
@@ -232,9 +240,19 @@ export function SiteHeader() {
                 <Link
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="block text-base font-semibold text-[var(--foreground)]"
+                  className="flex items-center justify-between text-base font-semibold text-[var(--foreground)]"
                 >
                   {item.label}
+                  {item.children && (
+                    <svg 
+                      className="h-4 w-4 text-[var(--muted)]"
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  )}
                 </Link>
                 {item.children && (
                   <ul className="mt-2 space-y-2 text-sm text-[var(--muted)]">
