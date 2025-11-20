@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/elite-oral-surgery//_next/:path+",
+        "destination": "/elite-oral-surgery/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
