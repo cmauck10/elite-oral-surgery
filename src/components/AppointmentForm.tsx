@@ -14,10 +14,44 @@ const services = [
 
 export function AppointmentForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    const formData = new FormData(event.currentTarget);
+    const data = {
+      firstName: formData.get('first-name') as string,
+      lastName: formData.get('last-name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      service: formData.get('service') as string,
+      comments: formData.get('comments') as string,
+    };
+
+    try {
+      const response = await fetch('/api/send-appointment', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit appointment request');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError('Something went wrong. Please try calling us at (561) 790-0206 instead.');
+      console.error('Submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -107,11 +141,18 @@ export function AppointmentForm() {
             />
           </label>
 
+          {error && (
+            <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+              {error}
+            </div>
+          )}
+
           <button
             type="submit"
-            className="w-full rounded-full bg-[var(--accent)] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
+            disabled={isSubmitting}
+            className="w-full rounded-full bg-[var(--accent)] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)] disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Submit Request
+            {isSubmitting ? 'Sending...' : 'Submit Request'}
           </button>
         </div>
 
