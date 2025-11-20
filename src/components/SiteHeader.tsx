@@ -11,17 +11,17 @@ const serviceNavChildren = serviceDetails.map((service) => ({
 }));
 
 const navItems = [
-  { label: "Home", href: "/#home" },
+  { label: "Home", href: "/" },
   {
     label: "About",
-    href: "/#about",
+    href: "/about",
     children: [
-      { label: "Elite Oral Surgery of Wellington", href: "/#elite-oral-surgery" },
-      { label: "Dr Michael Mauck", href: "/#our-team" },
-      { label: "Dr Michael London", href: "/#dr-michael-london" },
-      { label: "Our Team", href: "/#our-team" },
-      { label: "Office Tour", href: "/#office-gallery" },
-      { label: "Office Technology", href: "/#office-technology" },
+      { label: "Elite Oral Surgery of Wellington", href: "/about" },
+      { label: "Dr Michael Mauck", href: "/about/dr-michael-mauck" },
+      { label: "Dr Michael London", href: "/about/dr-michael-london" },
+      { label: "Our Team", href: "/about/our-team" },
+      { label: "Office Tour", href: "/about/office-tour" },
+      { label: "Office Technology", href: "/about/office-technology" },
     ],
   },
   {
@@ -71,6 +71,7 @@ function CloseIcon() {
 
 export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState<number | null>(null);
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-white/80 backdrop-blur-xl">
@@ -86,30 +87,47 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
-          {navItems.map((item) => (
-            <div key={item.label} className="group relative">
-              <Link
-                href={item.href}
-                className="text-sm font-medium text-[var(--foreground)] transition hover:text-[var(--accent)]"
-              >
-                {item.label}
-              </Link>
-              {item.children && (
-                <div className="invisible absolute left-1/2 mt-4 w-64 -translate-x-1/2 rounded-2xl border border-[var(--border)] bg-white/95 p-4 opacity-0 shadow-2xl transition duration-200 group-hover:visible group-hover:opacity-100">
-                  <ul className="space-y-2 text-sm text-[var(--muted)]">
-                    {item.children.map((child) => (
-                      <li key={child.label}>
-                        <Link
-                          href={child.href}
-                          className="flex items-center justify-between rounded-lg px-3 py-2 transition hover:bg-[var(--background)] hover:text-[var(--foreground)]"
-                        >
-                          <span>{child.label}</span>
-                          <span aria-hidden="true">↗</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+          {navItems.map((item, index) => (
+            <div key={item.label} className="relative">
+              {item.children ? (
+                <div onMouseLeave={() => setActiveMenu(null)}>
+                  <button
+                    type="button"
+                    className={`text-sm font-medium transition ${
+                      activeMenu === index ? "text-[var(--accent)]" : "text-[var(--foreground)]"
+                    }`}
+                    onMouseEnter={() => setActiveMenu(index)}
+                    onClick={() => setActiveMenu((prev) => (prev === index ? null : index))}
+                  >
+                    {item.label}
+                  </button>
+                  {activeMenu === index && (
+                    <div className="absolute left-1/2 top-full z-30 -translate-x-1/2 pt-4">
+                      <div className="w-64 rounded-2xl border border-[var(--border)] bg-white/95 p-4 shadow-2xl transition duration-200">
+                        <ul className="space-y-2 text-sm text-[var(--muted)]">
+                          {item.children.map((child) => (
+                            <li key={child.label}>
+                              <Link
+                                href={child.href}
+                                className="flex items-center justify-between rounded-lg px-3 py-2 transition hover:bg-[var(--background)] hover:text-[var(--foreground)]"
+                              >
+                                <span>{child.label}</span>
+                                <span aria-hidden="true">↗</span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
                 </div>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="text-sm font-medium text-[var(--foreground)] transition hover:text-[var(--accent)]"
+                >
+                  {item.label}
+                </Link>
               )}
             </div>
           ))}
