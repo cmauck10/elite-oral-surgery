@@ -11,6 +11,13 @@ export const metadata = {
 export default function OurTeamPage() {
   const teamMembers = [
     {
+      name: "Dr. Michael Mauck",
+      role: "Oral & Maxillofacial Surgeon",
+      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80",
+      bio: "Board-certified surgeon with expertise in full-arch implants, bone grafting, and regenerative surgical techniques.",
+      link: "/about/dr-michael-mauck",
+    },
+    {
       name: "Dr. Michael London",
       role: "Oral & Maxillofacial Surgeon",
       image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80",
@@ -18,35 +25,40 @@ export default function OurTeamPage() {
       link: "/about/dr-michael-london",
     },
     {
-      name: "Dr. Michael Mauck",
-      role: "Oral & Maxillofacial Surgeon",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80",
-      bio: "Expert in full-arch implants, bone grafting, and regenerative surgical techniques.",
-      link: "/about/dr-michael-mauck",
+      name: "Chris Mauck",
+      role: "Office Director",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+      bio: "Oversees practice operations and ensures every patient receives exceptional concierge-level care.",
     },
     {
-      name: "Sarah Martinez, RN",
-      role: "Lead Surgical Nurse",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80",
-      bio: "Over 15 years of perioperative nursing experience with specialty training in IV sedation monitoring.",
+      name: "Leslie London",
+      role: "Practice Relations",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      bio: "Cultivates relationships with referring dentists and community partners throughout Palm Beach County.",
     },
     {
-      name: "Jessica Chen, RDA",
-      role: "Surgical Assistant",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
-      bio: "Certified in implant assisting and digital impressioning with a passion for patient education.",
+      name: "Ana Gonzalez",
+      role: "Treatment Coordinator",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80",
+      bio: "Guides patients through treatment planning, insurance navigation, and financial coordination.",
     },
     {
-      name: "Michael Torres",
-      role: "Patient Care Coordinator",
-      image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=600&q=80",
-      bio: "Your first point of contact for scheduling, insurance verification, and treatment coordination.",
-    },
-    {
-      name: "Amanda Foster",
-      role: "Office Manager",
+      name: "Yasmin Rodriguez",
+      role: "Treatment Coordinator",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
-      bio: "Ensures seamless operations and oversees our concierge-level patient experience protocols.",
+      bio: "Your dedicated resource for scheduling, pre-operative preparation, and post-surgical follow-up.",
+    },
+    {
+      name: "Maci Lee",
+      role: "Dental Assistant",
+      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80",
+      bio: "Provides chairside support and ensures patient comfort throughout surgical procedures.",
+    },
+    {
+      name: "Kerri Coury",
+      role: "Dental Assistant",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
+      bio: "Skilled in sterilization protocols, digital imaging, and compassionate patient care.",
     },
   ];
 
