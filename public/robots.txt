@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://eliteoralsurgery.com/sitemap.xml
+Sitemap: https://eliteoralsurgerywellington.com/sitemap.xml
 

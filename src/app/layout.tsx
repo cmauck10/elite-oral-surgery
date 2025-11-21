@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://eliteoralsurgery.com"),
+  metadataBase: new URL("https://eliteoralsurgerywellington.com"),
   title: {
     default: "Elite Oral Surgery of Wellington | Oral Surgeons",
     template: "%s | Elite Oral Surgery of Wellington",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Elite Oral Surgery of Wellington | Oral Surgeons",
     description:
       "Concierge-level oral surgery, dental implants, and facial reconstruction with Dr. Michael London and Dr. Michael Mauck in Wellington, Florida.",
-    url: "https://eliteoralsurgery.com",
+    url: "https://eliteoralsurgerywellington.com",
     siteName: "Elite Oral Surgery of Wellington",
     type: "website",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Premium oral surgery care, advanced technology, and elevated comfort in Wellington, FL.",
   },
   alternates: {
-    canonical: "https://eliteoralsurgery.com",
+    canonical: "https://eliteoralsurgerywellington.com",
   },
 };
 

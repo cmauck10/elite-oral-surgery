@@ -85,8 +85,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Dentist",
     name: "Elite Oral Surgery of Wellington",
-    url: "https://eliteoralsurgery.com",
-    logo: "https://eliteoralsurgery.com/logo.png",
+    url: "https://eliteoralsurgerywellington.com",
+    logo: "https://eliteoralsurgerywellington.com/logo.png",
     telephone: "+1-561-790-0206",
     faxNumber: "+1-561-795-5445",
     address: {
