@@ -67,7 +67,7 @@ export default function FAQPage() {
         <div className="relative">
           <input
             type="text"
-            placeholder="Search for a question..."
+            placeholder="Search questions and answers..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full rounded-xl border border-[var(--border)] bg-transparent px-4 py-2 pl-10 text-sm outline-none focus:border-[var(--accent)]"

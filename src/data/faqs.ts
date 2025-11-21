@@ -13,10 +13,16 @@ export const faqs: FAQ[] = [
       "Referrals are appreciated but not required. Many patients come directly to us for implants, wisdom teeth, or trauma care. We'll collaborate with your dentist once treatment begins.",
   },
   {
-    category: "General",
+    category: "Insurance",
     question: "What insurances do you accept?",
     answer:
       "Please view our Participating Insurances page at /resources/insurance for a complete list of accepted insurance plans.",
+  },
+  {
+    category: "Insurance",
+    question: "Do you accept HMO insurances?",
+    answer:
+      "No, we do not accept any HMO insurances. Please see the Participating Insurances page at /resources/insurance for more details on insurances we do accept.",
   },
   {
     category: "General",
@@ -25,7 +31,7 @@ export const faqs: FAQ[] = [
       "We are open Monday through Friday, 8:00 AM to 5:00 PM. Emergency appointments are available for urgent cases. Please call (561) 790-0206 to schedule.",
   },
   {
-    category: "General",
+    category: "Finances",
     question: "Do you offer payment plans?",
     answer:
       "Yes! We partner with Cherry and CareCredit to offer flexible financing options. Visit our Financing page at /resources/financing for more details.",
@@ -132,17 +138,47 @@ export const faqs: FAQ[] = [
 
 // Helper function to get unique categories
 export function getCategories(): string[] {
-  return Array.from(new Set(faqs.map((faq) => faq.category)));
+  return Array.from(new Set(faqs.map((faq) => faq.category))).sort();
 }
 
 // Helper function to filter FAQs
 export function filterFAQs(searchQuery: string, category: string): FAQ[] {
   return faqs.filter((faq) => {
-    const matchesSearch =
-      searchQuery === "" ||
-      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (typeof faq.answer === "string" && faq.answer.toLowerCase().includes(searchQuery.toLowerCase()));
+    // If no search query, match all
+    if (searchQuery === "") {
+      const matchesCategory = category === "All" || faq.category === category;
+      return matchesCategory;
+    }
+
+    // Common stop words to filter out
+    const stopWords = new Set([
+      "a", "an", "and", "are", "as", "at", "be", "by", "do", "does", "for",
+      "from", "has", "have", "i", "in", "is", "it", "of", "on", "or", "that",
+      "the", "to", "was", "will", "with", "you", "your", "my", "we", "us",
+      "can", "could", "should", "would", "may", "might", "must", "take", "get"
+    ]);
+
+    // Split search query into individual words, filter out stop words and short terms
+    const searchTerms = searchQuery
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(term => term.length >= 3 && !stopWords.has(term));
+    
+    // If no valid search terms remain after filtering, return no results
+    if (searchTerms.length === 0) {
+      return false;
+    }
+
+    // Combine category, question and answer text for searching
+    const categoryText = faq.category.toLowerCase();
+    const questionText = faq.question.toLowerCase();
+    const answerText = typeof faq.answer === "string" ? faq.answer.toLowerCase() : "";
+    const combinedText = categoryText + " " + questionText + " " + answerText;
+
+    // Check if ANY search term appears somewhere in the combined text (OR logic)
+    const matchesSearch = searchTerms.some(term => combinedText.includes(term));
     const matchesCategory = category === "All" || faq.category === category;
+    
     return matchesSearch && matchesCategory;
   });
 }
