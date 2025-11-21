@@ -137,7 +137,12 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mx-auto mt-8 max-w-6xl px-6 text-xs text-[var(--muted)] lg:px-8">
-        © {new Date().getFullYear()} Elite Oral Surgery of Wellington. All rights reserved.
+        <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+          <p>© {new Date().getFullYear()} Elite Oral Surgery of Wellington. All rights reserved.</p>
+          <Link href="/privacy-policy" className="text-[var(--foreground)] hover:text-[var(--accent)] transition">
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );

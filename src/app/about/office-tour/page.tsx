@@ -249,8 +249,7 @@ export default function OfficeTourPage() {
           </p>
           <h2 className="mt-4 font-serif text-3xl">Ready to visit?</h2>
           <p className="mt-4 text-lg text-[var(--muted)] max-w-2xl mx-auto">
-            Schedule a complimentary consultation to tour our facility, meet our team, and discuss
-            your treatment goals in a relaxed, pressure-free environment.
+            Schedule a consultation to see our facility, meet our team, and discuss your treatment goals in a relaxed, pressure-free environment.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link

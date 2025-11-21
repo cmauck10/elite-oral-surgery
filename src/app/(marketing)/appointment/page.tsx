@@ -15,9 +15,7 @@ export default function AppointmentPage() {
           </p>
           <h1 className="font-serif text-4xl">Appointment Request</h1>
           <p className="text-lg text-[var(--muted)]">
-            Tell us a little about yourself and the care you&apos;re seeking. Our patient concierge
-            will reach out within one business day to finalize imaging, sedation, and appointment
-            details.
+            Tell us a little about yourself and which service you're interested in. Our patient concierge will reach out within one business day with next steps.
           </p>
         </div>
 
