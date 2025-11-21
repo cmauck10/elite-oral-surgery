@@ -22,6 +22,7 @@ const navItems = [
       { label: "Our Team", href: "/about/our-team" },
       { label: "Office Tour", href: "/about/office-tour" },
       { label: "Office Technology", href: "/about/office-technology" },
+      { label: "Our History", href: "/about/our-history" },
     ],
   },
   {
@@ -34,6 +35,7 @@ const navItems = [
     href: "/resources",
     children: [
       { label: "Financing", href: "/resources/financing" },
+      { label: "Participating Insurances", href: "/resources/insurance" },
       { label: "Patient Forms", href: "/resources/patient-forms" },
       { label: "Patient Comforts", href: "/resources/patient-comforts" },
       { label: "FAQ", href: "/resources/faq" },

@@ -7,19 +7,34 @@ const faqs = [
       "Referrals are appreciated but not required. Many patients come directly to us for implants, wisdom teeth, or trauma care. We’ll collaborate with your dentist once treatment begins.",
   },
   {
+    question: "What insurances do you accept?",
+    answer: (
+      <>
+        Please view our{" "}
+        <a
+          href="/resources/insurance"
+          className="text-[var(--accent)] hover:text-[var(--accent-dark)]"
+        >
+          Participating Insurances
+        </a>{" "}
+        page for more information.
+      </>
+    ),
+  },
+  {
     question: "What type of anesthesia do you offer?",
     answer:
-      "We provide local anesthesia, nitrous oxide, IV sedation, and general anesthesia. Your medical history, anxiety level, and procedure complexity help us tailor the safest option.",
+      "We provide oral sedation, IV sedation, nitrous oxide, and local anesthesia. Your medical history, anxiety level, and procedure complexity help us tailor the safest option.",
   },
   {
     question: "How long is the typical recovery?",
     answer:
-      "Most patients return to normal routines within 2–3 days for wisdom teeth or extractions, while implants and bone grafting may require 5–7 days of modified activity. Orthognathic or full-arch cases may require two weeks of downtime.",
+      "Most patients return to normal routines within 2–3 days for wisdom teeth or extractions, while implants and bone grafting may require 5–7 days of modified activity. Orthognathic or full-arch cases may require weeks to months of downtime.",
   },
   {
     question: "Will I need someone to drive me home?",
     answer:
-      "Yes. If you receive oral sedation, IV sedation, or general anesthesia, a licensed adult must escort you home and ideally stay with you for the first several hours.",
+      "Yes. If you receive oral sedation, IV sedation, a licensed adult must stay in the office during your procedure and escort you home after your procedure.",
   },
 ]; 
 
@@ -29,7 +44,7 @@ export default function FAQPage() {
       <PageIntro
         eyebrow="FAQ"
         title="Answers to common questions"
-        description="If you don’t see your question here, call our concierge line at (561) 790-0206."
+        description="If you don't see your question here, call our office at (561) 790-0206."
       />
 
       <div className="mt-12 space-y-6">

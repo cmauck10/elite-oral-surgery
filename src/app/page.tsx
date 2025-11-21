@@ -35,6 +35,12 @@ const resourceCards = [
     href: "/resources/financing",
   },
   {
+    title: "Participating Insurances",
+    copy:
+      "We accept most major dental insurance plans and help maximize your benefits.",
+    href: "/resources/insurance",
+  },
+  {
     title: "Patient Forms",
     copy: "Save time in-office with secure online intake, health history, and consent paperwork.",
     href: "/resources/patient-forms",

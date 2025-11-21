@@ -12,8 +12,15 @@ const financingOptions = [
     name: "CareCredit",
     summary:
       "Healthcare credit line that can cover oral surgery, dental implants, and sedation with extended payment terms.",
-    perks: ["6–24 month deferred interest plans", "Accepted nationwide", "Use for follow-up visits"],
+    perks: ["6–24 month deferred interest plans", "Accepted nationwide","Same-day approvals"],
     url: "https://www.carecredit.com",
+  },
+  {
+    name: "Pre-Surgery Payment Plan",
+    summary:
+      "Break your total treatment plan into smaller, more manageable payments leading up to your procedure.",
+    perks: ["No application required", "Fixed payments", "No interest or fees"],
+    url: "/resources/financing",
   },
 ];
 

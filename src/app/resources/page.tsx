@@ -8,6 +8,11 @@ const resourceCards = [
     href: "/resources/financing",
   },
   {
+    title: "Participating Insurances",
+    description: "Learn about accepted insurance plans and our verification process.",
+    href: "/resources/insurance",
+  },
+  {
     title: "Patient Forms",
     description: "Download medical history, intake, and HIPAA documents before your visit.",
     href: "/resources/patient-forms",
