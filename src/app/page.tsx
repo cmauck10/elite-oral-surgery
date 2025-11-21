@@ -133,7 +133,7 @@ export default function Home() {
         Skip to appointment request
       </a>
 
-      <main className="mx-auto max-w-6xl px-6 pb-24 pt-10 lg:px-8 lg:pb-32">
+      <main className="mx-auto max-w-7xl px-6 pb-24 pt-10 lg:px-8 lg:pb-32">
         <section id="home" className="pt-6">
           <div className="relative min-h-[520px] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)]">
             <video

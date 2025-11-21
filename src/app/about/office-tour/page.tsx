@@ -43,7 +43,7 @@ export default function OfficeTourPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <PageIntro
         eyebrow="Office Tour"
         title="Welcome to Our Sanctuary"

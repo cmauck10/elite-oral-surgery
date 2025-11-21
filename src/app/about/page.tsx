@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <PageIntro
         eyebrow="About Us"
         title="Elite Oral Surgery of Wellington"

@@ -39,7 +39,7 @@ function YelpIcon() {
 export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--border)] bg-white/90 py-10 text-sm text-[var(--muted)]">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
         <div className="space-y-3">
           <Image
             src="/logo.png"
@@ -50,7 +50,7 @@ export function SiteFooter() {
           <p className="text-base font-semibold text-[var(--foreground)]">
             Elite Oral Surgery of Wellington
           </p>
-          <p>Cncierge oral surgery, full-arch implants, and regenerative healing.</p>
+          <p>Concierge oral surgery in a safe, comfortable, and efficient environment.</p>
           <div className="flex items-center gap-3 pt-2">
             <Link
               href="https://www.facebook.com/profile.php?id=61582791724204"
@@ -136,7 +136,7 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-8 max-w-6xl space-y-4 px-6 text-xs text-[var(--muted)] lg:px-8">
+      <div className="mx-auto mt-8 max-w-7xl space-y-4 px-6 text-xs text-[var(--muted)] lg:px-8">
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Elite Oral Surgery of Wellington. All rights reserved.</p>
           <div className="flex items-center gap-4">

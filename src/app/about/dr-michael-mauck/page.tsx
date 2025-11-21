@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function DrMauckPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <PageIntro
         eyebrow="Meet Our Surgeon"
         title="Dr. Michael Mauck"
