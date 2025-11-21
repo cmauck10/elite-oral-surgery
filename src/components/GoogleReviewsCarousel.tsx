@@ -10,7 +10,7 @@ export function GoogleReviewsCarousel() {
   const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
   const [isPaused, setIsPaused] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const scrollPositionRef = useRef(0);
 
   const toggleReview = (index: number) => {
