@@ -132,6 +132,29 @@ export default function DrLondonPage() {
       </section>
 
       <section className="mt-16">
+        <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
+            Professional Memberships
+          </p>
+          <ul className="space-y-3 text-base text-[var(--muted)]">
+            {[
+              "Diplomate, American Board of Oral and Maxillofacial Surgery",
+              "Fellow, American Association of Oral and Maxillofacial Surgeons",
+              "Member, Florida Society of Oral & Maxillofacial Surgery",
+              "Member, Florida Dental Association (FDA)",
+              "Delegate, Atlantic Coast District Dental Association to the FDA",
+              "Delegate, FDA to the American Dental Association (ADA)",
+            ].map((membership) => (
+              <li key={membership} className="flex items-start">
+                <span className="mr-3 text-[var(--accent)]">→</span>
+                <span>{membership}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="mt-16">
         <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Philosophy
@@ -156,29 +179,6 @@ export default function DrLondonPage() {
               Meet the Team
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
-            Professional Memberships
-          </p>
-          <ul className="space-y-3 text-base text-[var(--muted)]">
-            {[
-              "Diplomate, American Board of Oral and Maxillofacial Surgery",
-              "Fellow, American Association of Oral and Maxillofacial Surgeons",
-              "Member, Florida Society of Oral & Maxillofacial Surgery",
-              "Member, Florida Dental Association (FDA)",
-              "Delegate, Atlantic Coast District Dental Association to the FDA",
-              "Delegate, FDA to the American Dental Association (ADA)",
-            ].map((membership) => (
-              <li key={membership} className="flex items-start">
-                <span className="mr-3 text-[var(--accent)]">→</span>
-                <span>{membership}</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
