@@ -46,7 +46,7 @@ export default function OurHistoryPage() {
                 For over three decades, Elite Oral Surgery of Wellington has been a cornerstone of exceptional oral and maxillofacial surgery in Palm Beach County.
               </p>
               <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
-                Founded in 1995 by <span className="font-semibold text-[var(--foreground)]">Dr. Michael G. Mauck</span> as the Wellington Centre for Oral and Maxillofacial Surgery, our practice began in the professional building at Wellington Regional Hospital. From the start, we earned a reputation for clinical excellence, a welcoming atmosphere, and built deep ties to the Wellington community.
+                Founded in 1995 by <Link href="/about/dr-michael-mauck" className="font-semibold text-[var(--foreground)] hover:text-[var(--accent)] transition">Dr. Michael G. Mauck</Link> as the Wellington Centre for Oral and Maxillofacial Surgery, our practice began in the professional building at Wellington Regional Hospital. From the start, we earned a reputation for clinical excellence, a welcoming atmosphere, and built deep ties to the Wellington community.
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function OurHistoryPage() {
                 The Next Chapter
               </h2>
               <p className="text-lg text-[var(--muted)] leading-relaxed">
-                With Dr. Mauck's retirement from surgical operations, we mark the start of the next chapter for our team and our patients. Reopening in August 2025 as <span className="font-semibold text-[var(--foreground)]">Elite Oral Surgery of Wellington</span>, our practice will now be led by <span className="font-semibold text-[var(--foreground)]">Dr. Michael London</span>, a board-certified, experienced oral and maxillofacial surgeon.
+                With Dr. Mauck's retirement from surgical operations, we mark the start of the next chapter for our team and our patients. Reopening in August 2025 as <span className="font-semibold text-[var(--foreground)]">Elite Oral Surgery of Wellington</span>, our practice will now be led by <Link href="/about/dr-michael-london" className="font-semibold text-[var(--foreground)] hover:text-[var(--accent)] transition">Dr. Michael London</Link>, a board-certified, experienced oral and maxillofacial surgeon.
               </p>
               <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
                 Dr. London is dedicated to honoring Dr. Mauck's legacy while elevating care with cutting-edge techniques, advanced technology, and an unwavering focus on patient comfort.

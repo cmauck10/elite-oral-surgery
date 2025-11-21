@@ -195,10 +195,15 @@ export default function Home() {
                   <p className="mt-1 text-3xl font-semibold text-white">4.8★</p>
                   <p className="text-base text-white">Google Reviews</p>
                 </Link>
-                <div>
-                  <p className="text-3xl font-semibold text-white">10+</p>
+                <Link
+                  href="/about/our-history"
+                  aria-label="Learn about our history"
+                  className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
+                  <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
+                  <p className="text-3xl font-semibold text-white">25+</p>
                   <p>Years of Experience</p>
-                </div>
+                </Link>
                 <div className="rounded-3xl border border-white/30 bg-white/10 px-4 py-3 text-base font-semibold leading-tight text-white">
                   Board
                   <br />
