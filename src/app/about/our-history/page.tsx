@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PageIntro } from "@/components/PageIntro";
 
 export const metadata = {
@@ -19,81 +20,98 @@ export default function OurHistoryPage() {
       <div className="mt-12 space-y-8">
         {/* Foundation */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="text-4xl font-serif text-[var(--accent)]">1995</div>
-            <div className="h-px flex-1 bg-[var(--border)]"></div>
+          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+            {/* Image */}
+            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/michael_mauck.png"
+                alt="Dr. Michael G. Mauck"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Content */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="text-4xl font-serif text-[var(--accent)]">1995</div>
+                <div className="h-px flex-1 bg-[var(--border)]"></div>
+              </div>
+              <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
+                The Foundation
+              </h2>
+              <p className="text-lg text-[var(--muted)] leading-relaxed">
+                For over three decades, Elite Oral Surgery of Wellington has been a cornerstone of exceptional oral and maxillofacial surgery in Palm Beach County.
+              </p>
+              <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
+                Founded in 1995 by <span className="font-semibold text-[var(--foreground)]">Dr. Michael G. Mauck</span> as the Wellington Centre for Oral and Maxillofacial Surgery, our practice began in the professional building at Wellington Regional Hospital. From the start, we earned a reputation for clinical excellence, a welcoming atmosphere, and built deep ties to the Wellington community.
+              </p>
+            </div>
           </div>
-          <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
-            The Foundation
-          </h2>
-          <p className="text-lg text-[var(--muted)] leading-relaxed">
-            For over three decades, Elite Oral Surgery of Wellington has been a cornerstone of exceptional oral and maxillofacial surgery in Palm Beach County.
-          </p>
-          <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
-            Founded in 1995 by <span className="font-semibold text-[var(--foreground)]">Dr. Michael G. Mauck</span> as the Wellington Centre for Oral and Maxillofacial Surgery, our practice began in the professional building at Wellington Regional Hospital. From the start, we earned a reputation for clinical excellence, a welcoming atmosphere, and built deep ties to the Wellington community.
-          </p>
         </section>
 
         {/* Expansion */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="text-4xl font-serif text-[var(--accent)]">2005</div>
-            <div className="h-px flex-1 bg-[var(--border)]"></div>
+          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+            {/* Image */}
+            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80"
+                alt="State-of-the-Art Facility - 2005"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Content */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="text-4xl font-serif text-[var(--accent)]">2005</div>
+                <div className="h-px flex-1 bg-[var(--border)]"></div>
+              </div>
+              <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
+                A State-of-the-Art Facility
+              </h2>
+              <p className="text-lg text-[var(--muted)] leading-relaxed">
+                In 2005, Dr. Mauck expanded the practice into a state-of-the-art, custom-built facility just steps from its original location. For nearly 20 years, this center has served patients across South Florida, delivering transformative care under Dr. Mauck's leadership.
+              </p>
+              <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
+                His commitment to patient-first values, precision, and compassion became the foundation of our legacy.
+              </p>
+            </div>
           </div>
-          <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
-            A State-of-the-Art Facility
-          </h2>
-          <p className="text-lg text-[var(--muted)] leading-relaxed">
-            In 2005, Dr. Mauck expanded the practice into a state-of-the-art, custom-built facility just steps from its original location. For nearly 20 years, this center has served patients across South Florida, delivering transformative care under Dr. Mauck's leadership.
-          </p>
-          <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
-            His commitment to patient-first values, precision, and compassion became the foundation of our legacy.
-          </p>
         </section>
 
         {/* New Chapter */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="text-4xl font-serif text-[var(--accent)]">2025</div>
-            <div className="h-px flex-1 bg-[var(--border)]"></div>
-          </div>
-          <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
-            The Next Chapter
-          </h2>
-          <p className="text-lg text-[var(--muted)] leading-relaxed">
-            With Dr. Mauck's retirement from surgical operations, we mark the start of the next chapter for our team and our patients. Reopening in August 2025 as <span className="font-semibold text-[var(--foreground)]">Elite Oral Surgery of Wellington</span>, our practice will now be led by <span className="font-semibold text-[var(--foreground)]">Dr. Michael London</span>, a board-certified, experienced oral and maxillofacial surgeon.
-          </p>
-          <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
-            Dr. London is dedicated to honoring Dr. Mauck's legacy while elevating care with cutting-edge techniques, advanced technology, and an unwavering focus on patient comfort.
-          </p>
-        </section>
+          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+            {/* Image */}
+            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/michael_london.jpeg"
+                alt="Dr. Michael London"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-        {/* Our Services */}
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
-          <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-6">
-            Comprehensive Oral Surgery Excellence
-          </h2>
-          <p className="text-lg text-[var(--muted)] leading-relaxed mb-6">
-            At Elite Oral Surgery of Wellington, we specialize in the full spectrum of oral and maxillofacial procedures, including:
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Wisdom teeth removal",
-              "Dental implants",
-              "Bone grafting",
-              "IV sedation",
-              "Full mouth implant reconstruction",
-              "Pathology",
-              "Orthognathic/corrective jaw surgery",
-              "Facial trauma",
-            ].map((service) => (
-              <div
-                key={service}
-                className="rounded-2xl border border-[var(--border)] bg-white/70 px-4 py-3 text-sm font-medium text-[var(--foreground)] shadow-sm"
-              >
-                {service}
+            {/* Content */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="text-4xl font-serif text-[var(--accent)]">2025</div>
+                <div className="h-px flex-1 bg-[var(--border)]"></div>
               </div>
-            ))}
+              <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">
+                The Next Chapter
+              </h2>
+              <p className="text-lg text-[var(--muted)] leading-relaxed">
+                With Dr. Mauck's retirement from surgical operations, we mark the start of the next chapter for our team and our patients. Reopening in August 2025 as <span className="font-semibold text-[var(--foreground)]">Elite Oral Surgery of Wellington</span>, our practice will now be led by <span className="font-semibold text-[var(--foreground)]">Dr. Michael London</span>, a board-certified, experienced oral and maxillofacial surgeon.
+              </p>
+              <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
+                Dr. London is dedicated to honoring Dr. Mauck's legacy while elevating care with cutting-edge techniques, advanced technology, and an unwavering focus on patient comfort.
+              </p>
+            </div>
           </div>
         </section>
 
