@@ -63,6 +63,32 @@ export default function FinancingPage() {
           </article>
         ))}
       </div>
+
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
+          Ready to Move Forward
+        </p>
+        <h2 className="text-3xl font-serif text-[var(--foreground)] mb-4">
+          Let's discuss your financing options
+        </h2>
+        <p className="text-lg text-[var(--muted)] max-w-2xl mx-auto mb-8">
+          Our team will walk you through payment plans and help you choose the best option for your situation. Schedule a consultation to get started.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link
+            href="/appointment"
+            className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
+          >
+            Schedule Consultation
+          </Link>
+          <a
+            href="tel:15617900206"
+            className="rounded-full border border-[var(--border)] bg-white px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+          >
+            Call (561) 790-0206
+          </a>
+        </div>
+      </section>
     </>
   );
 }

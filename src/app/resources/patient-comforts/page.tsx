@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
 
 const comforts = [
@@ -53,6 +54,32 @@ export default function PatientComfortsPage() {
           </article>
         ))}
       </div>
+
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
+          Experience the Difference
+        </p>
+        <h2 className="text-3xl font-serif text-[var(--foreground)] mb-4">
+          Comfort-focused care awaits
+        </h2>
+        <p className="text-lg text-[var(--muted)] max-w-2xl mx-auto mb-8">
+          From the moment you arrive to your final follow-up, experience the elevated comfort and personalized attention that sets Elite Oral Surgery apart.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link
+            href="/appointment"
+            className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
+          >
+            Schedule Consultation
+          </Link>
+          <Link
+            href="/about/office-tour"
+            className="rounded-full border border-[var(--border)] bg-white px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+          >
+            Tour Our Office
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
