@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Patient Resources | Elite Oral Surgery of Wellington",
@@ -9,7 +10,7 @@ export const metadata = {
 export default function ResourcesLayout({ children }: { children: ReactNode }) {
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <section className="mx-auto max-w-4xl px-6 py-8 lg:px-8">{children}</section>
+      <Container size="sm">{children}</Container>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "About Elite Oral Surgery of Wellington",
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+    <Container className="py-16">
       <PageIntro
         eyebrow="About Us"
         title="Elite Oral Surgery of Wellington"
@@ -154,7 +155,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 }
 

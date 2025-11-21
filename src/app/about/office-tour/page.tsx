@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Office Tour - Elite Oral Surgery",
@@ -43,7 +44,7 @@ export default function OfficeTourPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+    <Container>
       <PageIntro
         eyebrow="Office Tour"
         title="Welcome to Our Sanctuary"
@@ -267,7 +268,7 @@ export default function OfficeTourPage() {
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 }
 

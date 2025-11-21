@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PageIntro } from "@/components/PageIntro";
+import { Container, Card, Section } from "@/components/ui";
 
 export const metadata = {
   title: "Our History",
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function OurHistoryPage() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+    <Container>
       <PageIntro
         eyebrow="Our Story"
         title="Three decades of surgical excellence in Wellington"
@@ -176,7 +177,7 @@ export default function OurHistoryPage() {
           </div>
         </section>
       </div>
-    </div>
+    </Container>
   );
 }
 

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Office Technology - Elite Oral Surgery",
@@ -85,7 +86,7 @@ export default function OfficeTechnologyPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+    <Container>
       <PageIntro
         eyebrow="Office Technology"
         title="Innovation Meets Precision"
@@ -210,7 +211,7 @@ export default function OfficeTechnologyPage() {
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   );
 }
 

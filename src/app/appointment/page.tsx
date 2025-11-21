@@ -1,14 +1,16 @@
 import { AppointmentForm } from "@/components/AppointmentForm";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Request an Appointment",
   description:
     "Request a concierge consultation with Elite Oral Surgery of Wellington for implants, wisdom teeth, All-on-X, and more.",
 };
+
 export default function AppointmentPage() {
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <section className="mx-auto max-w-4xl px-6 py-8 lg:px-8">
+      <Container size="sm">
         <div className="space-y-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Concierge Scheduling
@@ -20,7 +22,7 @@ export default function AppointmentPage() {
         </div>
 
         <AppointmentForm />
-      </section>
+      </Container>
     </div>
   );
 }

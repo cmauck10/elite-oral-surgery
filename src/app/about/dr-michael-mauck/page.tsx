@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Dr. Michael Mauck - Oral Surgeon",
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function DrMauckPage() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+    <Container>
       <PageIntro
         eyebrow="Meet Our Surgeon"
         title="Dr. Michael Mauck"
@@ -174,7 +175,7 @@ export default function DrMauckPage() {
           mission trips providing dental care to underserved communities in Central America.
         </p>
       </section>
-    </div>
+    </Container>
   );
 }
 

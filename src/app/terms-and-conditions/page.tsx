@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
+import { Container } from "@/components/ui";
 
 export const metadata = {
   title: "Terms and Conditions",
@@ -9,8 +10,7 @@ export const metadata = {
 
 export default function TermsAndConditionsPage() {
   return (
-    <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <section className="mx-auto max-w-4xl px-6 py-8 lg:px-8">
+      <Container size="sm" className="space-y-8 bg-[var(--background)] text-[var(--foreground)]">
         <PageIntro
           eyebrow="Legal"
           title="Terms and Conditions"
@@ -284,8 +284,8 @@ export default function TermsAndConditionsPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Container>
   );
 }
+
 

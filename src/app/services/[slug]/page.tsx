@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, services } from "@/data/services";
+import { Container } from "@/components/ui";
 
 type ServicePageProps = {
   params: Promise<{
@@ -53,7 +54,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <div className="mx-auto max-w-6xl px-6 py-6 lg:px-8 lg:py-8">
+      <Container size="md" className="py-6 lg:py-8">
         <div className="flex flex-wrap items-center gap-2 text-sm text-[var(--muted)]">
           <Link href="/" className="font-semibold text-[var(--foreground)] hover:text-[var(--accent)]">
             Home
@@ -134,7 +135,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Link>{" "}
           or reach out to our concierge team for a custom plan.
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
