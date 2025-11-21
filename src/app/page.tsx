@@ -159,8 +159,7 @@ export default function Home() {
                   Extraordinary Oral Surgery Experience in Wellington, Florida
                 </h1>
                 <p className="mt-6 max-w-xl text-lg text-white/80">
-                  Led by <span className="font-semibold">Dr. Michael London</span> and{" "}
-                  <span className="font-semibold">Dr. Michael Mauck</span>, we fuse surgical mastery,
+                  Led by <span className="font-semibold">Dr. Michael London, </span> we fuse surgical mastery,
                   state-of-the-art technology, and concierge-level hospitality for every patient.
                 </p>
                 <div className="mt-8 mb-10 flex flex-wrap gap-4">
@@ -233,7 +232,7 @@ export default function Home() {
                 "Diplomate, American Board of Oral & Maxillofacial Surgery",
                 "All-on-X Full-Arch implant pioneer",
                 "Certified in IV sedation & general anesthesia",
-                "Faculty lecturer on digital surgical workflows",
+                "Advanced training in bone grafting and sinus augmentation",
               ].map((item) => (
                 <li
                   key={item}
@@ -273,16 +272,14 @@ export default function Home() {
               A sanctuary for elevated oral surgery experiences
             </h2>
             <p className="text-lg text-[var(--muted)]">
-              Every touchpoint—parking, check-in, sedation, and recovery—was designed to calm the
-              nervous system and streamline healing. From CBCT-guided planning to 3D-printed
-              surgical guides and platelet-rich fibrin, your treatment plan is as advanced as it is
-              personal.
+              Every touchpoint—scheduling, consultation, treatment planning, surgery, and recovery—was designed with patient safety, expectations, and outcomes in mind. From 3D imaging to platelet-rich fibrin, your treatment plan is as advanced as it is
+              personalized to meet your unique needs.
             </p>
             <div className="grid gap-4 text-sm text-[var(--foreground)]">
               {[
-                "CBCT suite, digital impressions, and 3D surgical printing in-house",
-                "Private recovery lounges with post-sedation monitoring",
-                "Dedicated implant lab for same-day provisional smiles",
+                "Private recovery lounge with post-sedation monitoring",
+                "State-of-the-art technology for treatment planning and surgery",
+                "Advanced adjuntive care for faster healing and recovery",
               ].map((item) => (
                 <div
                   key={item}
