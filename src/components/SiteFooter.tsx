@@ -50,7 +50,7 @@ export function SiteFooter() {
           <p className="text-base font-semibold text-[var(--foreground)]">
             Elite Oral Surgery of Wellington
           </p>
-          <p>Concierge oral surgery, full-arch implants, and regenerative healing.</p>
+          <p>Cncierge oral surgery, full-arch implants, and regenerative healing.</p>
           <div className="flex items-center gap-3 pt-2">
             <Link
               href="https://www.facebook.com/profile.php?id=61582791724204"
@@ -136,12 +136,27 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="mx-auto mt-8 max-w-6xl px-6 text-xs text-[var(--muted)] lg:px-8">
+      <div className="mx-auto mt-8 max-w-6xl space-y-4 px-6 text-xs text-[var(--muted)] lg:px-8">
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Elite Oral Surgery of Wellington. All rights reserved.</p>
-          <Link href="/privacy-policy" className="text-[var(--foreground)] hover:text-[var(--accent)] transition">
-            Privacy Policy
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="text-[var(--foreground)] hover:text-[var(--accent)] transition">
+              Privacy Policy
+            </Link>
+            <span className="text-[var(--border)]">|</span>
+            <Link href="/terms-and-conditions" className="text-[var(--foreground)] hover:text-[var(--accent)] transition">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--background)] p-4 text-center">
+          <p>
+            <strong className="text-[var(--foreground)]">Accessibility Notice:</strong> If you have a disability covered by the Americans with Disabilities Act (ADA) or similar legislation and require assistance accessing this website or our services, please contact our office at{" "}
+            <a href="tel:15617900206" className="font-semibold text-[var(--accent)] hover:text-[var(--accent-dark)] transition">
+              (561) 790-0206
+            </a>{" "}
+            to discuss reasonable accommodations we can provide.
+          </p>
         </div>
       </div>
     </footer>
