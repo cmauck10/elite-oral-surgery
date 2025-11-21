@@ -112,8 +112,10 @@ export default function Home() {
       },
     ],
     sameAs: [
-      "https://www.instagram.com/eliteoralsurgery",
-      "https://www.facebook.com/eliteoralsurgery",
+      "https://www.instagram.com/eliteoralsurgerywellington/",
+      "https://www.facebook.com/profile.php?id=61582791724204",
+      "https://www.yelp.com/biz/elite-oral-surgery-wellington",
+      "https://maps.app.goo.gl/whBTryReBdbhefcZ9",
     ],
     medicalSpecialty: "OralSurgery",
     founder: {
