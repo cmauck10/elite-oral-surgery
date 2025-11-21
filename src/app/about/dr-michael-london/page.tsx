@@ -51,7 +51,7 @@ export default function DrLondonPage() {
             "Diplomate, American Board of Oral & Maxillofacial Surgery",
             "Fellow, American Association of Oral & Maxillofacial Surgeons",
             "All-on-X Full-Arch implant pioneer",
-            "Certified in IV sedation & general anesthesia",
+            "Certified in IV conscious sedation",
             "Advanced training in bone grafting and sinus augmentation",
             "Faculty lecturer on digital surgical workflows",
             "Member, American Dental Association",

@@ -242,7 +242,7 @@ export default function Home() {
               {[
                 "Diplomate, American Board of Oral & Maxillofacial Surgery",
                 "All-on-X Full-Arch implant pioneer",
-                "Certified in IV sedation & general anesthesia",
+                "Certified in IV conscious sedation",
                 "Advanced training in bone grafting and sinus augmentation",
               ].map((item) => (
                 <li

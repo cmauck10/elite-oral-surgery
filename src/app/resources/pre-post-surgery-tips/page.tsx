@@ -5,7 +5,7 @@ const sections = [
   {
     label: "Before Your Procedure",
     items: [
-      "Confirm fasting instructions if you’re receiving IV sedation or general anesthesia.",
+      "Confirm fasting instructions if you're receiving IV sedation.",
       "Wear loose, comfortable clothing with short sleeves. Leave jewelry and contact lenses at home.",
       "Arrange transportation and a support person to stay with you for the first evening.",
       "Pick up prescriptions in advance and stock soft foods like smoothies, soups, and protein shakes.",
