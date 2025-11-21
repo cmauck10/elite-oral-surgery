@@ -1,2 +1,81 @@
-Placeholder content for HIPAA form.
-
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >>
+endobj
+5 0 obj
+<< /Length 1150 >>
+stream
+BT
+/F2 18 Tf
+50 750 Td
+(HIPAA AUTHORIZATION FORM) Tj
+0 -30 Td
+/F1 12 Tf
+(Elite Oral Surgery of Wellington) Tj
+0 -20 Td
+(Authorization for Use and Disclosure of Protected Health Information) Tj
+0 -40 Td
+/F2 14 Tf
+(PATIENT INFORMATION) Tj
+0 -25 Td
+/F1 10 Tf
+(Patient Name: ________________________________________________________________) Tj
+0 -18 Td
+(Date of Birth: _____________________  Phone: ________________________________) Tj
+0 -30 Td
+/F2 14 Tf
+(AUTHORIZATION TO RELEASE INFORMATION) Tj
+0 -25 Td
+/F1 10 Tf
+(I authorize Elite Oral Surgery of Wellington to use and disclose my protected) Tj
+0 -15 Td
+(health information as described below:) Tj
+0 -20 Td
+(Release information to \(Name and relationship\):) Tj
+0 -15 Td
+(_____________________________________________________________________________) Tj
+0 -15 Td
+(_____________________________________________________________________________) Tj
+0 -20 Td
+(Types of information to be released:) Tj
+0 -15 Td
+(__ Complete medical records     __ Lab results          __ X-rays/Images) Tj
+0 -15 Td
+(__ Treatment notes              __ Billing information  __ Other: __________) Tj
+0 -30 Td
+(Purpose of disclosure:) Tj
+0 -15 Td
+(__ Continued care    __ Insurance    __ Personal    __ Other: ________________) Tj
+0 -30 Td
+(This authorization will expire on: __________________ \(date or event\)) Tj
+0 -20 Td
+(If no date is specified, this authorization expires one year from signature date.) Tj
+0 -30 Td
+(Patient Signature: ________________________________  Date: _____________) Tj
+0 -20 Td
+(Legal Representative: ____________________________  Relationship: _______) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000217 00000 n
+0000000364 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1566
+%%EOF

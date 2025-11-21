@@ -1,2 +1,87 @@
-Placeholder content for new patient intake form.
-
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> >> >>
+endobj
+5 0 obj
+<< /Length 1250 >>
+stream
+BT
+/F2 18 Tf
+50 750 Td
+(NEW PATIENT INTAKE FORM) Tj
+0 -30 Td
+/F1 12 Tf
+(Elite Oral Surgery of Wellington) Tj
+0 -20 Td
+(12157 W Forest Hill Blvd, Suite 115, Wellington, FL 33414) Tj
+0 -15 Td
+(Phone: \(561\) 790-0206 | Email: office@eoswellington.com) Tj
+0 -40 Td
+/F2 14 Tf
+(PATIENT INFORMATION) Tj
+0 -25 Td
+/F1 10 Tf
+(Full Name: ___________________________________________________________________) Tj
+0 -18 Td
+(Date of Birth: _____________________  Social Security #: ____________________) Tj
+0 -18 Td
+(Address: _____________________________________________________________________) Tj
+0 -18 Td
+(City: ___________________________  State: _______  ZIP: _____________________) Tj
+0 -18 Td
+(Phone: _________________________  Email: _____________________________________) Tj
+0 -30 Td
+/F2 14 Tf
+(INSURANCE INFORMATION) Tj
+0 -25 Td
+/F1 10 Tf
+(Primary Insurance: ___________________________________________________________) Tj
+0 -18 Td
+(Policy #: _________________________  Group #: _______________________________) Tj
+0 -18 Td
+(Subscriber Name: _____________________________________________________________) Tj
+0 -18 Td
+(Relationship to Patient: _____________________________________________________) Tj
+0 -30 Td
+/F2 14 Tf
+(EMERGENCY CONTACT) Tj
+0 -25 Td
+/F1 10 Tf
+(Name: ________________________________________________________________________) Tj
+0 -18 Td
+(Relationship: ___________________  Phone: ___________________________________) Tj
+0 -30 Td
+/F2 14 Tf
+(REFERRING DENTIST) Tj
+0 -25 Td
+/F1 10 Tf
+(Name: ________________________________________________________________________) Tj
+0 -18 Td
+(Phone: _______________________________________________________________________) Tj
+0 -30 Td
+(Patient Signature: ________________________________  Date: _____________) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000217 00000 n
+0000000364 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1666
+%%EOF
