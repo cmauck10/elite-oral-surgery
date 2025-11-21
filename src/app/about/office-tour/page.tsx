@@ -100,18 +100,15 @@ export default function OfficeTourPage() {
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              "Private recovery suites with monitoring",
-              "Bose noise-cancelling headphones",
-              "Heated blankets and aromatherapy",
-              "In-house CBCT 3D imaging",
-              "Digital impression scanning",
-              "3D surgical guide printing",
-              "Dedicated implant laboratory",
-              "Complimentary WiFi throughout",
-              "Premium coffee and herbal tea bar",
-              "Convenient parking and accessibility",
-              "Secure medical records portal",
-              "Text and email appointment reminders",
+              "Private recovery suites with real-time vital monitoring",
+              "Heated blankets and calming aromatherapy",
+              "In-house CBCT 3D imaging for same-day planning",
+              "Cloud-based electronic health record system",
+              "Flexible financing options for every budget",
+              "Dedicated implant inventory for immediate placement",
+              "Complimentary high-speed WiFi throughout",
+              "Convenient parking with wheelchair accessibility",
+              "Automated text and email appointment reminders",
             ].map((amenity) => (
               <div
                 key={amenity}
