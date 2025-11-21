@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Link from "next/link";
 import { googleReviews } from "@/data/googleReviews";
 
 const TRUNCATE_LENGTH = 200;
@@ -9,9 +8,9 @@ const TRUNCATE_LENGTH = 200;
 export function GoogleReviewsCarousel() {
   const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
   const [isPaused, setIsPaused] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const [translateX, setTranslateX] = useState(0);
   const animationRef = useRef<number | undefined>(undefined);
-  const scrollPositionRef = useRef(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const toggleReview = (index: number) => {
     setExpandedReviews((prev) => {
@@ -36,25 +35,27 @@ export function GoogleReviewsCarousel() {
   };
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
+    let lastTimestamp = 0;
+    const speed = 30; // pixels per second
 
-    const scroll = () => {
-      if (!isPaused && scrollContainer) {
-        scrollPositionRef.current += 0.5;
-        
-        // Reset scroll when we've gone through all content
-        const maxScroll = scrollContainer.scrollWidth / 2;
-        if (scrollPositionRef.current >= maxScroll) {
-          scrollPositionRef.current = 0;
-        }
-        
-        scrollContainer.scrollLeft = scrollPositionRef.current;
+    const animate = (timestamp: number) => {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const delta = timestamp - lastTimestamp;
+
+      if (!isPaused && containerRef.current) {
+        setTranslateX((prev) => {
+          const newPosition = prev - (speed * delta) / 1000;
+          // Reset when we've scrolled through half (one full set)
+          const resetPoint = -(containerRef.current!.scrollWidth / 2);
+          return newPosition <= resetPoint ? 0 : newPosition;
+        });
       }
-      animationRef.current = requestAnimationFrame(scroll);
+
+      lastTimestamp = timestamp;
+      animationRef.current = requestAnimationFrame(animate);
     };
 
-    animationRef.current = requestAnimationFrame(scroll);
+    animationRef.current = requestAnimationFrame(animate);
 
     return () => {
       if (animationRef.current) {
@@ -69,11 +70,14 @@ export function GoogleReviewsCarousel() {
   return (
     <div className="relative overflow-hidden">
       <div
-        ref={scrollRef}
+        ref={containerRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="flex gap-4 overflow-x-hidden"
-        style={{ scrollBehavior: "auto" }}
+        className="flex gap-4"
+        style={{
+          transform: `translate3d(${translateX}px, 0, 0)`,
+          willChange: isPaused ? "auto" : "transform",
+        }}
       >
         {allReviews.map((review, index) => {
           const isLong = review.text.length > TRUNCATE_LENGTH;
