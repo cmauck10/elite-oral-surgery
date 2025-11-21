@@ -161,7 +161,7 @@ export default function Home() {
                 <p className="mt-6 max-w-xl text-lg text-white/80">
                   Led by <span className="font-semibold">Dr. Michael London</span> and{" "}
                   <span className="font-semibold">Dr. Michael Mauck</span>, we fuse surgical mastery,
-                  evidence-based comfort, and concierge-level hospitality for every patient.
+                  state-of-the-art technology, and concierge-level hospitality for every patient.
                 </p>
                 <div className="mt-8 mb-10 flex flex-wrap gap-4">
                   <Link
@@ -210,7 +210,7 @@ export default function Home() {
         >
           <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
             <Image
-              src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80"
+              src="/michael_london.jpeg"
               alt="Dr. Michael London smiling in office"
               width={640}
               height={800}
@@ -226,10 +226,7 @@ export default function Home() {
               Precision, artistry, and a patient-first philosophy
             </h2>
             <p className="text-lg text-[var(--muted)]">
-              Dr. London is a board-certified oral and maxillofacial surgeon specializing in dental
-              implants, complex reconstruction, facial trauma, and orthognathic surgery. His
-              training at Johns Hopkins and University of Florida laid the foundation for a practice
-              where innovation and empathy are inseparable.
+              Dr. London is a board-certified oral and maxillofacial surgeon with over 10 years of experience. A McGill University graduate who completed his specialty training at Emory University, he specializes in complex full-arch implant reconstructions, advanced bone grafting, and comprehensive oral surgery care.
             </p>
             <ul className="grid gap-4 text-sm text-[var(--foreground)] sm:grid-cols-2">
               {[

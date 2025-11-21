@@ -20,7 +20,7 @@ export default function DrLondonPage() {
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
-            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80"
+            src="/michael_london.jpeg"
             alt="Dr. Michael London"
             width={640}
             height={800}
@@ -32,16 +32,13 @@ export default function DrLondonPage() {
             Precision, artistry, and a patient-first philosophy
           </h2>
           <p className="text-lg text-[var(--muted)]">
-            Dr. London is a board-certified oral and maxillofacial surgeon specializing in dental
-            implants, complex reconstruction, facial trauma, and orthognathic surgery. His training
-            at Johns Hopkins and University of Florida laid the foundation for a practice where
-            innovation and empathy are inseparable.
+            Dr. Michael London is a highly skilled, board-certified oral and maxillofacial surgeon with over 10 years of experience delivering exceptional care in dentistry and oral surgery. A graduate of McGill University in Montreal, Canada, where he earned his Doctor of Dental Medicine (DMD) degree, Dr. London furthered his training with a General Practice Residency at the University of British Columbia.
           </p>
           <p className="text-base text-[var(--muted)]">
-            With over a decade of surgical experience, Dr. London has pioneered minimally invasive
-            techniques and digital workflows that reduce recovery time and improve outcomes. His
-            dedication to continuing education keeps him at the forefront of implant dentistry,
-            regenerative medicine, and sedation protocols.
+            After practicing as a general dentist, he pursued advanced specialization in oral and maxillofacial surgery at the renowned Emory University School of Medicine in Atlanta, Georgia, where he honed his expertise in anesthesia, dentoalveolar surgery, dental implant surgery, bone grafting, facial trauma reconstruction, orthognathic surgery, maxillofacial pathology, and temporomandibular disorders.
+          </p>
+          <p className="text-base text-[var(--muted)]">
+            Dr. London is particularly distinguished in implant dentistry and bone grafting, specializing in complex full-mouth rehabilitation using All-on-4 and All-on-6 implant-supported reconstructions, even for patients with significant bone loss requiring advanced techniques like zygomatic and pterygoid implants.
           </p>
         </div>
       </section>
@@ -81,20 +78,16 @@ export default function DrLondonPage() {
             <div className="mt-6 space-y-4">
               {[
                 {
-                  degree: "DDS, Doctor of Dental Surgery",
-                  institution: "University of Florida College of Dentistry",
+                  degree: "DMD, Doctor of Dental Medicine",
+                  institution: "McGill University, Montreal, Canada",
+                },
+                {
+                  degree: "General Practice Residency",
+                  institution: "University of British Columbia",
                 },
                 {
                   degree: "Oral & Maxillofacial Surgery Residency",
-                  institution: "Johns Hopkins Hospital",
-                },
-                {
-                  degree: "Advanced Implant Fellowship",
-                  institution: "Branemark Osseointegration Center",
-                },
-                {
-                  degree: "BS, Biomedical Engineering",
-                  institution: "Georgia Institute of Technology",
+                  institution: "Emory University School of Medicine, Atlanta, GA",
                 },
               ].map((item) => (
                 <div
@@ -116,15 +109,16 @@ export default function DrLondonPage() {
             </h3>
             <ul className="mt-6 space-y-3 text-base text-[var(--muted)]">
               {[
-                "Single and full-arch dental implants",
-                "All-on-4 and All-on-X immediate load protocols",
-                "Bone grafting and sinus lift procedures",
-                "Wisdom teeth extraction (simple and complex)",
+                "All-on-4 and All-on-6 full-arch implant reconstructions",
+                "Zygomatic and pterygoid implants for severe bone loss",
+                "Complex dental implant surgery and bone grafting",
+                "Wisdom teeth and dentoalveolar surgery",
+                "Impacted tooth exposures and extractions",
                 "Facial trauma reconstruction",
-                "Orthognathic (jaw) surgery",
-                "TMJ disorder treatment",
-                "Pathology and oral cancer screening",
-                "IV sedation and general anesthesia",
+                "Orthognathic (corrective jaw) surgery",
+                "TMJ disorders and facial pain management",
+                "Maxillofacial pathology",
+                "IV sedation and anesthesia",
               ].map((specialty) => (
                 <li key={specialty} className="flex items-start">
                   <span className="mr-3 text-[var(--accent)]">→</span>
@@ -142,15 +136,10 @@ export default function DrLondonPage() {
             Philosophy
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight max-w-3xl">
-            "Surgery is both science and art. My goal is to deliver predictable outcomes with
-            genuine compassion."
+            "My goal is to create a comfortable and stress-free surgical experience while empowering patients through education."
           </h2>
           <p className="mt-6 text-lg text-[var(--muted)] max-w-3xl">
-            Dr. London believes that every patient deserves to understand their treatment plan,
-            feel confident in their surgeon, and experience minimal discomfort throughout their
-            journey. He spends extra time in consultation to answer questions, review digital
-            simulations, and co-create treatment goals that align with each patient's unique needs
-            and lifestyle.
+            Dr. London is dedicated to creating a comfortable and stress-free surgical experience, prioritizing patient education to empower informed decision-making. His commitment to excellence extends to ongoing professional development through continuing education courses, ensuring he remains at the forefront of oral surgery advancements.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -169,11 +158,32 @@ export default function DrLondonPage() {
         </div>
       </section>
 
+      <section className="mt-16">
+        <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
+            Professional Memberships
+          </p>
+          <ul className="space-y-3 text-base text-[var(--muted)]">
+            {[
+              "Diplomate, American Board of Oral and Maxillofacial Surgery",
+              "Fellow, American Association of Oral and Maxillofacial Surgeons",
+              "Member, Florida Society of Oral & Maxillofacial Surgery",
+              "Member, Florida Dental Association (FDA)",
+              "Delegate, Atlantic Coast District Dental Association to the FDA",
+              "Delegate, FDA to the American Dental Association (ADA)",
+            ].map((membership) => (
+              <li key={membership} className="flex items-start">
+                <span className="mr-3 text-[var(--accent)]">→</span>
+                <span>{membership}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       <section className="mt-16 text-center">
         <p className="text-sm text-[var(--muted)] max-w-2xl mx-auto">
-          When Dr. London isn't in the operating room, he enjoys sailing the South Florida coast,
-          volunteering at free dental clinics, and mentoring dental students pursuing surgical
-          careers.
+          Outside the office, Dr. London cherishes time with his family and enjoys staying active through ice hockey, golf, and cycling.
         </p>
       </section>
     </div>

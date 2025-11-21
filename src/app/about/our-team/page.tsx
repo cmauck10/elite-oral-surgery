@@ -20,8 +20,8 @@ export default function OurTeamPage() {
     {
       name: "Dr. Michael London",
       role: "Oral & Maxillofacial Surgeon",
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80",
-      bio: "Board-certified surgeon specializing in dental implants, reconstruction, and facial trauma.",
+      image: "/michael_london.jpeg",
+      bio: "Board-certified surgeon with 10+ years experience, specializing in complex full-arch implants, advanced bone grafting, and comprehensive oral surgery.",
       link: "/about/dr-michael-london",
     },
     {
