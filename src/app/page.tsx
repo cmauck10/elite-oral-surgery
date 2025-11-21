@@ -201,14 +201,18 @@ export default function Home() {
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
-                  <p className="text-3xl font-semibold text-white">25+</p>
-                  <p>Years of Experience</p>
+                  <p className="mt-1 text-3xl font-semibold text-white">25+</p>
+                  <p className="text-base text-white">Years of Experience</p>
                 </Link>
-                <div className="rounded-3xl border border-white/30 bg-white/10 px-4 py-3 text-base font-semibold leading-tight text-white">
-                  Board
-                  <br />
-                  Certified
-                </div>
+                <Link
+                  href="/about/dr-michael-london"
+                  aria-label="Learn about our board-certified surgeons"
+                  className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
+                  <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
+                  <p className="mt-1 text-3xl font-semibold text-white">ABOMS</p>
+                  <p className="text-base text-white">Board-Certified</p>
+                </Link>
               </div>
             </div>
           </div>
