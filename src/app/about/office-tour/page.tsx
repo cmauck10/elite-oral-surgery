@@ -13,42 +13,32 @@ export default function OfficeTourPage() {
     {
       src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80",
       title: "Reception Lounge",
-      description: "Warm, inviting space with comfortable seating and natural light.",
+      description: "Warm, inviting space with comfortable seating, natural light, and a welcoming atmosphere for patients and families.",
     },
     {
-      src: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=900&q=80",
-      title: "Consultation Suite",
-      description: "Private rooms for unhurried conversations about your treatment plan.",
+      src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80",
+      title: "CBCT Imaging",
+      description: "In-house 3D cone beam CT scanner for same-day diagnosis, precise surgical planning, and implant placement.",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+      title: "Treatment Planning",
+      description: "Private consultation rooms with digital displays for reviewing 3D scans and discussing personalized treatment options.",
     },
     {
       src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80",
-      title: "Advanced Operating Room",
-      description: "State-of-the-art surgical theater with CBCT imaging and digital monitors.",
+      title: "Advanced Operating Rooms",
+      description: "State-of-the-art surgical suites equipped with digital monitors, anesthesia stations, and sterile protocols.",
     },
     {
       src: "https://images.unsplash.com/photo-1631248055644-c9795f95b45c?auto=format&fit=crop&w=900&q=80",
       title: "Recovery Suite",
-      description: "Private post-sedation rooms with monitoring equipment and comfort amenities.",
+      description: "Private, serene recovery rooms with vital sign monitoring, heated blankets, and dedicated nursing care.",
     },
     {
-      src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
-      title: "Comfort Bar",
-      description: "Herbal tea, aromatherapy, and relaxation zones for pre- and post-operative care.",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80",
-      title: "CBCT Imaging Suite",
-      description: "In-house 3D cone beam CT for same-day diagnosis and surgical planning.",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80",
-      title: "Sterile Processing Area",
-      description: "Hospital-grade sterilization protocols ensure safety at every step.",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=900&q=80",
-      title: "Team Collaboration Hub",
-      description: "Where surgeons, nurses, and coordinators plan your personalized care journey.",
+      src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80",
+      title: "Laboratory",
+      description: "On-site dental lab for fabricating surgical guides, temporary restorations, and custom implant components.",
     },
   ];
 
