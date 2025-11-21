@@ -41,5 +41,11 @@ export const googleReviews: GoogleReview[] = [
     text:
       "Don't go anywhere else for oral surgery! Dr. London is an excellent doctor and surgeon. Who looks forward to seeing their oral surgeon? You will because he and his warm, kind and competent staff will take outstanding care of you. Ms. Ana at the front desk is extremely personable and professional. Kerri and Maci on the surgical team are amazing. The helped me through my procedures by making me laugh and holding my hand if I needed it! Give them a raise!",
   },
+  {
+    name: "Jacque Doucette",
+    rating: 5,
+    text:
+      "I've been going to Elite for years, myself and my family. Dr. Mauck and Dr. London have been great when it comes to \"Bedside Manor\". I appreciate there direct approach when it comes to telling me what is going on but also great at making me feel comfortable. Front office is great and LOVE Keri and Macy. Doc London is my favorite though, he is great. Handle my 82 year old mother with such care...",
+  },
 ];
 
