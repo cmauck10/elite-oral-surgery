@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { services as serviceDetails } from "@/data/services";
 import { testimonials as allTestimonials } from "@/data/testimonials";
+import { googleReviews } from "@/data/googleReviews";
 
 const serviceHighlights = serviceDetails.map((service) => ({
   title: service.name,
@@ -66,14 +70,24 @@ const resourceCards = [
   },
 ];
 
-// Use first 3 testimonials for homepage
-const testimonials = allTestimonials.slice(0, 3).map((t) => ({
-  quote: t.quote,
-  name: t.name,
-  detail: t.procedure,
-}));
+// Use first 3 testimonials for homepage case studies
+const caseStudies = allTestimonials.slice(0, 3);
 
 export default function Home() {
+  const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
+  const TRUNCATE_LENGTH = 200;
+
+  const toggleReview = (index: number) => {
+    setExpandedReviews((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Dentist",
@@ -360,6 +374,142 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="case-studies" className="mt-24" aria-labelledby="case-studies-heading">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+                Case Studies
+              </p>
+              <h2 id="case-studies-heading" className="mt-2 font-serif text-4xl">
+                Real patients, real transformations
+              </h2>
+            </div>
+            <div className="flex flex-col items-start gap-3 sm:items-end sm:max-w-lg">
+              <p className="text-sm text-[var(--muted)]">
+                In-depth stories from patients who experienced life-changing surgical outcomes at Elite Oral Surgery.
+              </p>
+              <Link
+                href="/testimonials"
+                className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+              >
+                View all case studies →
+              </Link>
+            </div>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {caseStudies.map((caseStudy) => (
+              <article
+                key={caseStudy.name}
+                className="flex flex-col gap-4 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+                    <Image
+                      src={caseStudy.photo}
+                      alt={caseStudy.name}
+                      width={48}
+                      height={48}
+                      className="h-full w-full object-cover mix-blend-multiply"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[var(--foreground)]">{caseStudy.name}</p>
+                    <p className="text-xs text-[var(--muted)]">{caseStudy.procedure}</p>
+                  </div>
+                </div>
+                <blockquote className="text-sm leading-relaxed text-[var(--foreground)]">
+                  "{caseStudy.quote}"
+                </blockquote>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Google Reviews Section */}
+        <section id="google-reviews" className="mt-24" aria-labelledby="google-reviews-heading">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+                Google Reviews
+              </p>
+              <h2 id="google-reviews-heading" className="mt-2 font-serif text-4xl">
+                Patients describe the Elite feeling
+              </h2>
+            </div>
+            <div className="flex flex-col items-start gap-3 sm:items-end sm:max-w-lg">
+              <p className="text-sm text-[var(--muted)]">
+                Verified reviews from real patients who experienced exceptional care at Elite Oral Surgery.
+              </p>
+              <Link
+                href="https://maps.app.goo.gl/a4ZB9kYLWWRHBZDZ9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+              >
+                Read all reviews on Google →
+              </Link>
+            </div>
+          </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {googleReviews.slice(0, 3).map((review, index) => {
+              const isLong = review.text.length > TRUNCATE_LENGTH;
+              const isExpanded = expandedReviews.has(index);
+              const displayText = isLong && !isExpanded 
+                ? `${review.text.substring(0, TRUNCATE_LENGTH)}...` 
+                : review.text;
+
+              return (
+                <article
+                  key={`${review.name}-${index}`}
+                  className="flex flex-col gap-3 rounded-2xl border border-[var(--border)] bg-white/90 p-4 shadow-[0_15px_40px_rgba(15,23,42,0.05)]"
+                >
+                  {/* Star Rating */}
+                  <div className="flex items-center gap-1">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className="h-4 w-4 text-[#fbbc04]"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+
+                  {/* Review Text */}
+                  <p className="text-sm leading-relaxed text-[var(--foreground)]">
+                    {displayText}
+                  </p>
+
+                  {/* Expand/Collapse Button */}
+                  {isLong && (
+                    <button
+                      onClick={() => toggleReview(index)}
+                      className="flex items-center gap-1 text-xs font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+                    >
+                      {isExpanded ? "Show less" : "Read more"}
+                      <svg
+                        className={`h-3 w-3 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  )}
+
+                  {/* Reviewer Name */}
+                  <div className="mt-auto border-t border-[var(--border)] pt-3">
+                    <p className="text-sm font-semibold text-[var(--foreground)]">{review.name}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
         <section
           id="resources"
           className="mt-24 rounded-[32px] bg-white/80 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.07)] lg:p-12"
@@ -383,45 +533,6 @@ export default function Home() {
                 </div>
                 <p className="mt-3 text-sm text-[var(--muted)]">{card.copy}</p>
               </Link>
-            ))}
-          </div>
-        </section>
-
-        <section id="testimonials" className="mt-24" aria-labelledby="testimonials-heading">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-                Testimonials
-              </p>
-              <h2 id="testimonials-heading" className="mt-2 font-serif text-4xl">
-                Patients describe the Elite feeling
-              </h2>
-            </div>
-            <div className="flex flex-col items-start gap-3 sm:items-end sm:max-w-lg">
-              <p className="text-sm text-[var(--muted)]">
-                Heartfelt stories from neighbors who trusted us with implants, sedation, and
-                life-changing surgical solutions.
-              </p>
-              <Link
-                href="/testimonials"
-                className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
-              >
-                View all testimonials →
-              </Link>
-            </div>
-          </div>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <blockquote
-                key={testimonial.name}
-                className="flex flex-col gap-6 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
-              >
-                <p className="text-base text-[var(--foreground)]">“{testimonial.quote}”</p>
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-[var(--muted)]">{testimonial.detail}</p>
-                </div>
-              </blockquote>
             ))}
           </div>
         </section>
