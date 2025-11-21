@@ -47,7 +47,7 @@ export default function OfficeTourPage() {
       <PageIntro
         eyebrow="Office Tour"
         title="Welcome to Our Sanctuary"
-        description="Step inside a practice designed to calm the nervous system, elevate the senses, and optimize healing."
+        description="Step inside a practice designed to provide a comfortable, safe, and efficient experience for our patients."
       />
 
       <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-gradient-to-br from-white via-[#f8f8f8] to-[#fff5eb] p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
@@ -165,6 +165,19 @@ export default function OfficeTourPage() {
                 </a>
               </div>
               <div>
+                <p className="font-semibold text-[var(--foreground)]">Fax</p>
+                <p>(561) 795-5445</p>
+              </div>
+              <div>
+                <p className="font-semibold text-[var(--foreground)]">Email</p>
+                <a
+                  href="mailto:office@eoswellington.com"
+                  className="text-[var(--accent)] hover:text-[var(--accent-dark)] transition"
+                >
+                  office@eoswellington.com
+                </a>
+              </div>
+              <div>
                 <p className="font-semibold text-[var(--foreground)]">Hours</p>
                 <p>Monday – Thursday: 8:00 AM – 5:00 PM</p>
                 <p>Friday: 7:30 AM – 1:30 PM</p>
@@ -184,26 +197,47 @@ export default function OfficeTourPage() {
             </div>
           </div>
 
-          <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-              Accessibility
-            </p>
-            <h3 className="mt-4 font-serif text-2xl">Designed for everyone</h3>
-            <ul className="mt-6 space-y-3 text-base text-[var(--muted)]">
-              {[
-                "Wheelchair-accessible entrance and parking",
-                "Elevator access to all treatment floors",
-                "ADA-compliant restrooms",
-                "Assistive listening devices available",
-                "Large-print and digital forms",
-                "Spanish and Creole interpretation services",
-              ].map((item) => (
-                <li key={item} className="flex items-start">
-                  <span className="mr-3 text-[var(--accent)]">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="space-y-8">
+            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+                Operatory Certifications
+              </p>
+              <h3 className="mt-4 font-serif text-2xl">Surgical excellence certified</h3>
+              <ul className="mt-6 space-y-3 text-base text-[var(--muted)]">
+                {[
+                  "Ambulatory Surgical Center (ASC) accredited",
+                  "Heat-welded antimicrobial flooring for infection control",
+                  "HEPA-filtered air purification systems",
+                  "Hospital-grade sterilization protocols",
+                  "Emergency equipment and trained staff on-site",
+                ].map((item) => (
+                  <li key={item} className="flex items-start">
+                    <span className="mr-3 text-[var(--accent)]">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+                Accessibility
+              </p>
+              <h3 className="mt-4 font-serif text-2xl">Designed for everyone</h3>
+              <ul className="mt-6 space-y-3 text-base text-[var(--muted)]">
+                {[
+                  "Wheelchair-accessible entrance and parking",
+                  "ADA-compliant restrooms",
+                  "Large-print paper and digital forms",
+                  "Spanish translation available",
+                ].map((item) => (
+                  <li key={item} className="flex items-start">
+                    <span className="mr-3 text-[var(--accent)]">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
