@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { services as serviceDetails } from "@/data/services";
+import { testimonials as allTestimonials } from "@/data/testimonials";
 
 const serviceHighlights = serviceDetails.map((service) => ({
   title: service.name,
@@ -65,26 +66,12 @@ const resourceCards = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Dr. London restored my smile with All-on-X and I finally feel like myself again. The experience was elegant, calm, and unbelievably gentle.",
-    name: "Sophia M.",
-    detail: "Full-Arch Implant Patient",
-  },
-  {
-    quote:
-      "From IV sedation to follow-up calls, the entire team anticipates what you need before you know to ask. Elite truly defines concierge oral surgery.",
-    name: "Jackson R.",
-    detail: "Trauma & Reconstruction Case",
-  },
-  {
-    quote:
-      "Wisdom teeth removal was surprisingly easy. I was relaxing in their comfort suite with herbal tea within an hour.",
-    name: "Emily W.",
-    detail: "Wisdom Teeth Patient",
-  },
-];
+// Use first 3 testimonials for homepage
+const testimonials = allTestimonials.slice(0, 3).map((t) => ({
+  quote: t.quote,
+  name: t.name,
+  detail: t.procedure,
+}));
 
 export default function Home() {
   const structuredData = {
@@ -410,10 +397,18 @@ export default function Home() {
                 Patients describe the Elite feeling
               </h2>
             </div>
-            <p className="max-w-lg text-sm text-[var(--muted)]">
-              Heartfelt stories from neighbors who trusted us with implants, sedation, and
-              life-changing surgical solutions.
-            </p>
+            <div className="flex flex-col items-end gap-3">
+              <p className="max-w-lg text-sm text-[var(--muted)]">
+                Heartfelt stories from neighbors who trusted us with implants, sedation, and
+                life-changing surgical solutions.
+              </p>
+              <Link
+                href="/testimonials"
+                className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+              >
+                View all testimonials →
+              </Link>
+            </div>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {testimonials.map((testimonial) => (

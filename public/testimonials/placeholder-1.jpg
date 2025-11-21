@@ -1,0 +1,6 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#f0e6dc"/>
+  <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="18" fill="#8b7355" text-anchor="middle" dominant-baseline="middle">Patient Photo</text>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="14" fill="#a89080" text-anchor="middle" dominant-baseline="middle">Sophia M.</text>
+</svg>
+
