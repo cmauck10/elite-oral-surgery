@@ -120,9 +120,9 @@ export function SiteFooter() {
                         ? "/"
                         : link === "About"
                           ? "/about"
-                          : link === "Services"
-                            ? "/#services"
-                            : link === "Resources"
+                        : link === "Services"
+                          ? "/#services"
+                          : link === "Resources"
                               ? "/resources"
                               : "/appointment"
                     }

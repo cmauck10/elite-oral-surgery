@@ -128,15 +128,15 @@ export function SiteHeader() {
             <div key={item.label} className="relative">
               {item.children ? (
                 <div onMouseLeave={() => setActiveMenu(null)}>
-                  <button
-                    type="button"
+              <button
+                type="button"
                     className={`flex items-center gap-1 text-sm font-medium transition ${
-                      activeMenu === index ? "text-[var(--accent)]" : "text-[var(--foreground)]"
-                    }`}
-                    onMouseEnter={() => setActiveMenu(index)}
-                    onClick={() => setActiveMenu((prev) => (prev === index ? null : index))}
-                  >
-                    {item.label}
+                  activeMenu === index ? "text-[var(--accent)]" : "text-[var(--foreground)]"
+                }`}
+                onMouseEnter={() => setActiveMenu(index)}
+                onClick={() => setActiveMenu((prev) => (prev === index ? null : index))}
+              >
+                {item.label}
                     <svg 
                       className={`h-4 w-4 transition-transform duration-200 ${activeMenu === index ? 'rotate-180' : ''}`}
                       fill="none" 
@@ -145,26 +145,26 @@ export function SiteHeader() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
-                  </button>
+              </button>
                   {activeMenu === index && (
                     <div className="absolute left-1/2 top-full z-30 -translate-x-1/2 pt-4">
                       <div className="w-64 rounded-2xl border border-[var(--border)] bg-white/95 p-4 shadow-2xl transition duration-200">
-                        <ul className="space-y-2 text-sm text-[var(--muted)]">
-                          {item.children.map((child) => (
-                            <li key={child.label}>
-                              <Link
-                                href={child.href}
+                    <ul className="space-y-2 text-sm text-[var(--muted)]">
+                      {item.children.map((child) => (
+                        <li key={child.label}>
+                          <Link
+                            href={child.href}
                                 onClick={() => setActiveMenu(null)}
                                 className="flex items-center justify-between rounded-lg px-3 py-2 transition hover:bg-[var(--accent)]/10 hover:text-[var(--foreground)]"
-                              >
-                                <span>{child.label}</span>
-                                <span aria-hidden="true">↗</span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
+                          >
+                            <span>{child.label}</span>
+                            <span aria-hidden="true">↗</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
                   )}
                 </div>
               ) : (

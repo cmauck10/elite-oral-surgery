@@ -45,7 +45,7 @@ export function AppointmentForm() {
         throw new Error('Failed to submit appointment request');
       }
 
-      setSubmitted(true);
+    setSubmitted(true);
     } catch (err) {
       setError('Something went wrong. Please try calling us at (561) 790-0206 instead.');
       console.error('Submission error:', err);
