@@ -155,7 +155,7 @@ export default function Home() {
                 The Elite Difference
               </p>
               <div>
-                <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+                <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-5xl">
                   Extraordinary Oral Surgery Experience in Wellington, Florida
                 </h1>
                 <p className="mt-6 max-w-xl text-lg text-white/80">
