@@ -42,7 +42,7 @@ const navItems = [
       { label: "Pre/Post Surgery Tips", href: "/resources/pre-post-surgery-tips" },
     ],
   },
-  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Testimonials", href: "/testimonials" },
 ];
 
 function MenuIcon() {

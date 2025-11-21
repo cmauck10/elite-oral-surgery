@@ -388,17 +388,17 @@ export default function Home() {
         </section>
 
         <section id="testimonials" className="mt-24" aria-labelledby="testimonials-heading">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
                 Testimonials
               </p>
-              <h2 id="testimonials-heading" className="font-serif text-4xl">
+              <h2 id="testimonials-heading" className="mt-2 font-serif text-4xl">
                 Patients describe the Elite feeling
               </h2>
             </div>
-            <div className="flex flex-col items-end gap-3">
-              <p className="max-w-lg text-sm text-[var(--muted)]">
+            <div className="flex flex-col items-start gap-3 sm:items-end sm:max-w-lg">
+              <p className="text-sm text-[var(--muted)]">
                 Heartfelt stories from neighbors who trusted us with implants, sedation, and
                 life-changing surgical solutions.
               </p>
