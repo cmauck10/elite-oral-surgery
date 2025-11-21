@@ -58,7 +58,7 @@ export default function OurHistoryPage() {
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80"
+                src="/office/exterior.jpg"
                 alt="State-of-the-Art Facility - 2005"
                 fill
                 className="object-cover"

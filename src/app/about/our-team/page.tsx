@@ -14,7 +14,7 @@ export default function OurTeamPage() {
     {
       name: "Dr. Michael Mauck",
       role: "Oral & Maxillofacial Surgeon",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80",
+      image: "/michael_mauck.png",
       bio: "Board-certified surgeon with expertise in full-arch implants, bone grafting, and regenerative surgical techniques.",
       link: "/about/dr-michael-mauck",
     },
@@ -28,37 +28,37 @@ export default function OurTeamPage() {
     {
       name: "Chris Mauck",
       role: "Office Director",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+      image: "/team/chris-mauck.jpg",
       bio: "Oversees practice operations and ensures every patient receives exceptional concierge-level care.",
     },
     {
       name: "Leslie London",
       role: "Practice Relations",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      image: "/team/leslie-london.jpg",
       bio: "Cultivates relationships with referring dentists and community partners throughout Palm Beach County.",
     },
     {
       name: "Ana Gonzalez",
       role: "Treatment Coordinator",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80",
+      image: "/team/ana-gonzalez.jpg",
       bio: "Guides patients through treatment planning, insurance navigation, and financial coordination.",
     },
     {
       name: "Yasmin Rodriguez",
       role: "Treatment Coordinator",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80",
+      image: "/team/yasmin-rodriguez.jpg",
       bio: "Your dedicated resource for scheduling, pre-operative preparation, and post-surgical follow-up.",
     },
     {
       name: "Maci Lee",
       role: "Dental Assistant",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80",
+      image: "/team/maci-lee.jpg",
       bio: "Provides chairside support and ensures patient comfort throughout surgical procedures.",
     },
     {
       name: "Kerri Coury",
       role: "Dental Assistant",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
+      image: "/team/kerri-coury.jpg",
       bio: "Skilled in sterilization protocols, digital imaging, and compassionate patient care.",
     },
   ];

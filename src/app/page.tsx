@@ -14,19 +14,19 @@ const serviceHighlights = serviceDetails.map((service) => ({
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80",
+    src: "/office/reception.jpg",
     label: "Reception Lounge",
   },
   {
-    src: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=900&q=80",
+    src: "/office/treatment-planning.jpg",
     label: "Treatment Planning",
   },
   {
-    src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80",
+    src: "/office/operating-room.jpg",
     label: "Operating Room",
   },
   {
-    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
+    src: "/office/recovery-suite.jpg",
     label: "Recovery Suite",
   },
 ];
@@ -134,7 +134,7 @@ export default function Home() {
               loop
               muted
               playsInline
-              poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80"
+              poster="/hero-video-poster.jpg"
             >
               <source
                 src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"

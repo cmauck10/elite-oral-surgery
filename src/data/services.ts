@@ -34,7 +34,7 @@ export const services: ServiceDetail[] = [
       "Zygomatic and pterygoid implant options",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/implants.jpg",
       alt: "Digital implant planning on large monitor",
     },
     seoDescription:
@@ -65,7 +65,7 @@ export const services: ServiceDetail[] = [
       "Maintenance and warranty program",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/all-on-x.jpg",
       alt: "Patient smiling after All-on-X treatment",
     },
     seoDescription:
@@ -96,7 +96,7 @@ export const services: ServiceDetail[] = [
       "Tailored post-op comfort kits",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/iv-sedation.jpg",
       alt: "Patient resting comfortably under blanket",
     },
     seoDescription:
@@ -127,7 +127,7 @@ export const services: ServiceDetail[] = [
       "Recovery concierge check-ins",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/wisdom-teeth.jpg",
       alt: "Teen smiling in dental chair",
     },
     seoDescription:
@@ -158,7 +158,7 @@ export const services: ServiceDetail[] = [
       "Collaboration with your dentist",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1504439904031-93ded9f93e2e?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/extractions.jpg",
       alt: "Oral surgeon preparing instruments",
     },
     seoDescription:
@@ -189,7 +189,7 @@ export const services: ServiceDetail[] = [
       "Soft tissue microsurgery",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/bone-grafting.jpg",
       alt: "3D imaging scan for bone graft planning",
     },
     seoDescription:
@@ -220,7 +220,7 @@ export const services: ServiceDetail[] = [
       "Sports dentistry partnerships",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/pathology.jpg",
       alt: "Surgeon reviewing emergency imaging",
     },
     seoDescription:
@@ -251,7 +251,7 @@ export const services: ServiceDetail[] = [
       "Coordinated orthodontic care",
     ],
     image: {
-      src: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1200&q=80",
+      src: "/services/jaw-surgery.jpg",
       alt: "3D jaw model used for orthognathic planning",
     },
     seoDescription:

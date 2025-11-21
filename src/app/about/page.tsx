@@ -21,7 +21,7 @@ export default function AboutPage() {
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-2 lg:p-12">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
-            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80"
+            src="/office/facility.jpg"
             alt="Elite Oral Surgery reception area"
             width={640}
             height={720}

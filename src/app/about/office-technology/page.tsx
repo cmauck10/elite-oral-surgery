@@ -15,7 +15,7 @@ export default function OfficeTechnologyPage() {
       title: "CBCT 3D Imaging",
       description:
         "Cone Beam Computed Tomography provides precise 3D visualization of bone structure, nerve pathways, and anatomical landmarks for surgical planning.",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80",
+      image: "/office/cbct.jpg",
       benefits: [
         "Same-day diagnosis and treatment planning",
         "Sub-millimeter accuracy for implant placement",
@@ -27,7 +27,7 @@ export default function OfficeTechnologyPage() {
       title: "Digital Impression Scanning",
       description:
         "Intraoral scanners capture highly accurate digital impressions without messy materials, improving comfort and precision.",
-      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&q=80",
+      image: "/office/treatment-planning.jpg",
       benefits: [
         "No gagging from traditional impression trays",
         "Instant feedback and re-scans if needed",
@@ -39,7 +39,7 @@ export default function OfficeTechnologyPage() {
       title: "3D Surgical Guide Printing",
       description:
         "In-house 3D printing allows us to fabricate custom surgical guides that translate digital plans into precise physical templates.",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80",
+      image: "/office/laboratory.jpg",
       benefits: [
         "Implant placement accuracy to the degree",
         "Minimally invasive, flapless surgery options",
@@ -51,7 +51,7 @@ export default function OfficeTechnologyPage() {
       title: "Platelet-Rich Fibrin (PRF)",
       description:
         "We centrifuge a small sample of your own blood to concentrate healing growth factors, then apply the PRF membrane to surgical sites.",
-      image: "https://images.unsplash.com/photo-1583911860205-72f8ac8ddcbe?auto=format&fit=crop&w=900&q=80",
+      image: "/office/recovery-suite.jpg",
       benefits: [
         "Accelerated bone and soft tissue healing",
         "Reduced post-operative pain and swelling",
@@ -63,7 +63,7 @@ export default function OfficeTechnologyPage() {
       title: "IV Sedation & Monitoring",
       description:
         "Board-certified anesthesia protocols with real-time vital sign monitoring ensure safe, comfortable sedation tailored to your needs.",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=900&q=80",
+      image: "/office/operating-room.jpg",
       benefits: [
         "Twilight sedation with minimal memory of procedure",
         "Continuous pulse oximetry, EKG, and capnography",
@@ -75,7 +75,7 @@ export default function OfficeTechnologyPage() {
       title: "Digital Treatment Planning Software",
       description:
         "Advanced software integrates CBCT scans, digital impressions, and prosthetic designs to simulate your entire treatment before surgery.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+      image: "/office/facility.jpg",
       benefits: [
         "Visualize final results before surgery begins",
         "Collaborate with your restorative dentist digitally",

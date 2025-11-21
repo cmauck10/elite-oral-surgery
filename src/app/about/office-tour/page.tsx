@@ -12,32 +12,32 @@ export const metadata = {
 export default function OfficeTourPage() {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=80",
+      src: "/office/reception.jpg",
       title: "Reception Lounge",
       description: "Warm, inviting space with comfortable seating, natural light, and a welcoming atmosphere for patients and families.",
     },
     {
-      src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80",
+      src: "/office/cbct.jpg",
       title: "CBCT Imaging",
       description: "In-house 3D cone beam CT scanner for same-day diagnosis, precise surgical planning, and implant placement.",
     },
     {
-      src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+      src: "/office/treatment-planning.jpg",
       title: "Treatment Planning",
       description: "Private consultation rooms with digital displays for reviewing 3D scans and discussing personalized treatment options.",
     },
     {
-      src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80",
+      src: "/office/operating-room.jpg",
       title: "Advanced Operating Rooms",
       description: "State-of-the-art surgical suites equipped with digital monitors, anesthesia stations, and sterile protocols.",
     },
     {
-      src: "https://images.unsplash.com/photo-1631248055644-c9795f95b45c?auto=format&fit=crop&w=900&q=80",
+      src: "/office/recovery-suite.jpg",
       title: "Recovery Suite",
       description: "Private, serene recovery rooms with vital sign monitoring, heated blankets, and dedicated nursing care.",
     },
     {
-      src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80",
+      src: "/office/laboratory.jpg",
       title: "Laboratory",
       description: "On-site dental lab for fabricating surgical guides, temporary restorations, and custom implant components.",
     },
