@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function OurHistoryPage() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
       <PageIntro
         eyebrow="Our Story"
         title="Three decades of surgical excellence in Wellington"

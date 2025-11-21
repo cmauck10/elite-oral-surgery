@@ -8,7 +8,7 @@ export const metadata = {
 export default function AppointmentPage() {
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <section className="mx-auto max-w-4xl px-6 py-16 lg:px-8">
+      <section className="mx-auto max-w-4xl px-6 py-8 lg:px-8">
         <div className="space-y-6 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Concierge Scheduling

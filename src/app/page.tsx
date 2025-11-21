@@ -139,19 +139,19 @@ export default function Home() {
         Skip to appointment request
       </a>
 
-      <main className="mx-auto max-w-7xl px-6 pb-24 pt-10 lg:px-8 lg:pb-32">
-        <section id="home" className="pt-6">
-          <div className="relative min-h-[520px] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)]">
+      <main className="mx-auto max-w-7xl px-6 pb-24 pt-5 lg:px-8 lg:pb-32">
+        <section id="home" className="pt-3">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)]">
             <video
               className="absolute inset-0 h-full w-full object-cover"
               autoPlay
               loop
               muted
               playsInline
-              poster="https://images.unsplash.com/photo-1503437313881-503a91226402?auto=format&fit=crop&w=1400&q=80"
+              poster="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80"
             >
               <source
-                src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+                src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4"
                 type="video/mp4"
               />
             </video>

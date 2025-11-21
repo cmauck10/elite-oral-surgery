@@ -10,7 +10,7 @@ export const metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
-      <section className="mx-auto max-w-4xl px-6 py-16 lg:px-8">
+      <section className="mx-auto max-w-4xl px-6 py-8 lg:px-8">
         <PageIntro
           eyebrow="Legal"
           title="Privacy Policy"

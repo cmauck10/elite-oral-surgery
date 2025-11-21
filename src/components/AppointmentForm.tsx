@@ -58,7 +58,7 @@ export function AppointmentForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="relative mt-12 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.08)]"
+        className="relative mt-6 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.08)]"
       >
         <div className={`space-y-6 ${submitted ? "pointer-events-none blur-sm opacity-40" : ""}`}>
           <div className="grid gap-6 md:grid-cols-2">
@@ -135,7 +135,7 @@ export function AppointmentForm() {
             Comments / Questions
             <textarea
               name="comments"
-              rows={5}
+              rows={4}
               className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
               placeholder="Let us know how we can support you..."
             />

@@ -63,7 +63,7 @@ export default function OurTeamPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8">
       <PageIntro
         eyebrow="Our Team"
         title="Meet the Elite Oral Surgery Family"
