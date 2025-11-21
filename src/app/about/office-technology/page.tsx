@@ -115,13 +115,12 @@ export default function OfficeTechnologyPage() {
               index % 2 === 1 ? "lg:grid-flow-dense" : ""
             }`}
           >
-            <div className={`relative overflow-hidden rounded-[24px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea] ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
+            <div className={`relative aspect-[4/3] overflow-hidden rounded-[24px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea] ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
               <Image
                 src={tech.image}
                 alt={tech.title}
-                width={700}
-                height={500}
-                className="h-full w-full object-cover mix-blend-multiply"
+                fill
+                className="object-cover mix-blend-multiply"
               />
             </div>
             <div className={`flex flex-col justify-center ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
