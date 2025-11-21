@@ -37,9 +37,8 @@ export default function AboutPage() {
             has been thoughtfully curated to reduce anxiety and optimize outcomes.
           </p>
           <p className="text-base text-[var(--muted)]">
-            Our practice philosophy centers on three pillars: surgical excellence, patient-centered
-            comfort, and transparent communication. We believe that extraordinary results begin with
-            trust, and that healing is accelerated when patients feel safe, heard, and valued.
+            Our practice philosophy centers on three pillars: patient-first philosophy, surgical excellence, and outcome-driven care. We believe that extraordinary results begin with
+            trust, and that healing is accelerated when patients feel safe, heard, and valued. Every decision we make is made with the patient's best interests in mind.
           </p>
         </div>
       </section>
@@ -49,19 +48,19 @@ export default function AboutPage() {
         <div className="grid gap-6 md:grid-cols-3">
           {[
             {
-              title: "Surgical Excellence",
-              description:
-                "Board-certified surgeons, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
-            },
-            {
               title: "Patient-First Philosophy",
               description:
-                "From pre-op consultations to post-op calls, every interaction is designed to ease worry and answer every question.",
+                "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would want our family members to be treated.",
             },
             {
-              title: "Advanced Technology",
+              title: "Surgical Excellence",
               description:
-                "CBCT imaging, 3D surgical planning, PRF biologics, and digital workflows ensure precision at every step.",
+                "Board-certified oral and maxillofacial surgeon, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
+            },
+            {
+              title: "Outcome-Driven Care",
+              description:
+                "From pre-op consultations to post-op calls, every interaction is designed to ease worry and ensure your expectations are met.",
             },
           ].map((value) => (
             <div
@@ -89,7 +88,7 @@ export default function AboutPage() {
             We recognize that oral surgery can feel overwhelming. That's why we've built a practice
             that anticipates your needs before you voice them. Our concierge approach includes
             pre-visit communication, same-day imaging and treatment planning, multiple sedation
-            modalities, and dedicated recovery suites staffed by surgical nurses.
+            modalities, and a dedicated recovery suite to monitor you after surgery.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -112,15 +111,12 @@ export default function AboutPage() {
         <h2 className="font-serif text-3xl text-center mb-10">What Sets Us Apart</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
+            "Relentless focus on patient safety, comfort, and outcomes",
             "In-house CBCT suite for same-day 3D imaging",
-            "Digital impressions and 3D surgical guide printing",
-            "Private recovery lounges with post-sedation monitoring",
-            "Platelet-Rich Fibrin (PRF) therapy for faster healing",
-            "Multiple sedation options including IV and general anesthesia",
-            "Dedicated implant lab for immediate provisional restorations",
-            "Concierge scheduling and insurance coordination",
-            "Extended hours and emergency availability",
-            "Collaborative care with your referring dentist",
+            "Private recovery suite with post-sedation monitoring",
+            "Multiple sedation options including IV sedation, local anesthesia, and nitrous oxide",
+            "Emergency availability for urgent cases",
+            "Collaborative care with your referring dentist or specialist",
           ].map((feature) => (
             <div
               key={feature}
@@ -137,7 +133,7 @@ export default function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Experience the Difference
           </p>
-          <h2 className="mt-4 font-serif text-3xl">Ready to experience elite care?</h2>
+          <h2 className="mt-4 font-serif text-3xl">Ready to experience The Elite Difference?</h2>
           <p className="mt-4 text-lg text-[var(--muted)] max-w-2xl mx-auto">
             Schedule a consultation to discuss your treatment goals and discover how our approach
             can transform your oral surgery experience.

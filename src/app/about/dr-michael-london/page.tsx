@@ -29,7 +29,7 @@ export default function DrLondonPage() {
         </div>
         <div className="flex flex-col justify-center gap-6">
           <h2 className="font-serif text-3xl leading-tight text-[var(--foreground)]">
-            Precision, artistry, and a patient-first philosophy
+            Precision, expertise, and a patient-first philosophy
           </h2>
           <p className="text-lg text-[var(--muted)]">
             Dr. Michael London is a highly skilled, board-certified oral and maxillofacial surgeon with over 10 years of experience delivering exceptional care in dentistry and oral surgery. A graduate of McGill University in Montreal, Canada, where he earned his Doctor of Dental Medicine (DMD) degree, Dr. London furthered his training with a General Practice Residency at the University of British Columbia.

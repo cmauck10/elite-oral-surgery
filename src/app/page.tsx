@@ -15,15 +15,15 @@ const galleryImages = [
   },
   {
     src: "https://images.unsplash.com/photo-1502904550040-7534597429ae?auto=format&fit=crop&w=900&q=80",
-    label: "Serene Consult Suite",
+    label: "Treatment Planning",
   },
   {
     src: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=900&q=80",
-    label: "Advanced Op Room",
+    label: "Operating Room",
   },
   {
     src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80",
-    label: "Comfort Bar",
+    label: "Recovery Suite",
   },
 ];
 
@@ -222,7 +222,7 @@ export default function Home() {
               Meet Dr. Michael London
             </span>
             <h2 className="font-serif text-4xl leading-tight text-[var(--foreground)]">
-              Precision, artistry, and a patient-first philosophy
+              Precision, expertise, and a patient-first philosophy
             </h2>
             <p className="text-lg text-[var(--muted)]">
               Dr. London is a board-certified oral and maxillofacial surgeon with over 10 years of experience. A McGill University graduate who completed his specialty training at Emory University, he specializes in complex full-arch implant reconstructions, advanced bone grafting, and comprehensive oral surgery care.
@@ -277,9 +277,10 @@ export default function Home() {
             </p>
             <div className="grid gap-4 text-sm text-[var(--foreground)]">
               {[
-                "Private recovery lounge with post-sedation monitoring",
-                "State-of-the-art technology for treatment planning and surgery",
-                "Advanced adjuntive care for faster healing and recovery",
+                "Welcoming reception area with comfortable seating, natural light, and snacks",
+                "Private consultation room for no-pressure conversations about your treatment plan",
+                "ASC accredited operating room with state-of-the-art technology",
+                "Peaceful recovery suite with post-sedation monitoring ",
               ].map((item) => (
                 <div
                   key={item}
@@ -322,7 +323,7 @@ export default function Home() {
                 Services
               </p>
               <h2 id="services-heading" className="font-serif text-4xl">
-                Surgical artistry for every need
+                Surgical precision for every need
               </h2>
             </div>
             <p className="max-w-xl text-sm text-[var(--muted)]">
@@ -382,15 +383,6 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </section>
-
-        <section
-          id="our-team"
-          className="mt-24 rounded-[32px] border border-dashed border-[var(--border)] p-8 text-center text-sm text-[var(--muted)]"
-        >
-          Profiles for Dr. Michael Mauck, our surgical nursing collective, and technology deep dives
-          are coming next. This placeholder anchors the navigation while we perfect the copy,
-          photography, and virtual tour experience.
         </section>
 
         <section id="testimonials" className="mt-24" aria-labelledby="testimonials-heading">
