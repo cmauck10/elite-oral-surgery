@@ -50,17 +50,37 @@ export default function OfficeTourPage() {
         description="Step inside a practice designed to calm the nervous system, elevate the senses, and optimize healing."
       />
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl leading-tight text-[var(--foreground)]">
-            Every detail, intentionally designed
-          </h2>
-          <p className="mt-6 text-lg text-[var(--muted)]">
-            From the moment you enter our Wellington office, you'll notice the difference. Soft
-            lighting, natural materials, and thoughtful acoustics create an atmosphere of calm.
-            Our private treatment and recovery areas ensure your experience is both dignified and
-            comfortable.
-          </p>
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-gradient-to-br from-white via-[#f8f8f8] to-[#fff5eb] p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+          {/* Left side - Description */}
+          <div className="flex flex-col justify-center">
+            <h2 className="font-serif text-3xl leading-tight text-[var(--foreground)]">
+              Every detail, intentionally designed
+            </h2>
+            <p className="mt-6 text-lg text-[var(--muted)]">
+              From the moment you enter our Wellington office, you'll notice the difference. Custom built for comfort, safety, and aesthetic excellence, our office features soft
+              lighting, Florida-inspired beach design, and state-of-the-art technology.
+              Our private treatment and recovery areas ensure your experience is both comfortable and safe.
+            </p>
+          </div>
+
+          {/* Right side - Featured Quote */}
+          <div className="relative flex flex-col justify-center rounded-[24px] border border-[var(--border)] bg-white/60 p-8 lg:p-10">
+            <div className="absolute top-4 left-6 text-[80px] font-serif text-[var(--accent)]/10 leading-none">
+              "
+            </div>
+            <blockquote className="relative space-y-6">
+              <p className="font-serif text-xl leading-relaxed text-[var(--foreground)] lg:text-2xl">
+                I must give a mention to Elite Oral Surgery for their exceptional professionalism and charming design of their office. One hardly feels they are at the dentist at all.
+              </p>
+              <footer className="pt-4 border-t border-[var(--border)]">
+                <cite className="not-italic">
+                  <p className="font-semibold text-[var(--foreground)]">Lars Bolander</p>
+                  <p className="text-sm text-[var(--muted)]">Swedish Interior Designer</p>
+                </cite>
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </section>
 
@@ -105,10 +125,11 @@ export default function OfficeTourPage() {
               "In-house CBCT 3D imaging for same-day planning",
               "Cloud-based electronic health record system",
               "Flexible financing options for every budget",
-              "Dedicated implant inventory for immediate placement",
-              "Complimentary high-speed WiFi throughout",
+              "Expansive implant inventory",
+              "Complimentary high-speed WiFi",
               "Convenient parking with wheelchair accessibility",
               "Automated text and email appointment reminders",
+              "Spanish translation services",
             ].map((amenity) => (
               <div
                 key={amenity}
