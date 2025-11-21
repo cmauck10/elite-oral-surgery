@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
 import { Container } from "@/components/ui";
 import { testimonials } from "@/data/testimonials";
+import { googleReviews } from "@/data/googleReviews";
 
 export const metadata = {
   title: "Patient Testimonials",
@@ -65,6 +66,65 @@ export default function TestimonialsPage() {
           </article>
         ))}
       </div>
+
+      {/* Google Reviews Section */}
+      <section className="mt-24" aria-labelledby="google-reviews-heading">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+              Google Reviews
+            </p>
+            <h2 id="google-reviews-heading" className="mt-2 font-serif text-4xl">
+              Verified patient experiences
+            </h2>
+          </div>
+          <div className="flex flex-col items-start gap-3 sm:items-end sm:max-w-lg">
+            <p className="text-sm text-[var(--muted)]">
+              Real reviews from patients who trusted us with their care. See what others are saying about their experience at Elite Oral Surgery.
+            </p>
+            <Link
+              href="https://maps.app.goo.gl/a4ZB9kYLWWRHBZDZ9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+            >
+              Read all reviews on Google →
+            </Link>
+          </div>
+        </div>
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {googleReviews.map((review, index) => (
+            <article
+              key={`${review.name}-${index}`}
+              className="flex flex-col gap-4 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
+            >
+              {/* Star Rating */}
+              <div className="flex items-center gap-1">
+                {[...Array(review.rating)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="h-5 w-5 text-[#fbbc04]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+
+              {/* Review Text */}
+              <p className="text-sm leading-relaxed text-[var(--foreground)]">
+                {review.text}
+              </p>
+
+              {/* Reviewer Info */}
+              <div className="mt-auto border-t border-[var(--border)] pt-4">
+                <p className="font-semibold text-[var(--foreground)]">{review.name}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
