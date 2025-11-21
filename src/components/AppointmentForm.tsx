@@ -58,16 +58,16 @@ export function AppointmentForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="relative mt-6 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_30px_70px_rgba(15,23,42,0.08)]"
+        className="relative mt-6 rounded-[32px] border border-[var(--border)] bg-white/90 px-8 pt-4 pb-8 shadow-[0_30px_70px_rgba(15,23,42,0.08)]"
       >
-        <div className={`space-y-6 ${submitted ? "pointer-events-none blur-sm opacity-40" : ""}`}>
-          <div className="grid gap-6 md:grid-cols-2">
+        <div className={`space-y-3 ${submitted ? "pointer-events-none blur-sm opacity-40" : ""}`}>
+          <div className="grid gap-4 md:grid-cols-2">
             <label className="text-sm font-semibold text-[var(--foreground)]">
               First Name
               <input
                 type="text"
                 name="first-name"
-                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
                 placeholder="First name"
                 required
               />
@@ -77,20 +77,20 @@ export function AppointmentForm() {
               <input
                 type="text"
                 name="last-name"
-                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
                 placeholder="Last name"
                 required
               />
             </label>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2">
             <label className="text-sm font-semibold text-[var(--foreground)]">
               Email
               <input
                 type="email"
                 name="email"
-                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
                 placeholder="you@email.com"
                 required
               />
@@ -100,7 +100,7 @@ export function AppointmentForm() {
               <input
                 type="tel"
                 name="phone"
-                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+                className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
                 placeholder="(561) 123-4567"
                 required
               />
@@ -113,7 +113,7 @@ export function AppointmentForm() {
               <select
                 name="service"
                 defaultValue=""
-                className="w-full appearance-none rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+                className="w-full appearance-none rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
                 required
               >
                 <option value="" disabled>
@@ -135,8 +135,8 @@ export function AppointmentForm() {
             Comments / Questions
             <textarea
               name="comments"
-              rows={4}
-              className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-3 outline-none focus:border-[var(--accent)]"
+              rows={3}
+              className="mt-2 w-full rounded-2xl border border-[var(--border)] bg-transparent px-4 py-2.5 outline-none focus:border-[var(--accent)]"
               placeholder="Let us know how we can support you..."
             />
           </label>
@@ -169,7 +169,7 @@ export function AppointmentForm() {
 
       <p className="mt-6 text-center text-sm text-[var(--muted)]">
         Prefer to speak with someone? Call{" "}
-        <Link href="tel:15617900206" className="font-semibold text-[var(--foreground)]">
+        <Link href="tel:15617900206" className="font-semibold text-[var(--accent)]">
           (561) 790-0206
         </Link>{" "}
         or email{" "}
