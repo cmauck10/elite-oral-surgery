@@ -67,7 +67,7 @@ export default function DrLondonPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#f8f8f8] to-[#fff5eb] p-8 lg:p-12">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">

@@ -427,42 +427,41 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-24 rounded-[32px] bg-gradient-to-r from-[#4b4b4b] via-[#383838] to-[#ff8200] p-8 text-white shadow-[0_35px_90px_rgba(75,75,75,0.35)] lg:p-12">
+        <section className="mt-24 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
                 Appointment Request
               </p>
-              <h2 className="mt-4 font-serif text-4xl">
+              <h2 className="mt-4 font-serif text-4xl text-[var(--foreground)]">
                 Ready for concierge-level oral surgery care?
               </h2>
-              <p className="mt-4 text-lg text-white/80">
-                Call, text, or send a secure message. Our patient concierge will coordinate imaging,
-                records transfer, and sedation planning that works for your schedule.
+              <p className="mt-4 text-lg text-[var(--muted)]">
+                Our concierge team will coordinate your appointment and ensure you have a pleasent, safe, and no-pressure experience.
               </p>
             </div>
-            <div className="space-y-4 rounded-[28px] bg-white/10 p-6 backdrop-blur">
+            <div className="space-y-4 rounded-[28px] border border-[var(--border)] bg-white/70 p-6">
               <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-white/60">Call or Text</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-[var(--muted)]">Call</p>
                 <a
                   href="tel:15617900206"
-                  className="text-2xl font-semibold text-white transition hover:text-[var(--accent)]"
+                  className="text-2xl font-semibold text-[var(--foreground)] transition hover:text-[var(--accent)]"
                 >
                   (561) 790-0206
                 </a>
               </div>
-              <div className="flex items-center justify-between text-white/80">
+              <div className="flex items-center justify-between text-[var(--muted)]">
                 <span className="text-sm uppercase tracking-[0.2em]">Fax</span>
-                <span className="text-lg font-semibold text-white">(561) 795-5445</span>
+                <span className="text-lg font-semibold text-[var(--foreground)]">(561) 795-5445</span>
               </div>
-              <div className="border-t border-white/20 pt-3 text-sm text-white/80">
-                <p className="uppercase tracking-[0.2em] text-white/60">Hours</p>
+              <div className="border-t border-[var(--border)] pt-3 text-sm text-[var(--muted)]">
+                <p className="uppercase tracking-[0.2em]">Hours</p>
                 <p>Mon–Thu · 8:00a – 5:00p</p>
                 <p>Fri · 7:30a – 1:30p</p>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.2em] text-white/60">Email</p>
-                <a href="mailto:office@eoswellington.com" className="text-lg text-white transition hover:text-[var(--accent)]">
+                <p className="text-sm uppercase tracking-[0.2em] text-[var(--muted)]">Email</p>
+                <a href="mailto:office@eoswellington.com" className="text-lg text-[var(--foreground)] transition hover:text-[var(--accent)]">
                   office@eoswellington.com
                 </a>
         </div>
@@ -470,7 +469,7 @@ export default function Home() {
                 href="/appointment"
                 className="inline-flex w-full justify-center rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
               >
-                Appointment Request Form
+                Appointment Request
               </Link>
             </div>
           </div>

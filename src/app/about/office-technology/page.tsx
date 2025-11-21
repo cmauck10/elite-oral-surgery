@@ -145,7 +145,7 @@ export default function OfficeTechnologyPage() {
         ))}
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#f8f8f8] to-[#fff5eb] p-8 lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Commitment to Excellence
@@ -186,7 +186,7 @@ export default function OfficeTechnologyPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             See the Difference
           </p>
