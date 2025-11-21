@@ -10,14 +10,14 @@ export const metadata = {
 
 export default function OurHistoryPage() {
   return (
-    <>
+    <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <PageIntro
         eyebrow="Our Story"
         title="Three decades of surgical excellence in Wellington"
         description="A legacy of compassionate care, clinical mastery, and unwavering commitment to patient wellbeing."
       />
 
-      <div className="mt-12 space-y-8">
+      <div className="mt-16 space-y-8">
         {/* Foundation */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
           <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
@@ -116,34 +116,34 @@ export default function OurHistoryPage() {
         </section>
 
         {/* Our Values */}
-        <section className="rounded-[32px] bg-gradient-to-br from-[#4b4b4b] to-[#2d2d2d] p-8 lg:p-12 text-white">
-          <h2 className="text-2xl font-semibold mb-6">
-            Our Values
-          </h2>
-          <p className="text-lg opacity-90 leading-relaxed mb-8">
+        <section>
+          <h2 className="font-serif text-3xl text-center mb-10">Our Core Values</h2>
+          <p className="text-lg text-[var(--muted)] text-center leading-relaxed mb-10 max-w-4xl mx-auto">
             Our state-of-the-art facility and compassionate team ensure every patient receives personalized, world-class care in a warm, stress-free environment. Proudly serving Wellington, Palm Beach County, and South Florida, we continue to uphold the values that have defined us for over 30 years:
           </p>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-3">
             {[
               {
                 title: "Surgical Excellence",
-                description: "Board-certified expertise and precision in every procedure",
+                description: "Board-certified expertise and precision in every procedure. Our commitment to continuous education and evidence-based protocols keeps our outcomes at the forefront of the field.",
               },
               {
                 title: "Genuine Compassion",
-                description: "A warm, patient-first approach to care",
+                description: "A warm, patient-first approach to care. We treat every patient as we would want our own family members to be treated, with respect, dignity, and empathy.",
               },
               {
                 title: "Relentless Commitment",
-                description: "Dedicated to our patients' well-being and comfort",
+                description: "Dedicated to our patients' well-being and comfort. From your first consultation to your final follow-up, we ensure your expectations are met and exceeded.",
               },
             ].map((value) => (
               <div
                 key={value.title}
-                className="rounded-2xl bg-white/10 backdrop-blur-sm p-6 border border-white/20"
+                className="rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
               >
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-sm opacity-80 leading-relaxed">{value.description}</p>
+                <h3 className="text-xl font-semibold text-[var(--foreground)] mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-sm text-[var(--muted)]">{value.description}</p>
               </div>
             ))}
           </div>
@@ -176,7 +176,7 @@ export default function OurHistoryPage() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 
