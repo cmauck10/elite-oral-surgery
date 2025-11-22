@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { services as serviceDetails } from "@/data/services";
 
 const serviceNavChildren = serviceDetails.map((service) => ({
@@ -110,10 +110,24 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<number | null>(null);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileOpen]);
+
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-white/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
           <Image
             src="/logo.png"
             alt="Elite Oral Surgery of Wellington logo"
@@ -236,52 +250,59 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-[var(--border)] bg-white px-6 py-6 lg:hidden">
-          <ul className="space-y-4">
-            {navItems.map((item) => (
-              <li key={item.label}>
-                <Link
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center justify-between text-base font-semibold text-[var(--foreground)]"
-                >
-                  {item.label}
+        <div className="max-h-[calc(100vh-73px)] border-t border-[var(--border)] bg-white lg:hidden">
+          {/* Fixed Appointment Button at Top */}
+          <div className="sticky top-0 z-10 bg-white px-6 py-4 border-b border-[var(--border)]">
+            <Link
+              href="/appointment"
+              onClick={() => setMobileOpen(false)}
+              className="inline-flex w-full items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-white"
+            >
+              Appointment Request
+            </Link>
+          </div>
+          
+          {/* Scrollable Menu Items */}
+          <div className="overflow-y-auto px-6 py-4 pb-8" style={{ maxHeight: 'calc(100vh - 73px - 64px)' }}>
+            <ul className="space-y-4">
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center justify-between text-base font-semibold text-[var(--foreground)]"
+                  >
+                    {item.label}
+                    {item.children && (
+                      <svg 
+                        className="h-4 w-4 text-[var(--muted)]"
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    )}
+                  </Link>
                   {item.children && (
-                    <svg 
-                      className="h-4 w-4 text-[var(--muted)]"
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
+                    <ul className="mt-2 space-y-2 text-sm text-[var(--muted)]">
+                      {item.children.map((child) => (
+                        <li key={child.label}>
+                          <Link
+                            href={child.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="block rounded-lg bg-[var(--background)] px-3 py-1.5"
+                          >
+                            {child.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   )}
-                </Link>
-                {item.children && (
-                  <ul className="mt-2 space-y-2 text-sm text-[var(--muted)]">
-                    {item.children.map((child) => (
-                      <li key={child.label}>
-                        <Link
-                          href={child.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="block rounded-lg bg-[var(--background)] px-3 py-1.5"
-                        >
-                          {child.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="/appointment"
-            onClick={() => setMobileOpen(false)}
-            className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-white"
-          >
-            Appointment Request
-          </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
     </header>
