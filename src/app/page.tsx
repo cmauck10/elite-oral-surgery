@@ -142,34 +142,34 @@ export default function Home() {
               />
             </video>
             <div className="absolute inset-0 bg-gradient-to-r from-[#1f1f1f]/90 via-[#4b4b4b]/80 to-[#ff8200]/30" />
-            <div className="relative z-10 flex h-full flex-col justify-between p-10 sm:p-16">
+            <div className="relative z-10 flex h-full flex-col justify-between p-6 sm:p-10 lg:p-16">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
                 The Elite Difference
               </p>
               <div>
-                <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-5xl">
+                <h1 className="max-w-3xl text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
                   Extraordinary Oral Surgery Experience in Wellington, Florida
                 </h1>
-                <p className="mt-6 max-w-xl text-lg text-white/80">
+                <p className="mt-4 max-w-xl text-base sm:text-lg text-white/80">
                   Led by <span className="font-semibold">Dr. Michael London, </span> we fuse surgical mastery,
                   state-of-the-art technology, and concierge-level hospitality for every patient.
                 </p>
-                <div className="mt-8 mb-10 flex flex-wrap gap-4">
+                <div className="mt-6 mb-6 sm:mt-8 sm:mb-10 flex flex-wrap gap-3 sm:gap-4">
                   <Link
                     href="/appointment"
-                    className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#ff8200]/40 transition hover:bg-[var(--accent-dark)]"
+                    className="rounded-full bg-[var(--accent)] px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-semibold text-white shadow-lg shadow-[#ff8200]/40 transition hover:bg-[var(--accent-dark)]"
                   >
                     Request an Appointment
                   </Link>
                   <Link
                     href="#services"
-                    className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:border-white"
+                    className="rounded-full border border-white/60 px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-semibold text-white transition hover:border-white"
                   >
                     Explore Services
                   </Link>
                 </div>
         </div>
-              <div className="flex flex-wrap gap-8 text-sm text-white/80">
+              <div className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 text-sm text-white/80">
                 <Link
                   href="https://maps.app.goo.gl/a4ZB9kYLWWRHBZDZ9"
             target="_blank"
@@ -178,8 +178,8 @@ export default function Home() {
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
-                  <p className="mt-1 text-3xl font-semibold text-white">4.8★</p>
-                  <p className="text-base text-white">Google Reviews</p>
+                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">4.8★</p>
+                  <p className="text-sm sm:text-base text-white">Google Reviews</p>
                 </Link>
                 <Link
                   href="/about/our-history"
@@ -187,8 +187,8 @@ export default function Home() {
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
-                  <p className="mt-1 text-3xl font-semibold text-white">25+</p>
-                  <p className="text-base text-white">Years of Experience</p>
+                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">25+</p>
+                  <p className="text-sm sm:text-base text-white">Years of Experience</p>
                 </Link>
                 <Link
                   href="/about/dr-michael-london"
@@ -196,8 +196,8 @@ export default function Home() {
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
-                  <p className="mt-1 text-3xl font-semibold text-white">ABOMS</p>
-                  <p className="text-base text-white">Board-Certified</p>
+                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">ABOMS</p>
+                  <p className="text-sm sm:text-base text-white">Board-Certified</p>
                 </Link>
               </div>
             </div>
