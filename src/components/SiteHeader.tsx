@@ -142,13 +142,13 @@ export function SiteHeader() {
             <div key={item.label} className="relative">
               {item.children ? (
                 <div onMouseLeave={() => setActiveMenu(null)}>
-              <button
-                type="button"
+              <Link
+                href={item.href}
                     className={`flex items-center gap-1 text-sm font-medium transition ${
                   activeMenu === index ? "text-[var(--accent)]" : "text-[var(--foreground)]"
                 }`}
                 onMouseEnter={() => setActiveMenu(index)}
-                onClick={() => setActiveMenu((prev) => (prev === index ? null : index))}
+                onClick={() => setActiveMenu(null)}
               >
                 {item.label}
                     <svg 
@@ -159,7 +159,7 @@ export function SiteHeader() {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
-              </button>
+              </Link>
                   {activeMenu === index && (
                     <div className="absolute left-1/2 top-full z-30 -translate-x-1/2 pt-4">
                       <div className="w-64 rounded-2xl border border-[var(--border)] bg-white/95 p-4 shadow-2xl transition duration-200">
