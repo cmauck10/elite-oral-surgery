@@ -127,9 +127,9 @@ export default function Home() {
 
       <main className="mx-auto max-w-7xl px-6 pb-24 pt-5 lg:px-8 lg:pb-32">
         <section id="home" className="pt-3">
-          <div className="relative aspect-[16/9] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)]">
+          <div className="relative h-[85vh] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)] lg:aspect-[16/9] lg:h-auto">
             <video
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-cover object-center"
               autoPlay
               loop
               muted

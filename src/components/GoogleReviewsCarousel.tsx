@@ -9,8 +9,14 @@ export function GoogleReviewsCarousel() {
   const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
   const [isPaused, setIsPaused] = useState(false);
   const [translateX, setTranslateX] = useState(0);
+  const [direction, setDirection] = useState(-1); // -1 for left (default), 1 for right
+  const [isDragging, setIsDragging] = useState(false);
   const animationRef = useRef<number | undefined>(undefined);
   const containerRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef(0);
+  const initialTranslateX = useRef(0);
+  const lastTouchX = useRef(0);
+  const lastTouchTime = useRef(0);
 
   const toggleReview = (index: number) => {
     setExpandedReviews((prev) => {
@@ -34,6 +40,50 @@ export function GoogleReviewsCarousel() {
     setExpandedReviews(new Set());
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    lastTouchX.current = e.touches[0].clientX;
+    lastTouchTime.current = Date.now();
+    initialTranslateX.current = translateX;
+    setIsPaused(true);
+    setIsDragging(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging) return;
+    
+    const currentX = e.touches[0].clientX;
+    const deltaX = currentX - touchStartX.current;
+    const newTranslateX = initialTranslateX.current + deltaX;
+    
+    setTranslateX(newTranslateX);
+    lastTouchX.current = currentX;
+    lastTouchTime.current = Date.now();
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+    
+    // Calculate velocity based on last movement
+    const currentTime = Date.now();
+    const timeDelta = currentTime - lastTouchTime.current;
+    const distanceDelta = lastTouchX.current - touchStartX.current;
+    
+    // If there was significant movement, determine direction
+    if (Math.abs(distanceDelta) > 10) {
+      if (distanceDelta > 0) {
+        // Swiped right, continue moving right
+        setDirection(1);
+      } else {
+        // Swiped left, continue moving left
+        setDirection(-1);
+      }
+    }
+
+    setIsPaused(false);
+    setExpandedReviews(new Set());
+  };
+
   useEffect(() => {
     let lastTimestamp = 0;
     const speed = 30; // pixels per second
@@ -42,12 +92,30 @@ export function GoogleReviewsCarousel() {
       if (!lastTimestamp) lastTimestamp = timestamp;
       const delta = timestamp - lastTimestamp;
 
-      if (!isPaused && containerRef.current) {
+      if (!isPaused && !isDragging && containerRef.current) {
         setTranslateX((prev) => {
-          const newPosition = prev - (speed * delta) / 1000;
-          // Reset when we've scrolled through half (one full set)
-          const resetPoint = -(containerRef.current!.scrollWidth / 2);
-          return newPosition <= resetPoint ? 0 : newPosition;
+          const movement = (speed * delta) / 1000;
+          // direction -1 (left): prev - movement (more negative)
+          // direction 1 (right): prev + movement (less negative)
+          const newPosition = prev + (movement * direction);
+          
+          const halfWidth = containerRef.current!.scrollWidth / 2;
+          
+          if (direction === -1) {
+            // Scrolling left (negative direction)
+            // Reset to 0 when we reach the halfway point
+            if (newPosition <= -halfWidth) {
+              return 0;
+            }
+            return newPosition;
+          } else {
+            // Scrolling right (positive direction)
+            // Reset to -halfWidth when we reach 0
+            if (newPosition >= 0) {
+              return -halfWidth + (newPosition % halfWidth);
+            }
+            return newPosition;
+          }
         });
       }
 
@@ -62,7 +130,7 @@ export function GoogleReviewsCarousel() {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [isPaused]);
+  }, [isPaused, direction, isDragging]);
 
   // Duplicate reviews for seamless loop
   const allReviews = [...googleReviews, ...googleReviews];
@@ -73,10 +141,14 @@ export function GoogleReviewsCarousel() {
         ref={containerRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         className="flex gap-4"
         style={{
           transform: `translate3d(${translateX}px, 0, 0)`,
-          willChange: isPaused ? "auto" : "transform",
+          willChange: isPaused || isDragging ? "transform" : "auto",
+          transition: isDragging ? "none" : undefined,
         }}
       >
         {allReviews.map((review, index) => {
@@ -90,7 +162,7 @@ export function GoogleReviewsCarousel() {
             <article
               key={`${review.name}-${index}`}
               className="flex w-[350px] flex-shrink-0 flex-col gap-3 rounded-2xl border border-[var(--border)] bg-white/90 p-4 shadow-[0_15px_40px_rgba(15,23,42,0.05)] transition-all duration-300"
-              style={{ height: isExpanded ? 'auto' : '240px' }}
+              style={{ height: isExpanded ? 'auto' : 'auto' }}
             >
               {/* Star Rating */}
               <div className="flex items-center gap-1">
@@ -106,16 +178,17 @@ export function GoogleReviewsCarousel() {
                 ))}
               </div>
 
-              {/* Review Text */}
+              {/* Review Text - Full on mobile, truncated on desktop */}
               <p className="text-sm leading-relaxed text-[var(--foreground)] flex-1 overflow-hidden">
-                {displayText}
+                <span className="lg:hidden">{review.text}</span>
+                <span className="hidden lg:inline">{displayText}</span>
               </p>
 
-              {/* Expand/Collapse Button */}
+              {/* Expand/Collapse Button - Desktop only */}
               {isLong && (
                 <button
                   onClick={() => toggleReview(index)}
-                  className="flex items-center gap-1 text-xs font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
+                  className="hidden lg:flex items-center gap-1 text-xs font-semibold text-[var(--accent)] transition hover:text-[var(--accent-dark)]"
                 >
                   {isExpanded ? "Show less" : "Read more"}
                   <svg
@@ -139,8 +212,8 @@ export function GoogleReviewsCarousel() {
       </div>
       
       {/* Gradient Overlays */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[var(--background)] to-transparent" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[var(--background)] to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-[var(--background)] to-transparent" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-[var(--background)] to-transparent" />
     </div>
   );
 }
