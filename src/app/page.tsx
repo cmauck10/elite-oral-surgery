@@ -251,7 +251,7 @@ export default function Home() {
                 Schedule with Dr. London
               </Link>
               <Link
-                href="#our-team"
+                href="/about/our-team"
                 className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-semibold text-[var(--foreground)]"
               >
                 Meet the Team
