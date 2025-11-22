@@ -111,7 +111,7 @@ export function SiteFooter() {
             Quick Links
           </p>
           <ul className="mt-3 space-y-2">
-            {["Home", "About", "Services", "Resources", "Appointment Request"].map(
+            {["Home", "About", "Services", "Resources", "Testimonials", "Appointment Request"].map(
               (link) => (
                 <li key={link}>
                   <Link
@@ -121,10 +121,12 @@ export function SiteFooter() {
                         : link === "About"
                           ? "/about"
                         : link === "Services"
-                          ? "/#services"
+                          ? "/services"
                           : link === "Resources"
                               ? "/resources"
-                              : "/appointment"
+                              : link === "Testimonials"
+                                ? "/testimonials"
+                                : "/appointment"
                     }
                     className="text-[var(--foreground)] hover:text-[var(--accent)] transition"
                   >

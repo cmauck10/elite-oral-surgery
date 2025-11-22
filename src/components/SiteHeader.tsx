@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     label: "Services",
-    href: "/#services",
+    href: "/services",
     children: serviceNavChildren,
   },
   {

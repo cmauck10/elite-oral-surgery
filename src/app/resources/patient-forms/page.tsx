@@ -20,7 +20,7 @@ export default function PatientFormsPage() {
                   href={section.zipFile}
                   download
                   className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-white px-4 py-2 text-sm font-semibold text-[var(--foreground)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                >
+          >
                   <svg
                     className="h-4 w-4"
                     fill="none"
@@ -71,9 +71,9 @@ export default function PatientFormsPage() {
                     </div>
                   </div>
                   <div className="flex w-full gap-2">
-                    <Link
-                      href={form.file}
-                      download
+            <Link
+              href={form.file}
+              download
                       className="flex-1 rounded-full bg-[var(--accent)] px-3 py-2 text-xs font-semibold text-white transition hover:bg-[var(--accent-dark)]"
                     >
                       Download
@@ -83,9 +83,9 @@ export default function PatientFormsPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 rounded-full border border-[var(--border)] bg-white px-3 py-2 text-xs font-semibold text-[var(--foreground)] transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                    >
+            >
                       View
-                    </Link>
+            </Link>
                   </div>
                 </div>
               ))}
