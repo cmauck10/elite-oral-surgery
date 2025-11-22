@@ -71,7 +71,7 @@ export default function OurTeamPage() {
         description="A collective of talented professionals united by a commitment to surgical excellence and compassionate care."
       />
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:p-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl leading-tight text-[var(--foreground)]">
             Experience you can trust
@@ -91,7 +91,7 @@ export default function OurTeamPage() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="group rounded-[28px] border border-[var(--border)] bg-white/90 overflow-hidden shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition hover:shadow-[0_25px_70px_rgba(15,23,42,0.12)]"
+              className="group rounded-[28px] border border-[var(--border)] bg-white/90 overflow-hidden shadow-card transition hover:shadow-card-hover"
             >
               <div className="relative h-72 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
                 <Image
@@ -121,7 +121,7 @@ export default function OurTeamPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] text-center">
             Team Values
@@ -161,7 +161,7 @@ export default function OurTeamPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Join the Elite Family
           </p>

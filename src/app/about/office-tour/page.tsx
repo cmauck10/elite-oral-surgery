@@ -51,7 +51,7 @@ export default function OfficeTourPage() {
         description="Step inside a practice designed to provide a comfortable, safe, and efficient experience for our patients."
       />
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-gradient-to-br from-white via-[#f8f8f8] to-[#fff5eb] p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-gradient-to-br from-white via-[#f8f8f8] to-[#fff5eb] p-8 shadow-section lg:p-12">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
           {/* Left side - Description */}
           <div className="flex flex-col justify-center">
@@ -91,7 +91,7 @@ export default function OfficeTourPage() {
           {galleryImages.map((image) => (
             <div
               key={image.title}
-              className="group overflow-hidden rounded-[28px] border border-[var(--border)] bg-white/90 shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition hover:shadow-[0_25px_70px_rgba(15,23,42,0.12)]"
+              className="group overflow-hidden rounded-[28px] border border-[var(--border)] bg-white/90 shadow-card transition hover:shadow-card-hover"
             >
               <div className="relative h-64 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
                 <Image
@@ -111,7 +111,7 @@ export default function OfficeTourPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
         <div className="max-w-4xl mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] text-center">
             Amenities & Features
@@ -145,7 +145,7 @@ export default function OfficeTourPage() {
 
       <section className="mt-16">
         <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
               Location & Hours
             </p>
@@ -199,7 +199,7 @@ export default function OfficeTourPage() {
           </div>
 
           <div className="space-y-8">
-            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
                 Operatory Certifications
               </p>
@@ -220,7 +220,7 @@ export default function OfficeTourPage() {
               </ul>
             </div>
 
-            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+            <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
                 Accessibility
               </p>
@@ -244,7 +244,7 @@ export default function OfficeTourPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Experience It Yourself
           </p>

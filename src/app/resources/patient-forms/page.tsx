@@ -47,7 +47,7 @@ export default function PatientFormsPage() {
               {section.forms.map((form) => (
                 <div
                   key={form.name}
-                  className="flex flex-col items-center justify-between gap-4 rounded-[24px] border border-[var(--border)] bg-white/95 p-6 text-center shadow-[0_15px_40px_rgba(15,23,42,0.06)]"
+                  className="flex flex-col items-center justify-between gap-4 rounded-[24px] border border-[var(--border)] bg-white/95 p-6 text-center shadow-sm-card"
                 >
                   <div className="flex flex-col items-center gap-3">
                     <div className="rounded-full bg-[var(--accent)]/10 p-4">
@@ -94,7 +94,7 @@ export default function PatientFormsPage() {
         ))}
       </div>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
           Questions About Your Forms?
         </p>

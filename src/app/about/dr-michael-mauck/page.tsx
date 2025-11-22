@@ -18,7 +18,7 @@ export default function DrMauckPage() {
         description="Board-certified oral and maxillofacial surgeon with more than 30 years of surgical excellence in South Florida."
       />
 
-      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
+      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
             src="/michael_mauck.png"
@@ -41,7 +41,7 @@ export default function DrMauckPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
         <h2 className="font-serif text-3xl mb-6">Building a Legacy in Wellington</h2>
         <div className="space-y-4 text-lg text-[var(--muted)]">
           <p>
@@ -151,7 +151,7 @@ export default function DrMauckPage() {
       </section>
 
       <section className="mt-16">
-        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Community & Family
           </p>
@@ -164,7 +164,7 @@ export default function DrMauckPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] border-2 border-[var(--accent)]/20 p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] border-2 border-[var(--accent)]/20 p-8 shadow-cta lg:p-12 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
           Continue the Legacy
         </p>

@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </div>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">1. Information We Collect</h2>
             
             <h3 className="text-xl font-semibold text-[var(--foreground)] mt-6 mb-3">Personal Information</h3>
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">2. How We Use Your Information</h2>
             <p className="mb-4">
               We use the information we collect to:
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
             </ul>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">3. How We Share Your Information</h2>
             <p className="mb-4">
               We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">4. Data Security</h2>
             <p className="mb-4">
               We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:
@@ -124,7 +124,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">5. HIPAA Compliance</h2>
             <p className="mb-4">
               Elite Oral Surgery of Wellington is a covered entity under the Health Insurance Portability and Accountability Act (HIPAA). Protected Health Information (PHI) collected in the course of providing healthcare services is governed by our HIPAA Notice of Privacy Practices, which is available at our office and provided to patients.
@@ -135,7 +135,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">6. Cookies and Tracking Technologies</h2>
             <p className="mb-4">
               Our website may use cookies and similar tracking technologies to enhance your browsing experience. Cookies are small data files stored on your device that help us:
@@ -150,14 +150,14 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">7. Third-Party Links</h2>
             <p>
               Our website may contain links to third-party websites (such as Google Maps, Facebook, Instagram, and Yelp). We are not responsible for the privacy practices or content of these third-party sites. We encourage you to review the privacy policies of any third-party sites you visit.
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">8. Your Privacy Rights</h2>
             <p className="mb-4">
               Depending on your location, you may have certain rights regarding your personal information, including:
@@ -174,21 +174,21 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">9. Children's Privacy</h2>
             <p>
               Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately so we can delete the information.
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">10. Data Retention</h2>
             <p>
               We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When we no longer need your information, we will securely delete or anonymize it.
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">11. Changes to This Privacy Policy</h2>
             <p className="mb-4">
               We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will notify you of any material changes by posting the updated policy on this page and updating the "Effective Date" at the top.
@@ -198,7 +198,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">12. Contact Us</h2>
             <p className="mb-4">
               If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:

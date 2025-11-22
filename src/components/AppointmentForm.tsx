@@ -58,7 +58,7 @@ export function AppointmentForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="relative mt-6 rounded-[32px] border border-[var(--border)] bg-white/90 px-8 pt-4 pb-8 shadow-[0_30px_70px_rgba(15,23,42,0.08)]"
+        className="relative mt-6 rounded-[32px] border border-[var(--border)] bg-white/90 px-8 pt-4 pb-8 shadow-form"
       >
         <div className={`space-y-3 ${submitted ? "pointer-events-none blur-sm opacity-40" : ""}`}>
           <div className="grid gap-4 md:grid-cols-2">

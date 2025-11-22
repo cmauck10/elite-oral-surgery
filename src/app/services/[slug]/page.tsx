@@ -70,7 +70,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <span className="text-[var(--accent)]">{service.name}</span>
         </div>
 
-        <section className="mt-10 grid gap-10 rounded-[32px] border border-[var(--border)] bg-white/90 p-6 shadow-[0_30px_90px_rgba(75,75,75,0.12)] lg:grid-cols-[minmax(0,0.95fr)_1.1fr] lg:p-10">
+        <section className="mt-10 grid gap-10 rounded-[32px] border border-[var(--border)] bg-white/90 p-6 shadow-section lg:grid-cols-[minmax(0,0.95fr)_1.1fr] lg:p-10">
           <div className="overflow-hidden rounded-[28px] bg-[var(--background)]">
             <Image
               src={service.image.src}

@@ -18,7 +18,7 @@ export default function TermsAndConditionsPage() {
         />
 
         <div className="mt-12 space-y-8 text-base text-[var(--muted)]">
-          <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <p className="text-sm text-[var(--muted)] mb-6">
               <strong>Effective Date:</strong> {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
@@ -30,7 +30,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </div>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">1. Acceptance of Terms</h2>
             <p className="mb-4">
               By accessing and using this Site, you accept and agree to be bound by these Terms and our Privacy Policy. These Terms apply to all visitors, users, and others who access or use the Site.
@@ -40,7 +40,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">2. Medical Disclaimer</h2>
             <p className="mb-4">
               <strong>Important:</strong> The information provided on this Site is for general informational purposes only and is not intended as medical advice, diagnosis, or treatment.
@@ -56,7 +56,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">3. No Doctor-Patient Relationship</h2>
             <p className="mb-4">
               Use of this Site and communication with Elite Oral Surgery of Wellington through this Site does not establish a doctor-patient relationship. A formal doctor-patient relationship is only established when:
@@ -72,7 +72,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">4. Appointment Requests</h2>
             <p className="mb-4">
               When you submit an appointment request through our Site:
@@ -89,7 +89,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">5. Use of the Site</h2>
             
             <h3 className="text-xl font-semibold text-[var(--foreground)] mt-6 mb-3">Permitted Use</h3>
@@ -119,7 +119,7 @@ export default function TermsAndConditionsPage() {
             </ul>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">6. Intellectual Property</h2>
             <p className="mb-4">
               All content on this Site, including but not limited to text, graphics, logos, images, audio clips, digital downloads, data compilations, and software, is the property of Elite Oral Surgery of Wellington or its content suppliers and is protected by United States and international copyright laws.
@@ -132,7 +132,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">7. Third-Party Links</h2>
             <p className="mb-4">
               This Site may contain links to third-party websites or services, including:
@@ -148,7 +148,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">8. Disclaimer of Warranties</h2>
             <p className="mb-4">
               THIS SITE AND ALL CONTENT, SERVICES, AND PRODUCTS ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
@@ -164,7 +164,7 @@ export default function TermsAndConditionsPage() {
             </ul>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">9. Limitation of Liability</h2>
             <p className="mb-4">
               TO THE FULLEST EXTENT PERMITTED BY LAW, ELITE ORAL SURGERY OF WELLINGTON, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
@@ -180,7 +180,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">10. Indemnification</h2>
             <p>
               You agree to indemnify, defend, and hold harmless Elite Oral Surgery of Wellington, its affiliates, officers, directors, employees, agents, and third-party service providers from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses arising from:
@@ -193,7 +193,7 @@ export default function TermsAndConditionsPage() {
             </ul>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">11. HIPAA and Privacy</h2>
             <p className="mb-4">
               Elite Oral Surgery of Wellington is committed to protecting your privacy and complying with the Health Insurance Portability and Accountability Act (HIPAA).
@@ -206,7 +206,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">12. Governing Law and Jurisdiction</h2>
             <p className="mb-4">
               These Terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions.
@@ -216,21 +216,21 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">13. Severability</h2>
             <p>
               If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The invalid or unenforceable provision shall be deemed modified to the extent necessary to make it valid and enforceable.
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">14. Entire Agreement</h2>
             <p>
               These Terms, together with our Privacy Policy, constitute the entire agreement between you and Elite Oral Surgery of Wellington regarding your use of the Site and supersede all prior agreements and understandings, whether written or oral.
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">15. Changes to Terms</h2>
             <p className="mb-4">
               We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the Site. Your continued use of the Site after any changes constitutes your acceptance of the new Terms.
@@ -240,7 +240,7 @@ export default function TermsAndConditionsPage() {
             </p>
           </section>
 
-          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <section className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
             <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-4">16. Contact Information</h2>
             <p className="mb-4">
               If you have questions about these Terms and Conditions, please contact us:

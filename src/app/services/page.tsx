@@ -30,7 +30,7 @@ export default function ServicesPage() {
             <Link
               key={service.href}
               href={service.href}
-              className="group flex flex-col gap-3 rounded-3xl border border-[var(--border)] bg-white/80 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition hover:border-[var(--accent)] hover:shadow-[0_25px_70px_rgba(75,75,75,0.18)]"
+              className="group flex flex-col gap-3 rounded-3xl border border-[var(--border)] bg-white/80 p-6 shadow-card transition hover:border-[var(--accent)] hover:shadow-card-hover"
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-semibold text-[var(--foreground)]">
@@ -53,7 +53,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Not Sure Where to Start?
           </p>

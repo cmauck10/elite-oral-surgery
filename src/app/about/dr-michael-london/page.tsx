@@ -18,7 +18,7 @@ export default function DrLondonPage() {
         description="Board-certified oral and maxillofacial surgeon dedicated to surgical excellence and compassionate care."
       />
 
-      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
+      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
             src="/michael_london.jpeg"
@@ -67,7 +67,7 @@ export default function DrLondonPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
         <div className="grid gap-10 lg:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -132,7 +132,7 @@ export default function DrLondonPage() {
       </section>
 
       <section className="mt-16">
-        <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+        <div className="rounded-[28px] border border-[var(--border)] bg-white/90 p-8 shadow-card">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
             Professional Memberships
           </p>
@@ -155,7 +155,7 @@ export default function DrLondonPage() {
       </section>
 
       <section className="mt-16">
-        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Philosophy
           </p>

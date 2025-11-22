@@ -20,7 +20,7 @@ export default function OurHistoryPage() {
 
       <div className="mt-16 space-y-8">
         {/* Foundation */}
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
@@ -53,7 +53,7 @@ export default function OurHistoryPage() {
         </section>
 
         {/* Expansion */}
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
@@ -85,7 +85,7 @@ export default function OurHistoryPage() {
         </section>
 
         {/* New Chapter */}
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
@@ -139,7 +139,7 @@ export default function OurHistoryPage() {
             ].map((value) => (
               <div
                 key={value.title}
-                className="rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
+                className="rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-card"
               >
                 <h3 className="text-xl font-semibold text-[var(--foreground)] mb-3">
                   {value.title}
@@ -151,7 +151,7 @@ export default function OurHistoryPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+        <section className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
             Join Our Legacy
           </p>

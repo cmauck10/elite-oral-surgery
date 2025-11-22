@@ -161,7 +161,7 @@ export function GoogleReviewsCarousel() {
           return (
             <article
               key={`${review.name}-${index}`}
-              className="flex w-[350px] flex-shrink-0 flex-col gap-3 rounded-2xl border border-[var(--border)] bg-white/90 p-4 shadow-[0_15px_40px_rgba(15,23,42,0.05)] transition-all duration-300"
+              className="flex w-[350px] flex-shrink-0 flex-col gap-3 rounded-2xl border border-[var(--border)] bg-white/90 p-4 shadow-sm-card transition-all duration-300 contain-layout"
               style={{ height: isExpanded ? 'auto' : 'auto' }}
             >
               {/* Star Rating */}

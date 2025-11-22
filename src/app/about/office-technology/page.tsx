@@ -93,7 +93,7 @@ export default function OfficeTechnologyPage() {
         description="Discover the advanced technology that makes Elite Oral Surgery a leader in digital workflows, regenerative medicine, and patient safety."
       />
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:p-12">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-3xl leading-tight text-[var(--foreground)]">
             Technology that transforms outcomes
@@ -111,7 +111,7 @@ export default function OfficeTechnologyPage() {
         {technologies.map((tech, index) => (
           <div
             key={tech.title}
-            className={`grid gap-8 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,23,42,0.06)] lg:grid-cols-2 lg:p-10 ${
+            className={`grid gap-8 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-card lg:grid-cols-2 lg:p-10 ${
               index % 2 === 1 ? "lg:grid-flow-dense" : ""
             }`}
           >
@@ -144,7 +144,7 @@ export default function OfficeTechnologyPage() {
         ))}
       </section>
 
-      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+      <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Commitment to Excellence
@@ -185,7 +185,7 @@ export default function OfficeTechnologyPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+        <div className="rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             See the Difference
           </p>

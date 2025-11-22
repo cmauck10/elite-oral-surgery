@@ -127,7 +127,7 @@ export default function Home() {
 
       <main className="mx-auto max-w-7xl px-6 pb-24 pt-5 lg:px-8 lg:pb-32">
         <section id="home" className="pt-3">
-          <div className="relative h-[85vh] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-[0_40px_120px_rgba(0,0,0,0.28)] lg:aspect-[16/9] lg:h-auto">
+          <div className="relative h-[85vh] overflow-hidden rounded-[32px] bg-[#1f1f1f] text-white shadow-hero lg:aspect-[16/9] lg:h-auto">
             <video
               className="absolute inset-0 h-full w-full object-cover object-center"
               autoPlay
@@ -206,7 +206,7 @@ export default function Home() {
 
         <section
           id="dr-michael-london"
-          className="mt-24 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12"
+          className="mt-24 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12"
         >
           <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
             <Image
@@ -337,7 +337,7 @@ export default function Home() {
               <Link
                 key={service.href}
                 href={service.href}
-                className="group flex flex-col gap-3 rounded-3xl border border-[var(--border)] bg-white/80 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition hover:border-[var(--accent)] hover:shadow-[0_25px_70px_rgba(75,75,75,0.18)]"
+                className="group flex flex-col gap-3 rounded-3xl border border-[var(--border)] bg-white/80 p-6 shadow-card transition hover:border-[var(--accent)] hover:shadow-card-hover"
               >
                 <div className="flex items-center justify-between">
                   <h3 className="text-lg font-semibold text-[var(--foreground)]">
@@ -385,7 +385,7 @@ export default function Home() {
             {caseStudies.map((caseStudy) => (
               <article
                 key={caseStudy.name}
-                className="flex flex-col gap-4 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
+                className="flex flex-col gap-4 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-card"
               >
                 <div className="flex items-center gap-3">
                   <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
@@ -440,7 +440,7 @@ export default function Home() {
 
         <section
           id="resources"
-          className="mt-24 rounded-[32px] bg-white/80 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.07)] lg:p-12"
+          className="mt-24 rounded-[32px] bg-white/80 p-8 shadow-section-md lg:p-12"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -453,7 +453,7 @@ export default function Home() {
               <Link
                 key={card.title}
                 href={card.href}
-                className="group rounded-3xl border border-[var(--border)] p-6 transition hover:border-[var(--accent)] hover:shadow-[0_20px_60px_rgba(15,23,42,0.1)]"
+                className="group rounded-3xl border border-[var(--border)] p-6 transition hover:border-[var(--accent)] hover:shadow-card-hover"
               >
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-semibold">{card.title}</h3>
@@ -465,7 +465,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-24 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+        <section className="mt-24 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">

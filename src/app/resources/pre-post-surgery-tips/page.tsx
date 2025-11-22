@@ -44,7 +44,7 @@ export default function PrePostTipsPage() {
         {sections.map((section) => (
           <article
             key={section.label}
-            className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)]"
+            className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md"
           >
             <h2 className="text-2xl font-semibold">{section.label}</h2>
             <ul className="mt-5 grid gap-3 text-sm text-[var(--foreground)]">
@@ -61,7 +61,7 @@ export default function PrePostTipsPage() {
         ))}
       </div>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12 text-center">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
           Ready for Your Procedure
         </p>

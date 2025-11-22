@@ -18,13 +18,14 @@ export default function AboutPage() {
         description="A sanctuary for elevated oral surgery experiences, where precision meets compassion."
       />
 
-      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-[0_30px_80px_rgba(15,23,42,0.08)] lg:grid-cols-2 lg:p-12">
+      <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-2 lg:p-12">
         <div className="relative aspect-[4/3] max-h-[400px] overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
             src="/office/facility.jpg"
             alt="Elite Oral Surgery reception area"
             fill
             className="object-cover mix-blend-multiply"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col justify-center gap-6">
@@ -65,7 +66,7 @@ export default function AboutPage() {
           ].map((value) => (
             <div
               key={value.title}
-              className="rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.06)]"
+              className="rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-card"
             >
               <h3 className="text-xl font-semibold text-[var(--foreground)] mb-3">
                 {value.title}
@@ -76,7 +77,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-[0_35px_90px_rgba(75,75,75,0.2)] lg:p-12">
+      <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Our Commitment
@@ -129,7 +130,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-16 text-center">
-        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_70px_rgba(15,23,42,0.08)] lg:p-12">
+        <div className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             Experience the Difference
           </p>

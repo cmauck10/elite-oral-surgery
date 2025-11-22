@@ -58,7 +58,7 @@ export default function InsurancePage() {
       />
 
       <div className="mt-12 space-y-8">
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-6">
             Insurance Acceptance
           </h2>
@@ -70,7 +70,7 @@ export default function InsurancePage() {
           </p>
         </section>
 
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-8">
             Insurance Plans We Accept
           </h2>
@@ -137,7 +137,7 @@ export default function InsurancePage() {
           </p>
         </section>
 
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-6">
             What if I don't have insurance?
           </h2>
@@ -146,7 +146,7 @@ export default function InsurancePage() {
           </p>
         </section>
 
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-6">
             How Insurance Works for Oral Surgery
           </h2>
@@ -180,7 +180,7 @@ export default function InsurancePage() {
           </div>
         </section>
 
-        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-[0_25px_60px_rgba(15,23,42,0.08)] lg:p-12">
+        <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mb-6">
             Insurance Verification Process
           </h2>

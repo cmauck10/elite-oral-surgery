@@ -48,7 +48,7 @@ export default function ResourcesIndexPage() {
           <Link
             key={card.title}
             href={card.href}
-            className="group flex flex-col gap-3 rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] transition hover:border-[var(--accent)] hover:shadow-[0_30px_80px_rgba(15,23,42,0.12)]"
+            className="group flex flex-col gap-3 rounded-[28px] border border-[var(--border)] bg-white/90 p-6 shadow-card transition hover:border-[var(--accent)] hover:shadow-section"
           >
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-semibold text-[var(--foreground)]">{card.title}</h2>
