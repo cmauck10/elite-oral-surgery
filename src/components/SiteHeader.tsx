@@ -11,7 +11,7 @@ const serviceNavChildren = serviceDetails.map((service) => ({
 }));
 
 const navItems = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/", scrollTop: true },
   {
     label: "About",
     href: "/about",
@@ -185,6 +185,12 @@ export function SiteHeader() {
                 <Link
                   href={item.href}
                   className="text-sm font-medium text-[var(--foreground)] transition hover:text-[var(--accent)]"
+                  onClick={(e) => {
+                    if (item.label === "Home" && window.location.pathname === "/") {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -266,12 +272,18 @@ export function SiteHeader() {
           <div className="overflow-y-auto px-6 py-4 pb-8" style={{ maxHeight: 'calc(100vh - 73px - 64px)' }}>
             <ul className="space-y-4">
               {navItems.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="flex items-center justify-between text-base font-semibold text-[var(--foreground)]"
-                  >
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  onClick={(e) => {
+                    setMobileOpen(false);
+                    if (item.label === "Home" && window.location.pathname === "/") {
+                      e.preventDefault();
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                  }}
+                  className="flex items-center justify-between text-base font-semibold text-[var(--foreground)]"
+                >
                     {item.label}
                     {item.children && (
                       <svg 
