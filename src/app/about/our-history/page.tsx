@@ -119,22 +119,22 @@ export default function OurHistoryPage() {
         {/* Our Values */}
         <section>
           <h2 className="font-serif text-3xl text-center mb-10">Our Core Values</h2>
-          <p className="text-lg text-[var(--muted)] text-center leading-relaxed mb-10 max-w-4xl mx-auto">
-            Our state-of-the-art facility and compassionate team ensure every patient receives personalized, world-class care in a warm, stress-free environment. Proudly serving Wellington, Palm Beach County, and South Florida, we continue to uphold the values that have defined us for over 30 years:
-          </p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               {
+                title: "Patient-First Philosophy",
+                description:
+                  "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would want our family members to be treated.",
+              },
+              {
                 title: "Surgical Excellence",
-                description: "Board-certified expertise and precision in every procedure. Our commitment to continuous education and evidence-based protocols keeps our outcomes at the forefront of the field.",
+                description:
+                  "Board-certified oral and maxillofacial surgeon, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
               },
               {
-                title: "Genuine Compassion",
-                description: "A warm, patient-first approach to care. We treat every patient as we would want our own family members to be treated, with respect, dignity, and empathy.",
-              },
-              {
-                title: "Relentless Commitment",
-                description: "Dedicated to our patients' well-being and comfort. From your first consultation to your final follow-up, we ensure your expectations are met and exceeded.",
+                title: "Outcome-Driven Care",
+                description:
+                  "From pre-op consultations to post-op calls, every interaction is designed to ease worry and ensure your expectations are met.",
               },
             ].map((value) => (
               <div
