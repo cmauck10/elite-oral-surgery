@@ -51,7 +51,7 @@ export function FacilitySlideshow({ images, intervalMs = 4000 }: FacilitySlidesh
               src={image.src}
               alt={image.title}
               fill
-              className="object-cover"
+              className="object-cover object-bottom"
               priority={index === 0}
             />
           </div>
