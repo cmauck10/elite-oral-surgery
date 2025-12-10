@@ -31,6 +31,14 @@ const galleryImages = [
     src: "/office/recovery-suite.jpg",
     title: "Recovery Suite",
   },
+  {
+    src: "/office/laboratory.jpg",
+    title: "Laboratory",
+  },
+  {
+    src: "/office/sterilization.jpg",
+    title: "Sterilization Center",
+  },
 ];
 
 export default function OfficeTourPage() {
