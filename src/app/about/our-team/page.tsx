@@ -12,13 +12,6 @@ export const metadata = {
 export default function OurTeamPage() {
   const teamMembers = [
     {
-      name: "Dr. Michael Mauck",
-      role: "Oral & Maxillofacial Surgeon",
-      image: "/michael_mauck.png",
-      bio: "Board-certified surgeon with expertise in full-arch implants, bone grafting, and regenerative surgical techniques.",
-      link: "/about/dr-michael-mauck",
-    },
-    {
       name: "Dr. Michael London",
       role: "Oral & Maxillofacial Surgeon",
       image: "/team/michael-london.jpg",
@@ -30,12 +23,6 @@ export default function OurTeamPage() {
       role: "Office Director",
       image: "/team/chris-mauck.jpg",
       bio: "Oversees practice operations and ensures every patient receives exceptional concierge-level care.",
-    },
-    {
-      name: "Leslie London",
-      role: "Practice Relations",
-      image: "/team/leslie-london.jpg",
-      bio: "Cultivates relationships with referring dentists and community partners throughout Palm Beach County.",
     },
     {
       name: "Ana Gonzalez",

@@ -25,7 +25,7 @@ export default function OurHistoryPage() {
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/michael_mauck.png"
+                src="/team/michael-mauck.png"
                 alt="Dr. Michael G. Mauck"
                 fill
                 className="object-cover"
