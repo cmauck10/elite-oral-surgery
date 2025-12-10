@@ -14,32 +14,22 @@ export default function OfficeTourPage() {
     {
       src: "/office/reception.jpg",
       title: "Reception Lounge",
-      description: "Warm, inviting space with comfortable seating, natural light, and a welcoming atmosphere for patients and families.",
     },
     {
       src: "/office/cbct.jpg",
       title: "CBCT Imaging",
-      description: "In-house 3D cone beam CT scanner for same-day diagnosis, precise surgical planning, and implant placement.",
     },
     {
       src: "/office/treatment-planning.jpg",
       title: "Treatment Planning",
-      description: "Private consultation rooms with digital displays for reviewing 3D scans and discussing personalized treatment options.",
     },
     {
       src: "/office/operating-room.jpg",
       title: "Advanced Operating Rooms",
-      description: "State-of-the-art surgical suites equipped with digital monitors, anesthesia stations, and sterile protocols.",
     },
     {
       src: "/office/recovery-suite.jpg",
       title: "Recovery Suite",
-      description: "Private, serene recovery rooms with vital sign monitoring, heated blankets, and dedicated nursing care.",
-    },
-    {
-      src: "/office/laboratory.jpg",
-      title: "Laboratory",
-      description: "On-site dental lab for fabricating surgical guides, temporary restorations, and custom implant components.",
     },
   ];
 
@@ -87,24 +77,23 @@ export default function OfficeTourPage() {
 
       <section className="mt-16">
         <h2 className="font-serif text-3xl text-center mb-10">Explore Our Facility</h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((image) => (
             <div
               key={image.title}
               className="group overflow-hidden rounded-[28px] border border-[var(--border)] bg-white/90 shadow-card transition hover:shadow-card-hover"
             >
-              <div className="relative h-64 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+              <div className="relative h-48 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
                 <Image
                   src={image.src}
                   alt={image.title}
-                  width={800}
-                  height={600}
+                  width={600}
+                  height={400}
                   className="h-full w-full object-cover mix-blend-multiply transition duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[var(--foreground)]">{image.title}</h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">{image.description}</p>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-semibold text-[var(--foreground)]">{image.title}</h3>
               </div>
             </div>
           ))}
