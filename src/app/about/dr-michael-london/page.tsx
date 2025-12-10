@@ -23,9 +23,10 @@ export default function DrLondonPage() {
           <Image
             src="/team/michael-london.jpg"
             alt="Dr. Michael London"
-            width={640}
-            height={800}
-            className="h-full w-full object-cover mix-blend-multiply"
+            width={1200}
+            height={1500}
+            quality={90}
+            className="h-full w-full object-cover brightness-[1.15]"
           />
         </div>
         <div className="flex flex-col justify-center gap-6">

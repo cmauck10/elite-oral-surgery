@@ -84,9 +84,10 @@ export default function OurTeamPage() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={400}
-                  height={500}
-                  className="h-full w-full object-cover mix-blend-multiply transition duration-500 group-hover:scale-105"
+                  width={800}
+                  height={1000}
+                  quality={90}
+                  className="h-full w-full object-cover brightness-[1.15] transition duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">
