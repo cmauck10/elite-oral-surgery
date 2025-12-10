@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
 import { Container } from "@/components/ui";
+import { FacilitySlideshow } from "@/components/FacilitySlideshow";
 
 export const metadata = {
   title: "Office Tour - Elite Oral Surgery",
@@ -9,29 +10,30 @@ export const metadata = {
     "Take a virtual tour of our state-of-the-art facility featuring private recovery suites, advanced technology, and comfort-focused design.",
 };
 
+const galleryImages = [
+  {
+    src: "/office/reception.jpg",
+    title: "Reception Lounge",
+  },
+  {
+    src: "/office/cbct.jpg",
+    title: "CBCT Imaging",
+  },
+  {
+    src: "/office/treatment-planning.jpg",
+    title: "Treatment Planning",
+  },
+  {
+    src: "/office/operating-room.jpg",
+    title: "Advanced Operating Rooms",
+  },
+  {
+    src: "/office/recovery-suite.jpg",
+    title: "Recovery Suite",
+  },
+];
+
 export default function OfficeTourPage() {
-  const galleryImages = [
-    {
-      src: "/office/reception.jpg",
-      title: "Reception Lounge",
-    },
-    {
-      src: "/office/cbct.jpg",
-      title: "CBCT Imaging",
-    },
-    {
-      src: "/office/treatment-planning.jpg",
-      title: "Treatment Planning",
-    },
-    {
-      src: "/office/operating-room.jpg",
-      title: "Advanced Operating Rooms",
-    },
-    {
-      src: "/office/recovery-suite.jpg",
-      title: "Recovery Suite",
-    },
-  ];
 
   return (
     <Container>
@@ -77,27 +79,7 @@ export default function OfficeTourPage() {
 
       <section className="mt-16">
         <h2 className="font-serif text-3xl text-center mb-10">Explore Our Facility</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {galleryImages.map((image) => (
-            <div
-              key={image.title}
-              className="group overflow-hidden rounded-[28px] border border-[var(--border)] bg-white/90 shadow-card transition hover:shadow-card-hover"
-            >
-              <div className="relative h-48 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
-                <Image
-                  src={image.src}
-                  alt={image.title}
-                  width={600}
-                  height={400}
-                  className="h-full w-full object-cover mix-blend-multiply transition duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold text-[var(--foreground)]">{image.title}</h3>
-              </div>
-            </div>
-          ))}
-        </div>
+        <FacilitySlideshow images={galleryImages} />
       </section>
 
       <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
