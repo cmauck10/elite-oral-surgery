@@ -20,6 +20,7 @@ const galleryImages = [
   {
     src: "/office/treatment-planning.jpg",
     label: "Treatment Planning",
+    objectPosition: "left bottom",
   },
   {
     src: "/office/operating-room.jpg",
@@ -141,7 +142,6 @@ export default function Home() {
                 type="video/mp4"
               />
             </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1f1f1f]/90 via-[#4b4b4b]/80 to-[#ff8200]/30" />
             <div className="relative z-10 flex h-full flex-col justify-between p-6 sm:p-10 lg:p-16">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
                 The Elite Difference
@@ -208,13 +208,14 @@ export default function Home() {
           id="dr-michael-london"
           className="mt-24 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12"
         >
-          <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+          <div className="relative overflow-hidden rounded-[28px]">
             <Image
               src="/team/michael-london.jpg"
               alt="Dr. Michael London smiling in office"
-              width={640}
-              height={800}
-              className="h-full w-full object-cover mix-blend-multiply"
+              width={1200}
+              height={1500}
+              quality={90}
+              className="h-full w-full object-cover"
               priority
             />
           </div>
@@ -308,6 +309,7 @@ export default function Home() {
                   width={420}
                   height={520}
                   className="h-60 w-full object-cover transition duration-500 group-hover:scale-105"
+                  style={image.objectPosition ? { objectPosition: image.objectPosition } : undefined}
                 />
                 <figcaption className="p-4 text-sm font-semibold text-[var(--foreground)]">
                   {image.label}
@@ -388,13 +390,13 @@ export default function Home() {
                 className="flex flex-col gap-4 rounded-3xl border border-[var(--border)] bg-white/90 p-6 shadow-card"
               >
                 <div className="flex items-center gap-3">
-                  <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+                  <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-full">
                     <Image
                       src={caseStudy.photo}
                       alt={caseStudy.name}
                       width={48}
                       height={48}
-                      className="h-full w-full object-cover mix-blend-multiply"
+                      className="h-full w-full object-cover"
                     />
                   </div>
                   <div>

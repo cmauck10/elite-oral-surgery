@@ -23,13 +23,13 @@ export default function TestimonialsPage() {
             className="grid gap-8 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.5fr] lg:p-12"
           >
             {/* Photo on left */}
-            <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+            <div className="relative overflow-hidden rounded-[28px]">
               <Image
                 src={testimonial.photo}
                 alt={`${testimonial.name} - ${testimonial.procedure}`}
                 width={400}
                 height={500}
-                className="h-full w-full object-cover mix-blend-multiply"
+                className="h-full w-full object-cover"
                 loading="lazy"
               />
             </div>

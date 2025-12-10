@@ -12,10 +12,25 @@ export const metadata = {
 export default function OfficeTechnologyPage() {
   const technologies = [
     {
+      title: "Comprehensive Software Suite",
+      description:
+        "Our integrated technology stack powers every aspect of patient care—from scheduling and imaging to prescriptions and AI-assisted documentation.",
+      image: "/tech-logos.jpg",
+      benefitsLabel: "Our Tech Stack",
+      benefits: [
+        "CareStack: All-in-one Electronic Health Record (EHR) and Patient Management System (PMS)",
+        "DEXIS: Advanced digital imaging and CBCT integration",
+        "XChart: Specialized sedation monitoring and documentation",
+        "DoseSpot: Secure electronic prescribing with real-time drug interaction alerts",
+        "Heidi AI: AI-powered clinical documentation and note generation",
+      ],
+    },
+    {
       title: "CBCT 3D Imaging",
       description:
         "Cone Beam Computed Tomography provides precise 3D visualization of bone structure, nerve pathways, and anatomical landmarks for surgical planning.",
       image: "/office/cbct.jpg",
+      benefitsLabel: "Imaging Advantages",
       benefits: [
         "Same-day diagnosis and treatment planning",
         "Sub-millimeter accuracy for implant placement",
@@ -24,34 +39,11 @@ export default function OfficeTechnologyPage() {
       ],
     },
     {
-      title: "Digital Impression Scanning",
-      description:
-        "Intraoral scanners capture highly accurate digital impressions without messy materials, improving comfort and precision.",
-      image: "/office/treatment-planning.jpg",
-      benefits: [
-        "No gagging from traditional impression trays",
-        "Instant feedback and re-scans if needed",
-        "Faster turnaround for surgical guides",
-        "Digital archives for future reference",
-      ],
-    },
-    {
-      title: "3D Surgical Guide Printing",
-      description:
-        "In-house 3D printing allows us to fabricate custom surgical guides that translate digital plans into precise physical templates.",
-      image: "/office/laboratory.jpg",
-      benefits: [
-        "Implant placement accuracy to the degree",
-        "Minimally invasive, flapless surgery options",
-        "Reduced surgical time and faster recovery",
-        "Predictable esthetic and functional outcomes",
-      ],
-    },
-    {
       title: "Platelet-Rich Fibrin (PRF)",
       description:
         "We centrifuge a small sample of your own blood to concentrate healing growth factors, then apply the PRF membrane to surgical sites.",
-      image: "/office/recovery-suite.jpg",
+      image: "/office/centrifuge.jpg",
+      benefitsLabel: "Healing Benefits",
       benefits: [
         "Accelerated bone and soft tissue healing",
         "Reduced post-operative pain and swelling",
@@ -64,23 +56,12 @@ export default function OfficeTechnologyPage() {
       description:
         "Board-certified anesthesia protocols with real-time vital sign monitoring ensure safe, comfortable sedation tailored to your needs.",
       image: "/office/operating-room.jpg",
+      benefitsLabel: "Safety Features",
       benefits: [
         "Twilight sedation with minimal memory of procedure",
         "Continuous pulse oximetry, EKG, and capnography",
         "Certified ACLS-trained surgical team",
         "Private recovery suites for post-sedation care",
-      ],
-    },
-    {
-      title: "Digital Treatment Planning Software",
-      description:
-        "Advanced software integrates CBCT scans, digital impressions, and prosthetic designs to simulate your entire treatment before surgery.",
-      image: "/office/facility.jpg",
-      benefits: [
-        "Visualize final results before surgery begins",
-        "Collaborate with your restorative dentist digitally",
-        "Optimize implant angulation and bone grafting",
-        "Patient-specific treatment timelines",
       ],
     },
   ];
@@ -115,12 +96,12 @@ export default function OfficeTechnologyPage() {
               index % 2 === 1 ? "lg:grid-flow-dense" : ""
             }`}
           >
-            <div className={`relative aspect-[4/3] overflow-hidden rounded-[24px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea] ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
+            <div className={`relative aspect-[4/3] overflow-hidden rounded-[24px] bg-[#f5f5f5] ${index % 2 === 1 ? "lg:col-start-2" : ""}`}>
               <Image
                 src={tech.image}
                 alt={tech.title}
                 fill
-                className="object-cover mix-blend-multiply"
+                className="object-cover"
               />
             </div>
             <div className={`flex flex-col justify-center ${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
@@ -128,7 +109,7 @@ export default function OfficeTechnologyPage() {
               <p className="mt-4 text-base text-[var(--muted)]">{tech.description}</p>
               <div className="mt-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-                  Key Benefits
+                  {tech.benefitsLabel}
                 </p>
                 <ul className="mt-3 space-y-2">
                   {tech.benefits.map((benefit) => (
@@ -166,13 +147,9 @@ export default function OfficeTechnologyPage() {
           {[
             "Hospital-grade sterilization and infection control",
             "Digital radiography with 90% less radiation",
-            "Ultrasonic piezoelectric bone surgery",
-            "Laser-assisted soft tissue procedures",
             "EXPAREL long-acting local anesthesia",
             "Electronic medical records and secure patient portal",
-            "Intraoperative nerve monitoring systems",
             "Regenerative biologics and tissue banking",
-            "Real-time surgical microscopy and magnification",
           ].map((feature) => (
             <div
               key={feature}

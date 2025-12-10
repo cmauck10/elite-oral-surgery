@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // All images are now local - no remote patterns needed
+  images: {
+    qualities: [75, 90],
+  },
 };
 
 export default nextConfig;

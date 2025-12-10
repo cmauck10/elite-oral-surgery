@@ -21,9 +21,9 @@ export default function OurHistoryPage() {
       <div className="mt-16 space-y-8">
         {/* Foundation */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
-          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+          <div className="grid lg:grid-cols-[375px_1fr] gap-8 items-start">
             {/* Image */}
-            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative aspect-[15/16] w-full max-w-[375px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/team/michael-mauck.png"
                 alt="Dr. Michael G. Mauck"
@@ -54,9 +54,9 @@ export default function OurHistoryPage() {
 
         {/* Expansion */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
-          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+          <div className="grid lg:grid-cols-[375px_1fr] gap-8 items-start">
             {/* Image */}
-            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative aspect-[15/16] w-full max-w-[375px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
                 src="/office/exterior.jpg"
                 alt="State-of-the-Art Facility - 2005"
@@ -86,12 +86,12 @@ export default function OurHistoryPage() {
 
         {/* New Chapter */}
         <section className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md lg:p-12">
-          <div className="grid lg:grid-cols-[300px_1fr] gap-8 items-start">
+          <div className="grid lg:grid-cols-[375px_1fr] gap-8 items-start">
             {/* Image */}
-            <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative aspect-[15/16] w-full max-w-[375px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/team/michael-london.jpg"
-                alt="Dr. Michael London"
+                src="/team/dr-london-and-chris.jpg"
+                alt="Dr. Michael London and Chris Mauck"
                 fill
                 className="object-cover"
               />
@@ -110,7 +110,7 @@ export default function OurHistoryPage() {
                 With Dr. Mauck's retirement from surgical operations, we mark the start of the next chapter for our team and our patients. Reopening in August 2025 as <span className="font-semibold text-[var(--foreground)]">Elite Oral Surgery of Wellington</span>, our practice will now be led by <Link href="/about/dr-michael-london" className="font-semibold text-[var(--foreground)] hover:text-[var(--accent)] transition">Dr. Michael London</Link>, a board-certified, experienced oral and maxillofacial surgeon.
               </p>
               <p className="mt-4 text-lg text-[var(--muted)] leading-relaxed">
-                Dr. London is dedicated to honoring Dr. Mauck's legacy while elevating care with cutting-edge techniques, advanced technology, and an unwavering focus on patient comfort.
+                Joining Dr. London is <span className="font-semibold text-[var(--foreground)]">Chris Mauck</span>, Dr. Mauck's son, who steps into the role of Office Director. Together, they are dedicated to honoring Dr. Mauck's legacy while elevating care with cutting-edge techniques, advanced technology, and an unwavering focus on patient comfort.
               </p>
             </div>
           </div>

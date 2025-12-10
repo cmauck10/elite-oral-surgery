@@ -80,14 +80,14 @@ export default function OurTeamPage() {
               key={member.name}
               className="group rounded-[28px] border border-[var(--border)] bg-white/90 overflow-hidden shadow-card transition hover:shadow-card-hover"
             >
-              <div className="relative h-72 overflow-hidden bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+              <div className="relative h-72 overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
                   width={800}
                   height={1000}
                   quality={90}
-                  className="h-full w-full object-cover brightness-[1.15] transition duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">

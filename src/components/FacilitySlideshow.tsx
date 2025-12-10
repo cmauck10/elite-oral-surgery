@@ -13,7 +13,7 @@ interface FacilitySlideshowProps {
   intervalMs?: number;
 }
 
-export function FacilitySlideshow({ images, intervalMs = 4000 }: FacilitySlideshowProps) {
+export function FacilitySlideshow({ images, intervalMs = 3000 }: FacilitySlideshowProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
@@ -56,9 +56,6 @@ export function FacilitySlideshow({ images, intervalMs = 4000 }: FacilitySlidesh
             />
           </div>
         ))}
-
-        {/* Gradient Overlay for Text Readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
         {/* Title Overlay - Bottom Left */}
         <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-12">

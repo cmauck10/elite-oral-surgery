@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
 import { Container } from "@/components/ui";
@@ -25,7 +24,7 @@ const galleryImages = [
   },
   {
     src: "/office/operating-room.jpg",
-    title: "Advanced Operating Rooms",
+    title: "Main Operating Room",
   },
   {
     src: "/office/recovery-suite.jpg",
@@ -50,6 +49,11 @@ export default function OfficeTourPage() {
         title="Welcome to Our Sanctuary"
         description="Step inside a practice designed to provide a comfortable, safe, and efficient experience for our patients."
       />
+
+      {/* Image Carousel - 90% width */}
+      <section className="mt-12 mx-auto" style={{ maxWidth: '90%' }}>
+        <FacilitySlideshow images={galleryImages} />
+      </section>
 
       <section className="mt-16 rounded-[32px] border border-[var(--border)] bg-gradient-to-br from-white via-[#f8f8f8] to-[#fff5eb] p-8 shadow-section lg:p-12">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
@@ -83,11 +87,6 @@ export default function OfficeTourPage() {
             </blockquote>
           </div>
         </div>
-      </section>
-
-      <section className="mt-16">
-        <h2 className="font-serif text-3xl text-center mb-10">Explore Our Facility</h2>
-        <FacilitySlideshow images={galleryImages} />
       </section>
 
       <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">

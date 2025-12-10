@@ -202,25 +202,55 @@ export const services: ServiceDetail[] = [
     ],
   },
   {
+    slug: "biopsy-pathology",
+    name: "Biopsy & Pathology",
+    summary:
+      "Expert diagnosis and treatment of oral lesions, cysts, and abnormal tissue with precise biopsy techniques.",
+    heroTitle: "Biopsy & Oral Pathology",
+    heroSubtitle:
+      "Early detection and accurate diagnosis of oral lesions, tumors, and abnormalities with advanced tissue analysis.",
+    overview: [
+      "Our team performs comprehensive oral examinations and biopsies to diagnose a wide range of conditions, from benign cysts to precancerous lesions.",
+      "We coordinate with pathology laboratories and oncology specialists when needed to ensure you receive timely, accurate diagnoses and appropriate treatment plans.",
+    ],
+    highlights: [
+      "Incisional and excisional biopsy techniques",
+      "Cyst and tumor removal",
+      "Oral cancer screening",
+      "Coordination with oncology specialists",
+    ],
+    image: {
+      src: "/services/pathology.jpg",
+      alt: "Oral pathology examination",
+    },
+    seoDescription:
+      "Oral biopsy and pathology services in Wellington for accurate diagnosis of lesions, cysts, and oral abnormalities.",
+    keywords: [
+      "oral biopsy Wellington",
+      "oral pathology",
+      "oral cancer screening",
+      "cyst removal oral surgeon",
+    ],
+  },
+  {
     slug: "emergency-care",
     name: "Emergency Care",
     summary:
       "Rapid access to oral surgeons for facial trauma, dental injuries, infections, and post-surgical concerns.",
     heroTitle: "Emergency Oral Surgery",
     heroSubtitle:
-      "On-call surgeons and same-day imaging tackle everything from avulsed teeth to complex lacerations.",
+      "We accept emergency patients and are equipped to handle a wide range of dental emergencies.",
     overview: [
-      "We coordinate with ER teams, dentists, and physicians to stabilize injuries while preserving long-term function.",
-      "CBCT imaging, splinting, and regenerative techniques are available on demand.",
+      "We coordinate with referring dentists to ensure expedited care to get you out of pain.",
     ],
     highlights: [
-      "24/7 surgeon triage line",
-      "Facial trauma repair",
+      "Same-day emergency services",
+      "Infected teeth extraction",
       "Abscess + infection drainage",
-      "Sports dentistry partnerships",
+      "Pain management solutions",
     ],
     image: {
-      src: "/services/pathology.jpg",
+      src: "/services/emergency.jpg",
       alt: "Surgeon reviewing emergency imaging",
     },
     seoDescription:

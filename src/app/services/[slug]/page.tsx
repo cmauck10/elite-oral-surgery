@@ -61,7 +61,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Link>
           <span>/</span>
           <Link
-            href="/#services"
+            href="/services"
             className="font-semibold text-[var(--foreground)] hover:text-[var(--accent)]"
           >
             Services
@@ -70,67 +70,71 @@ export default async function ServicePage({ params }: ServicePageProps) {
           <span className="text-[var(--accent)]">{service.name}</span>
         </div>
 
-        <section className="mt-10 grid gap-10 rounded-[32px] border border-[var(--border)] bg-white/90 p-6 shadow-section lg:grid-cols-[minmax(0,0.95fr)_1.1fr] lg:p-10">
-          <div className="overflow-hidden rounded-[28px] bg-[var(--background)]">
-            <Image
-              src={service.image.src}
-              alt={service.image.alt}
-              width={720}
-              height={900}
-              className="h-full w-full object-cover"
-              priority
-            />
-          </div>
-          <div className="flex flex-col gap-6">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-                Elite Oral Surgery of Wellington
-              </p>
-              <h1 className="mt-4 font-serif text-4xl text-[var(--foreground)]">
-                {service.heroTitle}
-              </h1>
-              <p className="mt-3 text-lg text-[var(--muted)]">{service.heroSubtitle}</p>
+        <section className="mt-10 rounded-[32px] border border-[var(--border)] bg-white/90 p-6 shadow-section lg:p-10">
+          {/* Top row: Image + Title/Description side by side */}
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] items-start">
+            <div className="overflow-hidden rounded-[28px] bg-[var(--background)] aspect-[4/3] relative">
+              <Image
+                src={service.image.src}
+                alt={service.image.alt}
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
-            <div className="space-y-4 text-sm leading-relaxed text-[var(--foreground)]">
-              {service.overview.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-                Treatment Highlights
-              </p>
-              <ul className="mt-4 grid gap-3 text-sm text-[var(--foreground)] sm:grid-cols-2">
-                {service.highlights.map((highlight) => (
-                  <li
-                    key={highlight}
-                    className="rounded-2xl border border-[var(--border)] bg-white/80 px-4 py-3 font-medium"
-                  >
-                    {highlight}
-                  </li>
+            <div className="flex flex-col gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+                  Elite Oral Surgery of Wellington
+                </p>
+                <h1 className="mt-4 font-serif text-4xl text-[var(--foreground)]">
+                  {service.heroTitle}
+                </h1>
+                <p className="mt-3 text-lg text-[var(--muted)]">{service.heroSubtitle}</p>
+              </div>
+              <div className="space-y-4 text-sm leading-relaxed text-[var(--foreground)]">
+                {service.overview.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
                 ))}
-              </ul>
+              </div>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <Link
+                  href="/appointment"
+                  className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
+                >
+                  Request an Appointment
+                </Link>
+                <a
+                  href="tel:15617900206"
+                  className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-semibold text-[var(--foreground)]"
+                >
+                  Call (561) 790-0206
+                </a>
+              </div>
             </div>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Link
-                href="/appointment"
-                className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[var(--accent-dark)]"
-              >
-                Request an Appointment
-              </Link>
-              <a
-                href="tel:15617900206"
-                className="rounded-full border border-[var(--border)] px-6 py-3 text-sm font-semibold text-[var(--foreground)]"
-              >
-                Call (561) 790-0206
-              </a>
-            </div>
+          </div>
+
+          {/* Treatment Highlights below */}
+          <div className="mt-10 pt-10 border-t border-[var(--border)]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
+              Treatment Highlights
+            </p>
+            <ul className="mt-4 grid gap-3 text-sm text-[var(--foreground)] sm:grid-cols-2 lg:grid-cols-4">
+              {service.highlights.map((highlight) => (
+                <li
+                  key={highlight}
+                  className="rounded-2xl border border-[var(--border)] bg-white/80 px-4 py-3 font-medium"
+                >
+                  {highlight}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
         <div className="mt-12 rounded-[24px] border border-dashed border-[var(--border)] bg-white/70 p-6 text-sm text-[var(--muted)]">
           Looking for another treatment? Explore{" "}
-          <Link href="/#services" className="font-semibold text-[var(--accent)]">
+          <Link href="/services" className="font-semibold text-[var(--accent)]">
             all services
           </Link>{" "}
           or reach out to our concierge team for a custom plan.

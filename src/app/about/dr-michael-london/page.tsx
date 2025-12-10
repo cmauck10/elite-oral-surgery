@@ -19,14 +19,14 @@ export default function DrLondonPage() {
       />
 
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
-        <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+        <div className="relative overflow-hidden rounded-[28px]">
           <Image
             src="/team/michael-london.jpg"
             alt="Dr. Michael London"
             width={1200}
             height={1500}
             quality={90}
-            className="h-full w-full object-cover brightness-[1.15]"
+            className="h-full w-full object-cover"
           />
         </div>
         <div className="flex flex-col justify-center gap-6">

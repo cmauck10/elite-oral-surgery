@@ -19,12 +19,12 @@ export default function AboutPage() {
       />
 
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-2 lg:p-12">
-        <div className="relative aspect-[4/3] max-h-[400px] overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
+        <div className="relative aspect-[4/3] max-h-[400px] overflow-hidden rounded-[28px]">
           <Image
             src="/office/facility.jpg"
             alt="Elite Oral Surgery reception area"
             fill
-            className="object-cover mix-blend-multiply"
+            className="object-cover"
             loading="lazy"
           />
         </div>
