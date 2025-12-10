@@ -21,7 +21,7 @@ export default function DrLondonPage() {
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.1fr] lg:p-12">
         <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
           <Image
-            src="/michael_london.jpeg"
+            src="/team/michael-london.jpg"
             alt="Dr. Michael London"
             width={640}
             height={800}

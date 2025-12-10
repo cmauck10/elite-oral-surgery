@@ -210,7 +210,7 @@ export default function Home() {
         >
           <div className="relative overflow-hidden rounded-[28px] bg-gradient-to-b from-[#d8c4b3] to-[#f7f1ea]">
             <Image
-              src="/michael_london.jpeg"
+              src="/team/michael-london.jpg"
               alt="Dr. Michael London smiling in office"
               width={640}
               height={800}

@@ -90,7 +90,7 @@ export default function OurHistoryPage() {
             {/* Image */}
             <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/michael_london.jpeg"
+                src="/team/michael-london.jpg"
                 alt="Dr. Michael London"
                 fill
                 className="object-cover"
