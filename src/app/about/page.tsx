@@ -21,8 +21,8 @@ export default function AboutPage() {
       <section className="mt-16 grid gap-12 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-2 lg:p-12">
         <div className="relative aspect-[4/3] max-h-[400px] overflow-hidden rounded-[28px]">
           <Image
-            src="/office/facility.jpg"
-            alt="Elite Oral Surgery reception area"
+            src="/team/team.jpg"
+            alt="The Elite Oral Surgery team"
             fill
             className="object-cover"
             loading="lazy"
