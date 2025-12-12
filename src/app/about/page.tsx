@@ -51,17 +51,17 @@ export default function AboutPage() {
             {
               title: "Patient-First Philosophy",
               description:
-                "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would want our family members to be treated.",
+                "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would our family.",
             },
             {
               title: "Surgical Excellence",
               description:
-                "Board-certified oral and maxillofacial surgeon, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
+                "Board-certification, modern surgical techniques, rigorous safety standards, and continued education ensure our procedures are precise, safe, and predictable.",
             },
             {
               title: "Outcome-Driven Care",
               description:
-                "From pre-op consultations to post-op calls, every interaction is designed to ease worry and ensure your expectations are met.",
+                "We start with the end in mind. In coordination with your dentist, we tailor your treatment for your desired prosthetic result.",
             },
           ].map((value) => (
             <div
@@ -80,7 +80,7 @@ export default function AboutPage() {
       <section className="mt-16 rounded-[32px] bg-gradient-to-br from-[#e8e8e8] to-[#ffecd9] p-8 shadow-cta lg:p-12">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-            Our Commitment
+            The Elite Difference
           </p>
           <h2 className="mt-4 font-serif text-3xl leading-tight">
             Redefining the oral surgery experience
@@ -88,7 +88,7 @@ export default function AboutPage() {
           <p className="mt-6 text-lg text-[var(--muted)]">
             We recognize that oral surgery can feel overwhelming. That's why we've built a practice
             that anticipates your needs before you voice them. Our concierge approach includes
-            pre-visit communication, same-day imaging and treatment planning, multiple sedation
+            pre-visit communication, same-day imaging and treatment planning, multiple anesthesia
             modalities, and a dedicated recovery suite to monitor you after surgery.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -112,12 +112,12 @@ export default function AboutPage() {
         <h2 className="font-serif text-3xl text-center mb-10">What Sets Us Apart</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {[
-            "Relentless focus on patient safety, comfort, and outcomes",
-            "In-house CBCT suite for same-day 3D imaging",
+            "Relentless focus on patient comfort and predictable outcomes",
+            "High-resoluton, 3D CBCT digital imaging technology for accurate diagnosis and treatment planning",
+            "Over a decade of experience in advanced surgical techniques and patient care",
+            "Same-day emergency availability for urgent cases",
+            "Multiple sedation options including IV sedation, oral sedation, local anesthesia, and nitrous oxide",
             "Private recovery suite with post-sedation monitoring",
-            "Multiple sedation options including IV sedation, local anesthesia, and nitrous oxide",
-            "Emergency availability for urgent cases",
-            "Collaborative care with your referring dentist or specialist",
           ].map((feature) => (
             <div
               key={feature}

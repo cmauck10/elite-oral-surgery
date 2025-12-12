@@ -19,7 +19,7 @@ export const services: ServiceDetail[] = [
     slug: "implants",
     name: "Dental Implants",
     summary:
-      "Digitally guided implant placement with same-day temporaries and regenerative biomaterials for long-term stability.",
+      "Prosthetically driven and digitally planned implant placement with clinically proven, high quality bio-materials.",
     heroTitle: "Dental Implants",
     heroSubtitle:
       "Life-proof smiles crafted with CBCT planning, intraoral scanning, and custom titanium or zirconia solutions.",
@@ -28,10 +28,10 @@ export const services: ServiceDetail[] = [
       "From single-tooth replacement to complex reconstruction after trauma, every case is mapped for function, esthetics, and longevity.",
     ],
     highlights: [
-      "CBCT-guided surgical guides",
-      "Same-day provisional crowns",
-      "PRF + bone grafting protocols",
-      "Zygomatic and pterygoid implant options",
+      "CBCT-guided surgical planning",
+      "Full-arch reconstruction",
+      "Zygomatic, pterygoid, and custom implant options",
+      "PRF + bone regeneration protocols",
     ],
     image: {
       src: "/services/implants.jpg",
@@ -50,7 +50,7 @@ export const services: ServiceDetail[] = [
     slug: "all-on-x",
     name: "All-on-X",
     summary:
-      "Full-arch implant transformations delivered with photogrammetry, provisional smiles, and curated recovery pathways.",
+      "Full-arch implant transformations delivered with the highest safety standards at every stage and your final smile and functional goals in mind.",
     heroTitle: "All-on-X Full-Arch",
     heroSubtitle:
       "Transformative smile designs with four to six implants, immediate load temporaries, and on-site lab customization.",
@@ -62,7 +62,7 @@ export const services: ServiceDetail[] = [
       "Day-of-surgery provisional smile",
       "Anesthesia + comfort concierge",
       "Pink esthetics sculpting",
-      "Maintenance and warranty program",
+      "Maintenance and  program",
     ],
     image: {
       src: "/services/all-on-x.jpg",
@@ -81,7 +81,7 @@ export const services: ServiceDetail[] = [
     slug: "iv-sedation",
     name: "IV Sedation",
     summary:
-      "Board-certified anesthesia protocols tailored to your history, ensuring you remain relaxed, safe, and deeply comfortable.",
+      "Board-certified anesthesia protocols tailored to your history, ensuring you remain relaxed, safe, and comfortable.",
     heroTitle: "IV Sedation & Anesthesia",
     heroSubtitle:
       "Experience advanced oral surgery care while fully relaxed with personalized sedation medicine delivered by hospital-trained surgeons.",
@@ -90,9 +90,9 @@ export const services: ServiceDetail[] = [
       "We combine warm blankets, aromatherapy, and private recovery suites so you awaken calm and supported.",
     ],
     highlights: [
-      "Board-certified anesthesia providers",
-      "Smart pumps + continuous monitoring",
-      "Private recovery lounges",
+      "Board-certified anesthesia provider",
+      "Continuous monitoring with electronic anesthesia charting",
+      "Private recovery suite",
       "Tailored post-op comfort kits",
     ],
     image: {
@@ -112,7 +112,7 @@ export const services: ServiceDetail[] = [
     slug: "wisdom-teeth-removal",
     name: "Wisdom Teeth Removal",
     summary:
-      "Predictable, gentle third-molar extractions with PRF, minimal swelling protocols, and curated recovery instructions.",
+      "Predictable, gentle third-molar extractions using Enhanced Recovery After Surgery (ERAS) protocols and personalized post-operative care.",
     heroTitle: "Wisdom Teeth Removal",
     heroSubtitle:
       "Modern diagnostics ensure we remove third molars before they threaten surrounding teeth, airways, or orthodontic results.",
@@ -122,9 +122,9 @@ export const services: ServiceDetail[] = [
     ],
     highlights: [
       "3D CBCT nerve mapping",
-      "Sedation options from nitrous to IV",
-      "Weekend follow-up access",
-      "Recovery concierge check-ins",
+      "PRF to reduce risk of dry sockets",
+      "Exparel to reduce post-operative pain",
+      "Sedation options for your comfort",
     ],
     image: {
       src: "/services/wisdom-teeth.jpg",
@@ -143,7 +143,7 @@ export const services: ServiceDetail[] = [
     slug: "tooth-extractions",
     name: "Tooth Extractions",
     summary:
-      "Atraumatic removal techniques that protect bone volume and pave the way for implants or grafting.",
+      "Atraumatic removal techniques that protect bone volume and pave the way for bone regeneration and dental implant placement.",
     heroTitle: "Tooth Extractions",
     heroSubtitle:
       "Whether due to decay, fractures, or orthodontic needs, we remove teeth with precision and immediate site preservation.",
@@ -153,9 +153,9 @@ export const services: ServiceDetail[] = [
     ],
     highlights: [
       "Socket preservation grafts",
-      "Piezosurgery instrumentation",
-      "Nitrous, oral, or IV sedation",
-      "Collaboration with your dentist",
+      "Guided tissue regeneration techniques",
+      "Custom bone grafting techniques",
+      "Interdisiplinary collaboration with your dentist",
     ],
     image: {
       src: "/services/extractions.jpg",
@@ -174,7 +174,7 @@ export const services: ServiceDetail[] = [
     slug: "bone-grafting",
     name: "Bone Grafting",
     summary:
-      "Regenerative bone and soft tissue grafting to rebuild arches for implants, orthodontics, or trauma repair.",
+      "Regenerative bone grafting techniques to restore volume of lost bone for future implant placement.",
     heroTitle: "Bone & Soft Tissue Grafting",
     heroSubtitle:
       "Advanced biologics, membranes, and 3D-printed scaffolds restore the foundation for implants and facial harmony.",
@@ -183,10 +183,10 @@ export const services: ServiceDetail[] = [
       "Soft-tissue grafting refines esthetics while stabilizing peri-implant health.",
     ],
     highlights: [
-      "Sinus augmentation + lateral windows",
+      "High-quality clinically proven bio-materials",
       "Ridge-split + tenting techniques",
       "PRF + BMP regenerative options",
-      "Soft tissue microsurgery",
+      "3D CBCT planning for optimal graft placement",
     ],
     image: {
       src: "/services/bone-grafting.jpg",
@@ -205,8 +205,8 @@ export const services: ServiceDetail[] = [
     slug: "biopsy-pathology",
     name: "Biopsy & Pathology",
     summary:
-      "Expert diagnosis and treatment of oral lesions, cysts, and abnormal tissue with precise biopsy techniques.",
-    heroTitle: "Biopsy & Oral Pathology",
+      "Expert diagnosis and treatment of oral mucosal lesions, cysts, and abnormal tissue.",
+    heroTitle: "Biopsy & Pathology",
     heroSubtitle:
       "Early detection and accurate diagnosis of oral lesions, tumors, and abnormalities with advanced tissue analysis.",
     overview: [
@@ -215,7 +215,7 @@ export const services: ServiceDetail[] = [
     ],
     highlights: [
       "Incisional and excisional biopsy techniques",
-      "Cyst and tumor removal",
+      "Cyst and tumor evaluation",
       "Oral cancer screening",
       "Coordination with oncology specialists",
     ],
@@ -236,17 +236,15 @@ export const services: ServiceDetail[] = [
     slug: "emergency-care",
     name: "Emergency Care",
     summary:
-      "Rapid access to oral surgeons for facial trauma, dental injuries, infections, and post-surgical concerns.",
-    heroTitle: "Emergency Oral Surgery",
+      "Rapid access to emergency care for facial or dental trauma, dental infections, and post-surgical concerns.",
+    heroTitle: "Emergency Care",
     heroSubtitle:
       "We accept emergency patients and are equipped to handle a wide range of dental emergencies.",
-    overview: [
-      "We coordinate with referring dentists to ensure expedited care to get you out of pain.",
-    ],
+    overview: [],
     highlights: [
       "Same-day emergency services",
       "Infected teeth extraction",
-      "Abscess + infection drainage",
+      "Abscess and infection management",
       "Pain management solutions",
     ],
     image: {
@@ -266,7 +264,7 @@ export const services: ServiceDetail[] = [
     slug: "orthognathic-surgery",
     name: "Orthognathic Surgery",
     summary:
-      "Jaw surgery tailored for airway, bite harmony, and facial balance using virtual surgical planning.",
+      "Corrective jaw surgery tailored to improve bite and facial harmony.",
     heroTitle: "Orthognathic Surgery",
     heroSubtitle:
       "We partner with orthodontists to reposition jaws, unlock airway space, and harmonize facial esthetics.",
@@ -276,7 +274,7 @@ export const services: ServiceDetail[] = [
     ],
     highlights: [
       "Virtual surgical planning (VSP)",
-      "Airway + sleep assessment",
+      "Custom surgical guides",
       "3D printed surgical splints",
       "Coordinated orthodontic care",
     ],
@@ -291,6 +289,37 @@ export const services: ServiceDetail[] = [
       "jaw surgery Wellington",
       "sleep apnea jaw surgery",
       "VSP oral surgeon",
+    ],
+  },
+  {
+    slug: "tmj-facial-pain",
+    name: "TMJ & Facial Pain",
+    summary:
+      "Detailed diagnostic services and surgical management of temporomandibular joint (TMJ) and facial pain disorders.",
+    heroTitle: "TMJ & Facial Pain Disorders",
+    heroSubtitle:
+      "Comprehensive evaluation and treatment of temporomandibular joint dysfunction and chronic facial pain conditions.",
+    overview: [
+      "Our team provides thorough diagnostic workups including imaging, clinical examination, and bite analysis to identify the root cause of your TMJ or facial pain symptoms.",
+      "Treatment options range from conservative therapies and splint therapy to advanced surgical interventions when necessary, all tailored to restore comfort and function.",
+    ],
+    highlights: [
+      "Comprehensive 3D CBCT TMJ imaging",
+      "Certified Maxillofacial radiology interpretation",
+      "Non-surgical and surgical management options",
+
+    ],
+    image: {
+      src: "/services/tmj.png",
+      alt: "TMJ examination and diagnosis",
+    },
+    seoDescription:
+      "TMJ and facial pain treatment in Wellington with comprehensive diagnostics and personalized surgical and non-surgical management options.",
+    keywords: [
+      "TMJ treatment Wellington",
+      "facial pain specialist",
+      "TMJ disorder oral surgeon",
+      "jaw pain treatment",
     ],
   },
 ];

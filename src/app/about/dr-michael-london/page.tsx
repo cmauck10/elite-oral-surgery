@@ -49,14 +49,14 @@ export default function DrLondonPage() {
         <h2 className="font-serif text-3xl text-center mb-10">Credentials & Expertise</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {[
-            "Diplomate, American Board of Oral & Maxillofacial Surgery",
-            "Fellow, American Association of Oral & Maxillofacial Surgeons",
-            "All-on-X Full-Arch implant pioneer",
-            "Certified in IV conscious sedation",
+            "American Board of Oral & Maxillofacial Surgery Diplomate ",
+            "American Association of Oral & Maxillofacial Surgeons Fellow",
+            "American Dental Association Active Member",
+            "All-on-X Full-Arch implant surgeon",
+            "IV sedation certified",
             "Advanced training in bone grafting and sinus augmentation",
-            "Faculty lecturer on digital surgical workflows",
-            "Member, American Dental Association",
-            "Active participant in implant research and clinical trials",
+            "Multi-location hospital privileges",
+            "Continuing education lecturer",
           ].map((credential) => (
             <div
               key={credential}
@@ -80,16 +80,16 @@ export default function DrLondonPage() {
             <div className="mt-6 space-y-4">
               {[
                 {
-                  degree: "DMD, Doctor of Dental Medicine",
-                  institution: "McGill University, Montreal, Canada",
+                  degree: "Oral & Maxillofacial Surgery Residency",
+                  institution: "Emory University School of Medicine, Atlanta, GA",
                 },
                 {
-                  degree: "General Practice Residency",
+                  degree: "General Practice Residency in Dentistry",
                   institution: "University of British Columbia",
                 },
                 {
-                  degree: "Oral & Maxillofacial Surgery Residency",
-                  institution: "Emory University School of Medicine, Atlanta, GA",
+                  degree: "DMD, Doctor of Dental Medicine",
+                  institution: "McGill University, Montreal, Canada",
                 },
               ].map((item) => (
                 <div

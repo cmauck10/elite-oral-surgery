@@ -15,7 +15,7 @@ export default function OurTeamPage() {
       name: "Dr. Michael London",
       role: "Oral & Maxillofacial Surgeon",
       image: "/team/michael-london.jpg",
-      bio: "Board-certified surgeon with 10+ years experience, specializing in complex full-arch implants, advanced bone grafting, and comprehensive oral surgery.",
+      bio: "Board-certified surgeon over a decade of experience, specializing in the full scope of oral and maxillofacial surgery including complex full-arch implants, advanced bone grafting, and IV sedation.",
       link: "/about/dr-michael-london",
     },
     {
@@ -36,12 +36,12 @@ export default function OurTeamPage() {
     },
     {
       name: "Maci Lee",
-      role: "Dental Assistant",
+      role: "Surgical Assistant",
       image: "/team/maci-lee.jpg",
     },
     {
       name: "Kerri Coury",
-      role: "Dental Assistant",
+      role: "Surgical Assistant",
       image: "/team/kerri-coury.jpg",
     },
   ];
@@ -74,9 +74,9 @@ export default function OurTeamPage() {
             </h2>
             <p className="mt-4 text-lg text-[var(--muted)]">
               Behind every successful procedure is a team of dedicated professionals working in
-              harmony. From our board-certified surgeons to our experienced surgical nurses and
-              patient coordinators, every member of our team plays a vital role in delivering the
-              Elite experience.
+              harmony. From our board-certified surgeon to our experienced surgical staff and
+              patient coordinators, every member of our team plays a vital role in delivering The
+              Elite Difference.
             </p>
           </div>
         </div>
@@ -160,15 +160,15 @@ export default function OurTeamPage() {
             {[
               {
                 value: "Patient-First Philosophy",
-                description: "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would want our family members to be treated.",
+                description: "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would our family.",
               },
               {
                 value: "Surgical Excellence",
-                description: "Board-certified oral and maxillofacial surgeon, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
+                description: "Board-certification, modern surgical techniques, rigorous safety standards, and continued education ensure our procedures are precise, safe, and predictable.",
               },
               {
                 value: "Outcome-Driven Care",
-                description: "From pre-op consultations to post-op calls, every interaction is designed to ease worry and ensure your expectations are met.",
+                description: "We start with the end in mind. In coordination with your dentist, we tailor your treatment for your desired prosthetic result.",
               },
             ].map((item) => (
               <div

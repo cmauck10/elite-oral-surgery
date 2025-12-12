@@ -184,7 +184,7 @@ export default function OfficeTourPage() {
               <h3 className="mt-4 font-serif text-2xl">Surgical excellence certified</h3>
               <ul className="mt-6 space-y-3 text-base text-[var(--muted)]">
                 {[
-                  "Ambulatory Surgical Center (ASC) accredited",
+                  "Ambulatory Surgical Center designed",
                   "Heat-welded antimicrobial flooring for infection control",
                   "HEPA-filtered air purification systems",
                   "Hospital-grade sterilization protocols",

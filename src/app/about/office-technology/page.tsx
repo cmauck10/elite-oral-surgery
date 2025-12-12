@@ -41,7 +41,7 @@ export default function OfficeTechnologyPage() {
     {
       title: "Platelet-Rich Fibrin (PRF)",
       description:
-        "We centrifuge a small sample of your own blood to concentrate healing growth factors, then apply the PRF membrane to surgical sites.",
+        "Centrifugation of your blood sample isolates regenerative platelets and growth factors, promoting accelerated healing and improved recovery.",
       image: "/office/centrifuge.jpg",
       benefitsLabel: "Healing Benefits",
       benefits: [
@@ -58,10 +58,11 @@ export default function OfficeTechnologyPage() {
       image: "/office/operating-room.jpg",
       benefitsLabel: "Safety Features",
       benefits: [
-        "Twilight sedation with minimal memory of procedure",
-        "Continuous pulse oximetry, EKG, and capnography",
-        "Certified ACLS-trained surgical team",
-        "Private recovery suites for post-sedation care",
+        "Pulse oximetry",
+        "Electrocardiogram (EKG)",
+        "End-tidal CO2 monitoring",
+        "ACLS and advanced airway certified team",
+        "Private recovery suite for post-sedation monitoring",
       ],
     },
   ];

@@ -182,22 +182,35 @@ export default function Home() {
                   <p className="text-sm sm:text-base text-white">Google Reviews</p>
                 </Link>
                 <Link
-                  href="/about/our-history"
-                  aria-label="Learn about our history"
+                  href="/about/dr-michael-london"
+                  aria-label="Learn about Dr. London's experience"
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
-                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">25+</p>
+                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">10+</p>
                   <p className="text-sm sm:text-base text-white">Years of Experience</p>
                 </Link>
                 <Link
-                  href="/about/dr-michael-london"
-                  aria-label="Learn about our board-certified surgeons"
+                  href="https://www.aboms.org/diplomates/find-diplomate?name=michael+london&city=&statelist=&statetext=&country=&zip=&ziprange="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Verify Dr. London's board certification on ABOMS"
                   className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
                   <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
                   <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">ABOMS</p>
                   <p className="text-sm sm:text-base text-white">Board-Certified</p>
+                </Link>
+                <Link
+                  href="https://myoms.org/find-a-surgeon/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Find an oral surgeon on AAOMS"
+                  className="group relative flex flex-col text-left transition hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
+                  <span className="pointer-events-none absolute inset-[-10px] rounded-3xl border border-white/25 bg-white/8 opacity-0 transition duration-200 group-hover:opacity-100" />
+                  <p className="mt-1 text-2xl sm:text-3xl font-semibold text-white">AAOMS</p>
+                  <p className="text-sm sm:text-base text-white">Member</p>
                 </Link>
               </div>
             </div>
@@ -227,12 +240,12 @@ export default function Home() {
               Precision, expertise, and a patient-first philosophy
             </h2>
             <p className="text-lg text-[var(--muted)]">
-              Dr. London is a board-certified oral and maxillofacial surgeon with over 10 years of experience. A McGill University graduate who completed his specialty training at Emory University, he specializes in complex full-arch implant reconstructions, advanced bone grafting, and comprehensive oral surgery care.
+              Dr. London is a board-certified oral and maxillofacial surgeon with over 10 years of experience. A McGill University graduate who completed his specialty training at Emory University, he specializes in complex full-arch implant reconstructions, advanced bone grafting, wisdom teeth, IV sedation, and comprehensive oral surgery care.
             </p>
             <ul className="grid gap-4 text-sm text-[var(--foreground)] sm:grid-cols-2">
               {[
                 "Diplomate, American Board of Oral & Maxillofacial Surgery",
-                "All-on-X Full-Arch implant pioneer",
+                "Experienced All-on-X Full-Arch implant surgeon",
                 "Certified in IV conscious sedation",
                 "Advanced training in bone grafting and sinus augmentation",
               ].map((item) => (
@@ -274,19 +287,19 @@ export default function Home() {
               A sanctuary for elevated oral surgery experiences
             </h2>
             <p className="text-lg text-[var(--muted)]">
-              Every touchpoint—scheduling, consultation, treatment planning, surgery, and recovery—was designed with patient safety, expectations, and outcomes in mind. From 3D imaging to platelet-rich fibrin, your treatment plan is as advanced as it is
+              Every touchpoint—scheduling, consultation, treatment planning, surgery, and recovery—was designed with patient safety, expectations, and outcomes in mind. Your treatment plan is as advanced as it is
               personalized to meet your unique needs.
             </p>
-            <div className="grid gap-4 text-sm text-[var(--foreground)]">
+            <div className="grid grid-cols-2 gap-3 text-sm text-[var(--foreground)]">
               {[
-                "Welcoming reception area with comfortable seating, natural light, and snacks",
-                "Private consultation room for no-pressure conversations about your treatment plan",
-                "ASC accredited operating room with state-of-the-art technology",
-                "Peaceful recovery suite with post-sedation monitoring ",
+                "Welcoming reception lounge",
+                "Private consultation room",
+                "High-tech operating room",
+                "Peaceful recovery suite",
               ].map((item) => (
                 <div
                   key={item}
-                  className="rounded-2xl border border-[var(--border)] bg-white/70 px-4 py-3 shadow-sm"
+                  className="rounded-xl border border-[var(--border)] bg-white/70 px-3 py-2 shadow-sm text-center"
                 >
                   {item}
                 </div>
@@ -330,8 +343,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-xl text-sm text-[var(--muted)]">
-              From life-changing implant dentistry to strategic bone preservation, every procedure
-              is crafted with digital planning, regenerative biologics, and meticulous follow-up.
+              From life-changing implant dentistry to your straught forward wisdom teeth, every procedure
+              is crafted with digital planning, regenerative biologics, and personalized follow-up care.
             </p>
           </div>
           <div className="mt-10 grid gap-4 md:grid-cols-2">

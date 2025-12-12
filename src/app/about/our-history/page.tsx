@@ -124,17 +124,17 @@ export default function OurHistoryPage() {
               {
                 title: "Patient-First Philosophy",
                 description:
-                  "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would want our family members to be treated.",
+                  "From your first phone call to your final follow-up appointment, you'll feel the difference a dedicated, compassionate team makes. We treat our patients as we would our family.",
               },
               {
                 title: "Surgical Excellence",
                 description:
-                  "Board-certified oral and maxillofacial surgeon, evidence-based protocols, and continuous education keep our outcomes at the forefront of the field.",
+                  "Board-certification, modern surgical techniques, rigorous safety standards, and continued education ensure our procedures are precise, safe, and predictable.",
               },
               {
                 title: "Outcome-Driven Care",
                 description:
-                  "From pre-op consultations to post-op calls, every interaction is designed to ease worry and ensure your expectations are met.",
+                  "We start with the end in mind. In coordination with your dentist, we tailor your treatment for your desired prosthetic result.",
               },
             ].map((value) => (
               <div
