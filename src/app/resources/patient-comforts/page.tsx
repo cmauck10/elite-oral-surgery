@@ -3,12 +3,12 @@ import { PageIntro } from "@/components/PageIntro";
 
 const comforts = [
   {
-    title: "Private Recovery Suites",
+    title: "Private Recovery Suite",
     description:
       "After sedation, you’ll transition to a private suite with dimmed lighting, aromatherapy, and warmed blankets so you can wake up gradually.",
     details: [
-      "Continuous monitoring by our nursing team",
-      "Complimentary comfort kit with lip balm, ice packs, and herbal tea",
+      "Continuous monitoring by our team",
+      "Complimentary comfort kit`",
       "Discreet exit through a private doorway when you’re ready",
     ],
   },
@@ -33,11 +33,11 @@ export default function PatientComfortsPage() {
         description="Sedation dentistry is about trust. We pair advanced anesthesia with hospitality-level comforts, so you feel cared for before, during, and after treatment."
       />
 
-      <div className="mt-12 space-y-8">
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
         {comforts.map((item) => (
           <article
             key={item.title}
-            className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md"
+            className="rounded-[32px] border border-[var(--border)] bg-white/90 p-8 shadow-section-md flex flex-col"
           >
             <h2 className="text-2xl font-semibold">{item.title}</h2>
             <p className="mt-4 text-[var(--muted)]">{item.description}</p>
