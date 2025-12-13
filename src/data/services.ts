@@ -3,8 +3,6 @@ export type ServiceDetail = {
   name: string;
   summary: string;
   heroTitle: string;
-  heroSubtitle: string;
-  overview: string[];
   highlights: string[];
   image: {
     src: string;
@@ -12,6 +10,18 @@ export type ServiceDetail = {
   };
   seoDescription: string;
   keywords: string[];
+  // Page content
+  whatToExpect: {
+    title: string;
+    paragraphs: string[];
+  };
+  idealCandidates: {
+    title: string;
+    items: string[];
+  };
+  // Optional customizations
+  showHighlights?: boolean; // defaults to true
+  ctaText?: string; // custom CTA text above buttons
 };
 
 export const services: ServiceDetail[] = [
@@ -21,12 +31,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Prosthetically driven and digitally planned implant placement with clinically proven, high quality bio-materials.",
     heroTitle: "Dental Implants",
-    heroSubtitle:
-      "Life-proof smiles crafted with CBCT planning, intraoral scanning, and custom titanium or zirconia solutions.",
-    overview: [
-      "We combine 3D printing, platelet-rich fibrin, and photogrammetry to deliver implants that integrate faster and feel indistinguishable from natural teeth.",
-      "From single-tooth replacement to complex reconstruction after trauma, every case is mapped for function, esthetics, and longevity.",
-    ],
     highlights: [
       "CBCT-guided surgical planning",
       "Full-arch reconstruction",
@@ -45,6 +49,22 @@ export const services: ServiceDetail[] = [
       "implant dentist",
       "same day dental implants",
     ],
+    whatToExpect: {
+      title: "Your Dental Implant Journey",
+      paragraphs: [
+        "Dental implants are titanium posts surgically placed into your jawbone to serve as artificial tooth roots. Once healed, they provide a stable foundation for crowns, bridges, or dentures that look, feel, and function like natural teeth.",
+        "The process typically involves an initial consultation with 3D imaging, implant placement surgery, a healing period of at least 3 months for osseointegration, and finally the placement of your custom restoration.",
+      ],
+    },
+    idealCandidates: {
+      title: "Are Implants Right for You?",
+      items: [
+        "Want to confidently bite, chew, and smile again",
+        "Missing one or more teeth",
+        "Seeking a long-term, permanent solution",
+        "Frustration with your removable dentures",
+      ],
+    },
   },
   {
     slug: "all-on-x",
@@ -52,12 +72,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Full-arch implant transformations delivered with the highest safety standards at every stage and your final smile and functional goals in mind.",
     heroTitle: "All-on-X Full-Arch",
-    heroSubtitle:
-      "Transformative smile designs with four to six implants, immediate load temporaries, and on-site lab customization.",
-    overview: [
-      "Our All-on-X workflow blends digital smile design, photogrammetry, and PMMA temporaries so you wake up with a confident smile.",
-      "We coordinate with your restorative dentist or deliver complete prosthetics in-house for seamless care.",
-    ],
     highlights: [
       "Day-of-surgery provisional smile",
       "Anesthesia + comfort concierge",
@@ -76,6 +90,24 @@ export const services: ServiceDetail[] = [
       "teeth in a day",
       "implant supported dentures",
     ],
+    whatToExpect: {
+      title: "Your Full-Arch Transformation",
+      paragraphs: [
+        "All-on-X is a revolutionary technique that replaces an entire arch of teeth using four to six strategically placed implants. ",
+        "The process includes comprehensive planning with digital imaging and temporary teeth placement, followed by healing and placement of your final custom prosthesis once the implants are fully integrated.",
+      ],
+    },
+    idealCandidates: {
+      title: "Is All-on-X Right for You?",
+      items: [
+        "Missing all or most teeth in an arch",
+        "Tired of loose or uncomfortable dentures",
+        "Want a non-removable, permanent solution",
+        "Generally non-restorable teeth",
+      ],
+    },
+    showHighlights: false,
+    ctaText: "Start your smile transformation today",
   },
   {
     slug: "iv-sedation",
@@ -83,12 +115,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Board-certified anesthesia protocols tailored to your history, ensuring you remain relaxed, safe, and comfortable.",
     heroTitle: "IV Sedation & Anesthesia",
-    heroSubtitle:
-      "Experience advanced oral surgery care while fully relaxed with personalized sedation medicine delivered by hospital-trained surgeons.",
-    overview: [
-      "Each sedation plan begins with medical clearance, digital airway assessment, and anesthesia monitoring identical to hospital standards.",
-      "We combine warm blankets, aromatherapy, and private recovery suites so you awaken calm and supported.",
-    ],
     highlights: [
       "Board-certified anesthesia provider",
       "Continuous monitoring with electronic anesthesia charting",
@@ -107,6 +133,20 @@ export const services: ServiceDetail[] = [
       "oral surgery anesthesia",
       "sedation oral surgeon",
     ],
+    whatToExpect: {
+      title: "Your Comfort Experience",
+      paragraphs: [
+        "IV sedation delivers medication directly into your bloodstream for a deeply relaxed state during your procedure. You'll remain breathing on your own while feeling calm and comfortable throughout.",
+        "Our highly trained team will be by your side to monitor and support you every step of the way, ensuring your comfort and safety. After your procedure, you'll relax in our secluded recovery suite with attentive, personalized care until you're fully ready to head home.",
+      ],
+    },
+    idealCandidates: {
+      title: "Is IV Sedation Right for You?",
+      items: [
+        "Dental anxiety or fear",
+        "Undergoing longer or complex procedures",
+      ],
+    },
   },
   {
     slug: "wisdom-teeth-removal",
@@ -114,12 +154,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Predictable, gentle third-molar extractions using Enhanced Recovery After Surgery (ERAS) protocols and personalized post-operative care.",
     heroTitle: "Wisdom Teeth Removal",
-    heroSubtitle:
-      "Modern diagnostics ensure we remove third molars before they threaten surrounding teeth, airways, or orthodontic results.",
-    overview: [
-      "We time removal based on root development, airway considerations, and your orthodontic plan to make recovery smoother.",
-      "PRF, ozone therapy, and personalized post-op care kits help reduce swelling and speed healing.",
-    ],
     highlights: [
       "3D CBCT nerve mapping",
       "PRF to reduce risk of dry sockets",
@@ -138,6 +172,22 @@ export const services: ServiceDetail[] = [
       "painless wisdom tooth extraction",
       "third molar surgery",
     ],
+    whatToExpect: {
+      title: "Your Wisdom Teeth Journey",
+      paragraphs: [
+        "Wisdom teeth removal is one of the most common oral surgery procedures. Using 3D imaging, we carefully plan your extraction to minimize discomfort and reduce risk of complications.",
+        "Most patients are back to normal activities within a few days. We provide detailed aftercare instructions and are available for any questions during your recovery.",
+      ],
+    },
+    idealCandidates: {
+      title: "When Should Wisdom Teeth Be Removed?",
+      items: [
+        "Impacted or partially erupted wisdom teeth",
+        "Pain, swelling, or infection",
+        "Crowding or damage to adjacent teeth",
+        "Recommended by your dentist or orthodontist",
+      ],
+    },
   },
   {
     slug: "tooth-extractions",
@@ -145,12 +195,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Atraumatic removal techniques that protect bone volume and pave the way for bone regeneration and dental implant placement.",
     heroTitle: "Tooth Extractions",
-    heroSubtitle:
-      "Whether due to decay, fractures, or orthodontic needs, we remove teeth with precision and immediate site preservation.",
-    overview: [
-      "We utilize periotomes, Piezosurgery, and socket-shield concepts whenever indicated to preserve bone and soft tissue.",
-      "Same-day grafting options ensure your implant timeline stays on track.",
-    ],
     highlights: [
       "Socket preservation grafts",
       "Guided tissue regeneration techniques",
@@ -169,6 +213,22 @@ export const services: ServiceDetail[] = [
       "socket preservation",
       "oral surgery tooth removal",
     ],
+    whatToExpect: {
+      title: "Your Extraction Experience",
+      paragraphs: [
+        "Whether due to decay, abcess, fracture, or orthodontic needs, we use gentle, atraumatic techniques to preserve bone and surrounding tissue for optimal healing.",
+        "Bone grafting at time of extraction is available when needed to preserve the site for future implant placement. Multiple anesthesia options ensure your comfort throughout.",
+      ],
+    },
+    idealCandidates: {
+      title: "When Is Extraction Necessary?",
+      items: [
+        "Severe decay beyond repair",
+        "Fractured or broken teeth",
+        "Advanced periodontal disease",
+        "Preparation for orthodontics or dentures",
+      ],
+    },
   },
   {
     slug: "bone-grafting",
@@ -176,12 +236,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Regenerative bone grafting techniques to restore volume of lost bone for future implant placement.",
     heroTitle: "Bone & Soft Tissue Grafting",
-    heroSubtitle:
-      "Advanced biologics, membranes, and 3D-printed scaffolds restore the foundation for implants and facial harmony.",
-    overview: [
-      "We pair autogenous grafts with growth factors, collagen membranes, or titanium meshes for predictable volume gain.",
-      "Soft-tissue grafting refines esthetics while stabilizing peri-implant health.",
-    ],
     highlights: [
       "High-quality clinically proven bio-materials",
       "Ridge-split + tenting techniques",
@@ -200,6 +254,20 @@ export const services: ServiceDetail[] = [
       "ridge augmentation",
       "PRF dentistry",
     ],
+    whatToExpect: {
+      title: "Your Bone Regeneration Journey",
+      paragraphs: [
+        "Bone grafting restores lost jawbone volume using advanced biomaterials, growth factors, and tissue handling techniques. This creates a solid foundation for dental implants.",
+        "Healing of bone grafting typically takes 6 months as your body integrates the graft material. We monitor your progress throughout your journey to ensure optimal results.",
+      ],
+    },
+    idealCandidates: {
+      title: "Who Needs Bone Grafting?",
+      items: [
+        "Insufficient bone for dental implants",
+        "Sinus augmentation needed for upper implants",
+      ],
+    },
   },
   {
     slug: "biopsy-pathology",
@@ -207,12 +275,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Expert diagnosis and treatment of oral mucosal lesions, cysts, and abnormal tissue.",
     heroTitle: "Biopsy & Pathology",
-    heroSubtitle:
-      "Early detection and accurate diagnosis of oral lesions, tumors, and abnormalities with advanced tissue analysis.",
-    overview: [
-      "Our team performs comprehensive oral examinations and biopsies to diagnose a wide range of conditions, from benign cysts to precancerous lesions.",
-      "We coordinate with pathology laboratories and oncology specialists when needed to ensure you receive timely, accurate diagnoses and appropriate treatment plans.",
-    ],
     highlights: [
       "Incisional and excisional biopsy techniques",
       "Cyst and tumor evaluation",
@@ -231,6 +293,22 @@ export const services: ServiceDetail[] = [
       "oral cancer screening",
       "cyst removal oral surgeon",
     ],
+    whatToExpect: {
+      title: "Your Diagnostic Journey",
+      paragraphs: [
+        "Our team performs thorough oral examinations and precise biopsies when needed to diagnose a wide range of conditions. Tissue samples are analyzed in parternship with UF Health Oral Pathology Lab.",
+        "Results typically return within 3 weeks. We'll discuss findings with you and coordinate any necessary follow-up care with other specialists.",
+      ],
+    },
+    idealCandidates: {
+      title: "When Is a Biopsy Needed?",
+      items: [
+        "Unexplained oral lesions or growths",
+        "Persistent sores that don't heal",
+        "Abnormal tissue changes",
+        "Screening for oral cancer",
+      ],
+    },
   },
   {
     slug: "emergency-care",
@@ -238,9 +316,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Rapid access to emergency care for facial or dental trauma, dental infections, and post-surgical concerns.",
     heroTitle: "Emergency Care",
-    heroSubtitle:
-      "We accept emergency patients and are equipped to handle a wide range of dental emergencies.",
-    overview: [],
     highlights: [
       "Same-day emergency services",
       "Infected teeth extraction",
@@ -259,6 +334,22 @@ export const services: ServiceDetail[] = [
       "dental emergency Wellington",
       "abscess drainage oral surgery",
     ],
+    whatToExpect: {
+      title: "Your Emergency Visit",
+      paragraphs: [
+        "Dental emergencies require prompt attention. Our team is equipped to handle facial trauma, severe infections, uncontrolled bleeding, and other urgent situations.",
+        "We coordinate with emergency rooms and your dental team to stabilize injuries while planning for long-term restoration and recovery.",
+      ],
+    },
+    idealCandidates: {
+      title: "What Constitutes an Emergency?",
+      items: [
+        "Knocked out or broken teeth from facial trauma",
+        "Severe facial swelling or infection",
+        "Facial fractures",
+        "Jaw dislocations",
+      ],
+    },
   },
   {
     slug: "orthognathic-surgery",
@@ -266,12 +357,6 @@ export const services: ServiceDetail[] = [
     summary:
       "Corrective jaw surgery tailored to improve bite and facial harmony.",
     heroTitle: "Orthognathic Surgery",
-    heroSubtitle:
-      "We partner with orthodontists to reposition jaws, unlock airway space, and harmonize facial esthetics.",
-    overview: [
-      "Virtual surgical planning and cutting guides ensure jaw movements are exact, efficient, and safe.",
-      "Comprehensive follow-up, nutrition support, and airway monitoring safeguard your recovery.",
-    ],
     highlights: [
       "Virtual surgical planning (VSP)",
       "Custom surgical guides",
@@ -290,6 +375,21 @@ export const services: ServiceDetail[] = [
       "sleep apnea jaw surgery",
       "VSP oral surgeon",
     ],
+    whatToExpect: {
+      title: "Your Jaw Surgery Journey",
+      paragraphs: [
+        "Orthognathic surgery corrects jaw alignment issues affecting your bite, breathing, and facial aesthetics. We use virtual surgical planning for precise, predictable results in coordination with your orthodontist.",
+        "We make recovery tolerable with Enhanced Recovery After Surgery (ERAS) protocols and personalized post-operative care.",
+      ],
+    },
+    idealCandidates: {
+      title: "Is Jaw Surgery Right for You?",
+      items: [
+        "Significant bite misalignment",
+        "Sleep apnea related to jaw position",
+        "Facial asymmetry",
+      ],
+    },
   },
   {
     slug: "tmj-facial-pain",
@@ -297,17 +397,10 @@ export const services: ServiceDetail[] = [
     summary:
       "Detailed diagnostic services and surgical management of temporomandibular joint (TMJ) and facial pain disorders.",
     heroTitle: "TMJ & Facial Pain Disorders",
-    heroSubtitle:
-      "Comprehensive evaluation and treatment of temporomandibular joint dysfunction and chronic facial pain conditions.",
-    overview: [
-      "Our team provides thorough diagnostic workups including imaging, clinical examination, and bite analysis to identify the root cause of your TMJ or facial pain symptoms.",
-      "Treatment options range from conservative therapies and splint therapy to advanced surgical interventions when necessary, all tailored to restore comfort and function.",
-    ],
     highlights: [
       "Comprehensive 3D CBCT TMJ imaging",
       "Certified Maxillofacial radiology interpretation",
       "Non-surgical and surgical management options",
-
     ],
     image: {
       src: "/services/tmj.png",
@@ -321,10 +414,24 @@ export const services: ServiceDetail[] = [
       "TMJ disorder oral surgeon",
       "jaw pain treatment",
     ],
+    whatToExpect: {
+      title: "Your TMJ Treatment Journey",
+      paragraphs: [
+        "We begin with comprehensive evaluation including a detailed history, imaging, and an evidence-based clinical examination to identify the source of your pain and dysfunction.",
+        "Treatment may include conservative non-surgical care, occlusal guards, medications, physical therapy, Botox, or surgical options when indicated.",
+      ],
+    },
+    idealCandidates: {
+      title: "Signs You May Have TMJ Disorder",
+      items: [
+        "Jaw pain with eating, chewing, or speaking",
+        "Clicking, popping, or locking of the jaw",
+        "Difficulty chewing or opening mouth",
+      ],
+    },
   },
 ];
 
 export function getServiceBySlug(slug: string) {
   return services.find((service) => service.slug === slug);
 }
-

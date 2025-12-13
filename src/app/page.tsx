@@ -248,6 +248,8 @@ export default function Home() {
                 "Experienced All-on-X Full-Arch implant surgeon",
                 "Certified in IV conscious sedation",
                 "Advanced training in bone grafting and sinus augmentation",
+                "Wisdom tooth specialist",
+                "Oral Pathology trained"
               ].map((item) => (
                 <li
                   key={item}
