@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image"; // Uncomment when case studies are ready
 import Link from "next/link";
 import { PageIntro } from "@/components/PageIntro";
 import { Container } from "@/components/ui";
-import { testimonials } from "@/data/testimonials";
+// import { testimonials } from "@/data/testimonials"; // Uncomment when case studies are ready
 import { GoogleReviewsCarousel } from "@/components/GoogleReviewsCarousel";
 
 export default function TestimonialsPage() {
@@ -16,13 +16,13 @@ export default function TestimonialsPage() {
         description="Hear from neighbors who trusted us with their oral surgery needs and experienced the Elite difference."
       />
 
+      {/* Case Study Cards - Commented out until we have actual case studies
       <div className="mt-16 space-y-16">
         {testimonials.map((testimonial, index) => (
           <article
             key={testimonial.name}
             className="grid gap-8 rounded-[32px] border border-[var(--border)] bg-white/80 p-8 shadow-section lg:grid-cols-[minmax(0,1fr)_1.5fr] lg:p-12"
           >
-            {/* Photo on left */}
             <div className="relative overflow-hidden rounded-[28px]">
               <Image
                 src={testimonial.photo}
@@ -33,8 +33,6 @@ export default function TestimonialsPage() {
                 loading="lazy"
               />
             </div>
-
-            {/* Info on right */}
             <div className="flex flex-col justify-center gap-6">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -44,13 +42,11 @@ export default function TestimonialsPage() {
                   {testimonial.name}
                 </h3>
               </div>
-
               <blockquote className="border-l-4 border-[var(--accent)] pl-6">
                 <p className="text-xl italic leading-relaxed text-[var(--foreground)]">
                   "{testimonial.quote}"
                 </p>
               </blockquote>
-
               <div className="rounded-[24px] bg-gradient-to-br from-[#f8f8f8] to-[#fff5eb] p-6">
                 <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent)] mb-3">
                   Case Summary
@@ -63,6 +59,7 @@ export default function TestimonialsPage() {
           </article>
         ))}
       </div>
+      */}
 
       {/* Google Reviews Section */}
       <section className="mt-24" aria-labelledby="google-reviews-heading">

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getServiceBySlug, services } from "@/data/services";
 import { Container } from "@/components/ui";
+import { VideoPlayer } from "@/components/VideoPlayer";
 
 type ServicePageProps = {
   params: Promise<{
@@ -183,6 +184,23 @@ export default async function ServicePage({ params }: ServicePageProps) {
             </div>
           </div>
         </section>
+
+        {/* Video Section for Implants and Wisdom Teeth */}
+        {(slug === "implants" || slug === "wisdom-teeth-removal") && (
+          <section className="mt-12 rounded-[32px] border border-[var(--border)] bg-white/90 p-6 shadow-section lg:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)] mb-4">
+              Watch the Procedure
+            </p>
+            <h3 className="font-serif text-2xl text-[var(--foreground)] mb-6">
+              {slug === "implants" ? "Understanding Dental Implants" : "Understanding Wisdom Teeth Removal"}
+            </h3>
+            <VideoPlayer
+              src={slug === "implants" ? "/implants.mp4" : "/wisdom-teeth.mp4"}
+              poster={slug === "implants" ? "/implants-poster.jpg" : "/wisdom-teeth-poster.jpg"}
+              title={slug === "implants" ? "Understanding Dental Implants" : "Understanding Wisdom Teeth Removal"}
+            />
+          </section>
+        )}
 
         <div className="mt-12 rounded-[24px] border border-dashed border-[var(--border)] bg-white/70 p-6 text-sm text-[var(--muted)]">
           Looking for another treatment? Explore{" "}

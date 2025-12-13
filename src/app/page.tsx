@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { services as serviceDetails } from "@/data/services";
-import { testimonials as allTestimonials } from "@/data/testimonials";
+// import { testimonials as allTestimonials } from "@/data/testimonials"; // Uncomment when case studies are ready
 import { GoogleReviewsCarousel } from "@/components/GoogleReviewsCarousel";
 
 const serviceHighlights = serviceDetails.map((service) => ({
@@ -70,8 +70,8 @@ const resourceCards = [
   },
 ];
 
-// Use first 3 testimonials for homepage case studies
-const caseStudies = allTestimonials.slice(0, 3);
+// Use first 3 testimonials for homepage case studies - Uncomment when case studies are ready
+// const caseStudies = allTestimonials.slice(0, 3);
 
 export default function Home() {
   const structuredData = {
@@ -162,7 +162,7 @@ export default function Home() {
                     Request an Appointment
                   </Link>
                   <Link
-                    href="#services"
+                    href="/services"
                     className="rounded-full border border-white/60 px-5 py-2.5 sm:px-6 sm:py-3 text-sm font-semibold text-white transition hover:border-white"
                   >
                     Explore Services
@@ -246,7 +246,7 @@ export default function Home() {
               {[
                 "Diplomate, American Board of Oral & Maxillofacial Surgery",
                 "Experienced All-on-X Full-Arch implant surgeon",
-                "Certified in IV conscious sedation",
+                "Certified in IV sedation",
                 "Advanced training in bone grafting and sinus augmentation",
                 "Wisdom tooth specialist",
                 "Oral Pathology trained"
@@ -376,6 +376,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Case Studies Section - Commented out until we have actual case studies
         <section id="case-studies" className="mt-24" aria-labelledby="case-studies-heading">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
@@ -426,6 +427,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        */}
 
         {/* Google Reviews Section */}
         <section id="google-reviews" className="mt-24" aria-labelledby="google-reviews-heading">
