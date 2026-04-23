@@ -22,8 +22,8 @@ export async function POST(request: Request) {
 
     // Send email using Resend
     const data = await resend.emails.send({
-      from: 'Elite Oral Surgery <onboarding@resend.dev>',
-      to: 'admin@eoswellington.com',
+      from: 'Elite Oral Surgery <admin@eoswellington.com>',
+      to: 'office@eoswellington.com',
       subject: `New Appointment Request - ${firstName} ${lastName}`,
       html: `
         <!DOCTYPE html>
