@@ -104,7 +104,7 @@ export function SiteFooter() {
           </a>
           <p className="font-semibold text-[var(--foreground)]">F: (561) 795-5445</p>
           <p className="mt-2">Mon–Thu · 8:00a – 5:00p</p>
-          <p>Fri · 7:30a – 1:30p</p>
+          <p>Fri · 7:30a – 3:30p</p>
         </div>
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
