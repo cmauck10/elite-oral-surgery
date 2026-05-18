@@ -345,7 +345,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-xl text-sm text-[var(--muted)]">
-              From life-changing implant dentistry to your straught forward wisdom teeth, every procedure
+              From life-changing implant dentistry to your straight forward wisdom teeth, every procedure
               is crafted with digital planning, regenerative biologics, and personalized follow-up care.
             </p>
           </div>
