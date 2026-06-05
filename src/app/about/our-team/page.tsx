@@ -30,11 +30,6 @@ export default function OurTeamPage() {
       image: "/team/ana-gonzalez.jpg",
     },
     {
-      name: "Yasmin Rodriguez",
-      role: "Treatment Coordinator",
-      image: "/team/yasmin-rodriguez.jpg",
-    },
-    {
       name: "Maci Lee",
       role: "Surgical Assistant",
       image: "/team/maci-lee.jpg",
