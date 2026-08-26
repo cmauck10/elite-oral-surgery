@@ -514,7 +514,7 @@ export default function Home() {
               <div className="border-t border-[var(--border)] pt-3 text-sm text-[var(--muted)]">
                 <p className="uppercase tracking-[0.2em]">Hours</p>
                 <p>Mon–Thu · 8:00a – 5:00p</p>
-                <p>Fri · 7:30a – 1:30p</p>
+                <p>Fri · 7:30a – 3:30p</p>
               </div>
               <div>
                 <p className="text-sm uppercase tracking-[0.2em] text-[var(--muted)]">Email</p>
