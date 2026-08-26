@@ -159,7 +159,7 @@ export default function OfficeTourPage() {
               <div>
                 <p className="font-semibold text-[var(--foreground)]">Hours</p>
                 <p>Monday – Thursday: 8:00 AM – 5:00 PM</p>
-                <p>Friday: 7:30 AM – 1:30 PM</p>
+                <p>Friday: 7:30 AM – 3:30 PM</p>
                 <p>Saturday & Sunday: Closed</p>
               </div>
             </div>
