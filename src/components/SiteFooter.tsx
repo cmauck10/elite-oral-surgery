@@ -42,7 +42,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-8">
         <div className="space-y-3">
           <Image
-            src="/logo.png"
+            src="/elite-logo.png"
             alt="Elite Oral Surgery of Wellington logo"
             width={210}
             height={60}

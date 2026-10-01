@@ -79,7 +79,7 @@ export default function Home() {
     "@type": "Dentist",
     name: "Elite Oral Surgery of Wellington",
     url: "https://eliteoralsurgerywellington.com",
-    logo: "https://eliteoralsurgerywellington.com/logo.png",
+    logo: "https://eliteoralsurgerywellington.com/elite-logo.png",
     telephone: "+1-561-790-0206",
     faxNumber: "+1-561-795-5445",
     address: {

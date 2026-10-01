@@ -139,7 +139,7 @@ export function SiteHeader() {
           }}
         >
           <Image
-            src="/logo.png"
+            src="/elite-logo.png"
             alt="Elite Oral Surgery of Wellington logo"
             width={210}
             height={60}
